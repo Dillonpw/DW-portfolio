@@ -16,13 +16,13 @@ const images = [
   {
     id: 'dispatcher-cheat-sheet',
     src: '/DCS-home.png',
-    mobileImg: '//DCS-home-m.png',
+    mobileImg: '/DCS-home-m.png',
     livePreviewLink: 'https://www.911dcs.net/',
     githubLink: 'https://github.com/Dillonpw/DCS',
     title: 'Dispatcher Cheat Sheet',
     tags: ['TypeScript', 'React', 'CSS', 'Astro'],
     challenge:
-      ' I originally built this project using vanilla JavaScript, and after deciding to build the project up a bit I wanted to challenge myself and covert it to typeScript for some practice. This was the first project I built using TypeScript and I struggled a bit at first with typing things correctly and sometimes skipped types but as I moved through the documentation things becmae clear and the error responses turned into a tool as I converted the code.',
+      ' I originally built this project using vanilla JavaScript, and after deciding to build the project up a bit I wanted to challenge myself and covert it to TypeScript for some practice. This was the first project I built using TypeScript and I struggled a bit at first with typing things correctly and sometimes skipped types but as I moved through the documentation things becmae clear and the error responses turned into a tool as I converted the code.',
     description:
       'A live and public site with returning users, styled with a brutaslist theme in mind. Consisting of a few useful tools for 911 dispatchers, a job I worked for several years. I built the app to help with my efficiency as a dispatcher and as a send off gift to my former coworkers. The primary funciton is a work schedule generator. As a 911 dispatcher, my schedule was different every week due to the need for 24/7 uptime, and to prevent the same poeple from always working weekends we worked on a rotation of 4 work days followed by 3 days off, which required a great deal of effort to schedule anything in advance. I plan to add more tools to the page as they come to mind and offer this project up to other 911 dispatchers to hopefully make their jobs and lives easier as well.',
   },
@@ -33,7 +33,7 @@ const images = [
     title: 'Pomodoro Timer App',
     tags: ['TypeScript', 'React', 'Tailwind', 'Tauri'],
     challenge:
-      'This project did not pose much in the way of challeneges outside of making sure the countdown functioned as expected.',
+      'This project did not pose much in the way of challeneges outside of making sure the countdown functioned as expected, I spent most of the time on this project making sure the UI was both noticeable but not a distraction to the user by choosing neutral colors and a visible change between work-time and break-time.',
     description:
       'A simple but daily use Pomodoro Timer for productivity and time management consisting of an indicator, an active timer, two buttons and two inputs. Designed to take up very little desktop space and a basic UI to avoid being a distraction. The App loads quickly and begins counting on load, unless directed to reset and the allow for time adjustment.',
   },

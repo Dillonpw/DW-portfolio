@@ -11,7 +11,7 @@ const Header = () => {
         initial={{ opacity: 0 }}
         transition={{ duration: 2 }}
         whileInView={{ opacity: 1 }}
-        className="mx-8 mt-10 flex flex-col items-center justify-center lg:flex-row"
+        className="mx-8 mt-40 flex flex-col items-center justify-center lg:flex-row"
       >
         <div className="flex w-full flex-col gap-4 px-6 md:w-1/2">
           <h1 id="home" className=" px-5 py-10 text-5xl">

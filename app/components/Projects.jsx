@@ -13,7 +13,7 @@ const Projects = () => {
       whileInView={{ opacity: 1 }}
       className="m-10 mt-40 flex flex-col"
     >
-      <h3 className="my-20 text-center text-4xl font-bold">
+      <h3 className="mt-20 text-center text-4xl font-bold">
         Selected Projects
       </h3>
       <p className=" mb-6 text-center text-lg opacity-50">
@@ -29,7 +29,7 @@ const Projects = () => {
               href={`/${image.id}`}
             >
               <Image
-                className="h-[207px] w-[377px] rounded-xl border-2 border-white sm:h-[311px] sm:w-[565px]"
+                className="rounded-xl border-2 border-white"
                 src={image.src}
                 alt={image.title}
                 width={565}
