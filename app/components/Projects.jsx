@@ -40,7 +40,7 @@ const Projects = () => {
               {image.tags.map((tag) => (
                 <span
                   key={tag}
-                  className="m-2 cursor-default rounded-2xl border-2  border-cyan-200 bg-slate-800 px-3 py-2 text-cyan-200 hover:border-2 dark:bg-cyan-200 dark:text-slate-800"
+                  className="m-2 cursor-default rounded-2xl border-2 border-cyan-200 bg-slate-800 px-3 py-2 text-cyan-200 dark:bg-cyan-200 dark:text-slate-800"
                 >
                   {tag}
                 </span>
@@ -56,12 +56,12 @@ const Projects = () => {
         <p className="m-4 text-center text-4xl font-bold">There&apos;s More!</p>
         <p className="mx-8 text-left text-xl">
           I have several more projects in the works that I am happy to show and
-          discuss including a professional hair dresser&apos;s portfolio and a small
-          business&apos;s website still in the planning phase.
+          discuss including a professional hair dresser&apos;s portfolio and a
+          small business&apos;s website still in the planning phase.
         </p>
         <p className="mx-8 text-left text-xl">
-          If you&apos;re interested feel free to send me a message about the private
-          projects, or just visit my profile on
+          If you&apos;re interested feel free to send me a message about the
+          private projects, or just visit my profile on
           <a
             href="https://github.com/Dillonpw"
             target="_blank"

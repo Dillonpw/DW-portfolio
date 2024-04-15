@@ -1,4 +1,4 @@
-'use client'
+"use client";
 import images from "../components/Images";
 import { useEffect } from "react";
 import ThemeToggle from "../components/theme";
@@ -7,7 +7,6 @@ import Image from "next/image";
 import { useParams } from "next/navigation";
 import { motion } from "framer-motion";
 import logo from "/public/logo.svg";
-import Footer from "../components/Footer";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import { faUpRightFromSquare } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -34,7 +33,11 @@ const ProjectPage = () => {
             whileInView={{ opacity: 1 }}
           >
             <div className="pb-15 mx-8 flex flex-row items-center justify-between p-4 pt-6">
-              <Link href="/" id="logo" className="justify-start px-2 hover:scale-105">
+              <Link
+                href="/"
+                id="logo"
+                className="justify-start px-2 hover:scale-105"
+              >
                 <Image className="" src={logo} alt="Logo" />
               </Link>
               <ThemeToggle />
