@@ -14,7 +14,7 @@ const Header = () => {
         whileInView={{ opacity: 1 }}
         className="mx-8 mt-40 flex flex-col items-center justify-center lg:flex-row"
       >
-        <div className=" ml-10 flex w-full flex-col gap-4 px-6 md:w-1/2">
+        <div className="flex w-full flex-col items-center justify-center gap-4 px-6 md:w-1/2 lg:items-start lg:justify-start">
           <Image
             src="/Cartoon.jpeg"
             alt="cartoon"
