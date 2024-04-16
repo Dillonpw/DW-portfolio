@@ -14,7 +14,7 @@ const Header = () => {
         whileInView={{ opacity: 1 }}
         className="mx-8 mt-40 flex flex-col items-center justify-center lg:flex-row"
       >
-        <div className="flex w-full flex-col gap-4 px-6 md:w-1/2">
+        <div className=" ml-10 flex w-full flex-col gap-4 px-6 md:w-1/2">
           <Image
             src="/Cartoon.jpeg"
             alt="cartoon"
@@ -22,7 +22,7 @@ const Header = () => {
             height={200}
             className="mx-5 rounded-full border-2 dark:border-blue-400"
           />
-          <h1 id="home" className=" px-5 text-5xl">
+          <h1 id="home" className="px-5 text-5xl">
             Dillon Walsh
           </h1>
           <h2 className="fade-in-2 px-5 text-3xl opacity-60">

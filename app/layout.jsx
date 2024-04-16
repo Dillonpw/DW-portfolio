@@ -74,20 +74,6 @@ export const metadata = {
   alternates: {
     canonical: "/",
   },
-  link: [
-    {
-      rel: "preconnect",
-      href: "https://fonts.googleapis.com",
-      crossorigin: true,
-    },
-    { rel: "dns-prefetch", href: "https://fonts.gstatic.com" },
-    { rel: "preload", href: "/logo.svg", as: "image" },
-    { rel: "icon", href: "/favicon.ico", type: "image/x-icon" },
-  ],
-  bookmarks: [
-    { rel: "me", href: "https://github.com/Dillonpw" },
-    { rel: "me", href: "https://www.linkedin.com/in/dillon-walsh-50673b290/" },
-  ],
 };
 
 export default function RootLayout({ children }) {
