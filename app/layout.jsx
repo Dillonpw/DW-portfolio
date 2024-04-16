@@ -4,11 +4,26 @@ import Footer from "./components/Footer";
 /** @type {import("next").Metadata} */
 export const metadata = {
   title: "Dillon Walsh - Web Developer",
+  openGraph: {
+    title: "Dillon Walsh - Web Developer",
+  },
   description:
     "Dillon Walsh- Professional Web Developer. Come see what I've been up to!",
     icons: {
-        icon: "/logo.svg"
+        icon: "/logo.svg",
+        shortcut: "/logo.svg",
     },
+    referrer: "origin-when-cross-origin",
+    authors: ["Dillon Walsh"],
+    creator: "Dillon Walsh",
+    publisher: "Dillon Walsh",
+    robots: {
+      index: true,
+      nocache: true,
+      follow: true,
+      googleBot: "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+    },
+
   keywords: [
     "Dillon",
     "Walsh",
@@ -54,10 +69,20 @@ export const metadata = {
     "Interactive Websites",
     "Digital Portfolio",
   ],
-  metadataBase: new URL ("httos://dillonwalsh.com"),
+  metadataBase: new URL ("https://www.dillonwalsh.com"),
   alternates: {
       canonical: "/"
-  }
+  },
+  link: [
+    { rel: "preconnect", href: "https://fonts.googleapis.com", crossorigin: true },
+    { rel: "dns-prefetch", href: "https://fonts.gstatic.com" },
+    { rel: "preload", href: "/logo.svg", as: "image" },
+    { rel: "icon", href: "/favicon.ico", type: "image/x-icon" },
+  ],
+  bookmarks: [
+    { rel: "me", href: "https://github.com/Dillonpw" },
+    { rel: "me", href: "https://www.linkedin.com/in/dillon-walsh-50673b290/" },
+  ],
 };
 
 export default function RootLayout({ children }) {
