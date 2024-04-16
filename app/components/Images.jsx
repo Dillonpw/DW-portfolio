@@ -37,6 +37,7 @@ const images = [
     description:
       "A simple but daily use Pomodoro Timer for productivity and time management consisting of an indicator, an active timer, two buttons and two inputs. Designed to take up very little desktop space and a basic UI to avoid being a distraction. The App loads quickly and begins counting on load, unless directed to reset and the allow for time adjustment.",
   },
+
 ];
 
 export default images;

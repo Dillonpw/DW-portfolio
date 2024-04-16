@@ -12,7 +12,7 @@ const MoreInfo = () => {
       <p className="m-4 text-center text-4xl font-bold">There&apos;s More!</p>
       <p className="mx-8 text-left text-xl">
         I have several more projects in the works that I am happy to show and
-        discuss including a professional hair dresser&apos;s portfolio and a
+        discuss including a mobile app version of the Dispatcher cheat sheet and a
         small business&apos;s website still in the planning phase. If
         you&apos;re interested feel free to send me a message about the private
         projects, or just visit my profile on
