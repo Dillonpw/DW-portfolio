@@ -9,20 +9,6 @@ export const metadata = {
   },
   description:
     "Dillon Walsh- Professional Web Developer. Come see what I've been up to!",
-    icons: {
-        icon: "/logo.svg",
-        shortcut: "/logo.svg",
-    },
-    referrer: "origin-when-cross-origin",
-    authors: ["Dillon Walsh"],
-    creator: "Dillon Walsh",
-    publisher: "Dillon Walsh",
-    robots: {
-      index: true,
-      nocache: true,
-      follow: true,
-      googleBot: "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
-    },
 
   keywords: [
     "Dillon",
@@ -69,12 +55,31 @@ export const metadata = {
     "Interactive Websites",
     "Digital Portfolio",
   ],
-  metadataBase: new URL ("https://www.dillonwalsh.com"),
+  icons: {
+    icon: "/logo.svg",
+    shortcut: "/logo.svg",
+  },
+  referrer: "origin-when-cross-origin",
+  authors: ["Dillon Walsh"],
+  creator: "Dillon Walsh",
+  publisher: "Dillon Walsh",
+  robots: {
+    index: true,
+    nocache: true,
+    follow: true,
+    googleBot:
+      "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+  },
+  metadataBase: new URL("https://www.dillonwalsh.com"),
   alternates: {
-      canonical: "/"
+    canonical: "/",
   },
   link: [
-    { rel: "preconnect", href: "https://fonts.googleapis.com", crossorigin: true },
+    {
+      rel: "preconnect",
+      href: "https://fonts.googleapis.com",
+      crossorigin: true,
+    },
     { rel: "dns-prefetch", href: "https://fonts.gstatic.com" },
     { rel: "preload", href: "/logo.svg", as: "image" },
     { rel: "icon", href: "/favicon.ico", type: "image/x-icon" },

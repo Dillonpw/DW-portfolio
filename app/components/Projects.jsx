@@ -51,7 +51,6 @@ const Projects = () => {
           </div>
         ))}
       </div>
-
     </motion.section>
   );
 };

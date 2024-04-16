@@ -1,31 +1,31 @@
-import { useState } from 'react'
-import { motion } from 'framer-motion'
+import { useState } from "react";
+import { motion } from "framer-motion";
 
 const Contact = () => {
-  const [result, setResult] = useState('')
-  const [isEmailSubmitted, setIsEmailSubmitted] = useState(false)
+  const [result, setResult] = useState("");
+  const [isEmailSubmitted, setIsEmailSubmitted] = useState(false);
 
   const onSubmit = async (event) => {
-    event.preventDefault()
-    setResult('Sending....')
-    const formData = new FormData(event.target)
+    event.preventDefault();
+    setResult("Sending....");
+    const formData = new FormData(event.target);
 
-    formData.append('access_key', 'a1bf7f2c-e2c4-4575-9d2e-ac544037c627')
+    formData.append("access_key", "a1bf7f2c-e2c4-4575-9d2e-ac544037c627");
 
-    const res = await fetch('https://api.web3forms.com/submit', {
-      method: 'POST',
+    const res = await fetch("https://api.web3forms.com/submit", {
+      method: "POST",
       body: formData,
-    }).then((res) => res.json())
+    }).then((res) => res.json());
 
     if (res.success) {
-      console.log('Success', res)
-      setResult(res.message)
-      setIsEmailSubmitted(true)
+      console.log("Success", res);
+      setResult(res.message);
+      setIsEmailSubmitted(true);
     } else {
-      console.log('Error', res)
-      setResult(res.message)
+      console.log("Error", res);
+      setResult(res.message);
     }
-  }
+  };
 
   return isEmailSubmitted ? (
     <div className="m-8 text-3xl">
@@ -65,7 +65,7 @@ const Contact = () => {
         ></textarea>
 
         <button
-          className="w-fit items-center justify-center rounded-lg bg-slate-900 text-emerald-400 dark:bg-cyan-200 px-8 py-4 dark:text-sky-950 opacity-90 hover:scale-105 hover:opacity-100"
+          className="w-fit items-center justify-center rounded-lg bg-slate-900 px-8 py-4 text-emerald-400 opacity-90 hover:scale-105 hover:opacity-100 dark:bg-cyan-200 dark:text-sky-950"
           type="submit"
         >
           Submit
@@ -73,7 +73,7 @@ const Contact = () => {
       </form>
       <span className="text-center">{result}</span>
     </motion.aside>
-  )
-}
+  );
+};
 
-export default Contact
+export default Contact;
