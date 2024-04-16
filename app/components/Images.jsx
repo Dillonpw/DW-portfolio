@@ -28,7 +28,7 @@ const images = [
   },
   {
     id: 'pomodoro-timer-app',
-    src: '/Pomodoro.png',
+    src: '/pomodoro.png',
     githubLink: 'https://github.com/Dillonpw/pomodoro',
     title: 'Pomodoro Timer App',
     tags: ['TypeScript', 'React', 'Tailwind', 'Tauri'],
