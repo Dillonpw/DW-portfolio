@@ -2,7 +2,6 @@ import Link from "next/link";
 import Image from "next/image";
 import images from "./Images";
 import { motion } from "framer-motion";
-import Contact from "./Contact.jsx";
 
 const Projects = () => {
   return (
@@ -11,7 +10,7 @@ const Projects = () => {
       initial={{ opacity: 0 }}
       transition={{ duration: 2 }}
       whileInView={{ opacity: 1 }}
-      className="m-10 mt-40 flex flex-col"
+      className="mt-60 flex flex-col bg-slate-200 dark:bg-emerald-800"
     >
       <h3 className="mt-20 text-center text-4xl font-bold">
         Selected Projects
@@ -52,28 +51,7 @@ const Projects = () => {
           </div>
         ))}
       </div>
-      <div className="flex flex-col pt-10">
-        <p className="m-4 text-center text-4xl font-bold">There&apos;s More!</p>
-        <p className="mx-8 text-left text-xl">
-          I have several more projects in the works that I am happy to show and
-          discuss including a professional hair dresser&apos;s portfolio and a
-          small business&apos;s website still in the planning phase.
-        </p>
-        <p className="mx-8 text-left text-xl">
-          If you&apos;re interested feel free to send me a message about the
-          private projects, or just visit my profile on
-          <a
-            href="https://github.com/Dillonpw"
-            target="_blank"
-            rel="noreferrer"
-            className=" ml-2 underline"
-          >
-            Github
-          </a>{" "}
-          for everything else!
-        </p>
-        <Contact />
-      </div>
+
     </motion.section>
   );
 };

@@ -1,4 +1,5 @@
 import NavBar from "./nav.jsx";
+import Image from "next/image";
 import { faGithub, faLinkedinIn } from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { motion } from "framer-motion";
@@ -14,14 +15,15 @@ const Header = () => {
         className="mx-8 mt-40 flex flex-col items-center justify-center lg:flex-row"
       >
         <div className="flex w-full flex-col gap-4 px-6 md:w-1/2">
-          <h1 id="home" className=" px-5 py-10 text-5xl">
+          <Image src="/Cartoon.jpeg" alt="cartoon" width={200} height={200} className="mx-5 rounded-full border-2 dark:border-blue-400"/>
+          <h1 id="home" className=" px-5 text-5xl">
             Dillon Walsh
           </h1>
-          <h2 className="fade-in-2 px-5 pb-2 text-3xl opacity-60">
+          <h2 className="fade-in-2 px-5 text-3xl opacity-60">
             Full Stack Web Developer
           </h2>
-          <h3 className="fade-in-2 px-5 pb-2 text-xl opacity-60">
-            If I&apos;m not online I&apos;m probably walking my dogs
+          <h3 className="fade-in-2 px-5 text-xl opacity-60">
+         I&apos;m probably walking my dogs
           </h3>
 
           <div

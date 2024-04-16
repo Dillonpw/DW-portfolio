@@ -41,17 +41,16 @@ const NavBar = () => {
         <Image className="hover:scale-105" src={logo} alt="Logo" width={50} height={50} />
       </Link>
       <div className="justify-center px-2 text-xl">
-        <a className="m-2 hover:underline"  onClick={scrollAbout}>
+        <a className="m-2 hover:underline cursor-pointer"  onClick={scrollAbout}>
           About
         </a>
         <a
-          className="m-2 hover:underline "
-          href="#projects"
+          className="m-2 hover:underline cursor-pointer "
           onClick={scrollProjects}
         >
           Projects
         </a>
-        <a className="m-2 hover:underline" onClick={scrollTech}>
+        <a className="m-2 hover:underline cursor-pointer" onClick={scrollTech}>
           Tech
         </a>
       </div>

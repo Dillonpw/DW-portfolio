@@ -6,6 +6,9 @@ export const metadata = {
   title: "Dillon Walsh - Web Developer",
   description:
     "Dillon Walsh- Professional Web Developer. Come see what I've been up to!",
+    icons: {
+        icon: "/logo.svg"
+    },
   keywords: [
     "Dillon",
     "Walsh",
