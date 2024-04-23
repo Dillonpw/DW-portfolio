@@ -46,7 +46,7 @@ const ProjectPage = () => {
               </Link>
               <ThemeToggle />
             </div>
-            <Skeleton className="rounded-xl" isLoaded={isLoaded}>
+            <Skeleton className="rounded-xl flex flex-col items-center justify-center px-4 xl:flex-row" isLoaded={isLoaded}>
               <div className="flex flex-col items-center justify-center px-4 xl:flex-row">
                 <Image
                   className="w-100 m-2 h-auto items-center justify-center rounded-2xl border-2 border-black dark:border-white"
