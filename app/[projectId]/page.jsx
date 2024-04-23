@@ -8,6 +8,7 @@ import { useParams } from "next/navigation";
 import { motion } from "framer-motion";
 import logo from "/public/logo.svg";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
+import { Skeleton } from "@nextui-org/skeleton";
 import { faUpRightFromSquare } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
@@ -26,6 +27,8 @@ const ProjectPage = () => {
       case "ecommerce-site":
       case "pomodoro-timer-app":
         return (
+          <Skeleton>
+
           <motion.main
             className="bg-gradient-to-br from-gray-300 to-emerald-400 text-slate-900 dark:bg-gradient-to-br dark:from-sky-950 dark:to-slate-900 dark:text-cyan-200"
             initial={{ opacity: 0 }}
@@ -42,24 +45,24 @@ const ProjectPage = () => {
               </Link>
               <ThemeToggle />
             </div>
-            <div className="flex flex-col items-center justify-center px-4 xl:flex-row">
-              <Image
-                className="w-100 m-2 h-auto items-center justify-center rounded-2xl border-2 border-black dark:border-white"
-                src={project.src}
-                alt={project.title}
-                width={500}
-                height={300}
-              />
-              {project.mobileImg && (
+              <div className="flex flex-col items-center justify-center px-4 xl:flex-row">
                 <Image
-                  className="h-100 w-auto items-center justify-center rounded-2xl border-2 border-black dark:border-white"
-                  src={project.mobileImg}
+                  className="w-100 m-2 h-auto items-center justify-center rounded-2xl border-2 border-black dark:border-white"
+                  src={project.src}
                   alt={project.title}
-                  width={300}
-                  height={500}
+                  width={500}
+                  height={300}
                 />
-              )}
-            </div>
+                {project.mobileImg && (
+                  <Image
+                    className="h-100 w-auto items-center justify-center rounded-2xl border-2 border-black dark:border-white"
+                    src={project.mobileImg}
+                    alt={project.title}
+                    width={300}
+                    height={500}
+                  />
+                )}
+              </div>
             <div className=" mt-4 flex  justify-center pb-6">
               <a
                 id={`github link ${projectId}`}
@@ -102,6 +105,8 @@ const ProjectPage = () => {
               </p>
             </section>
           </motion.main>
+          </Skeleton>
+
         );
 
       default:
