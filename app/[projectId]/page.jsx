@@ -30,8 +30,6 @@ const ProjectPage = () => {
       case "ecommerce-site":
       case "pomodoro-timer-app":
         return (
-          <Skeleton className='rounded-xl' isLoaded={isLoaded} >
-
           <motion.main
             className="bg-gradient-to-br from-gray-300 to-emerald-400 text-slate-900 dark:bg-gradient-to-br dark:from-sky-950 dark:to-slate-900 dark:text-cyan-200"
             initial={{ opacity: 0 }}
@@ -48,6 +46,7 @@ const ProjectPage = () => {
               </Link>
               <ThemeToggle />
             </div>
+            <Skeleton className="rounded-xl" isLoaded={isLoaded}>
               <div className="flex flex-col items-center justify-center px-4 xl:flex-row">
                 <Image
                   className="w-100 m-2 h-auto items-center justify-center rounded-2xl border-2 border-black dark:border-white"
@@ -66,6 +65,8 @@ const ProjectPage = () => {
                   />
                 )}
               </div>
+            </Skeleton>
+
             <div className=" mt-4 flex  justify-center pb-6">
               <a
                 id={`github link ${projectId}`}
@@ -108,8 +109,6 @@ const ProjectPage = () => {
               </p>
             </section>
           </motion.main>
-          </Skeleton>
-
         );
 
       default:
