@@ -1,6 +1,6 @@
 "use client";
 import images from "../components/Images";
-import { useState, useEffect } from "react";
+import {  useEffect } from "react";
 import ThemeToggle from "../components/theme";
 import Link from "next/link";
 import Image from "next/image";
@@ -14,7 +14,6 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const ProjectPage = () => {
   const { projectId } = useParams();
-  const [isLoaded, useIsLoaded] = useState(false);
 
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -23,7 +22,6 @@ const ProjectPage = () => {
   const renderContent = () => {
     const project = images.find((image) => image.id === projectId);
 
-    const toggleLoad = () => setIsLoaded(!isLoaded);
 
     switch (projectId) {
       case "dispatcher-cheat-sheet":
@@ -46,7 +44,7 @@ const ProjectPage = () => {
               </Link>
               <ThemeToggle />
             </div>
-            <Skeleton className="rounded-xl flex flex-col items-center justify-center px-4 xl:flex-row" isLoaded={isLoaded}>
+            <Skeleton className="rounded-xl flex flex-col items-center justify-center px-4 xl:flex-row">
               <div className="flex flex-col items-center justify-center px-4 xl:flex-row">
                 <Image
                   className="w-100 m-2 h-auto items-center justify-center rounded-2xl border-2 border-black dark:border-white"
