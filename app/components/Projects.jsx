@@ -10,7 +10,7 @@ const Projects = () => {
       initial={{ opacity: 0 }}
       transition={{ duration: 2 }}
       whileInView={{ opacity: 1 }}
-      className="mt-60 flex flex-col bg-slate-200 dark:bg-emerald-800"
+      className="mt-60 flex flex-col bg-slate-200 dark:bg-emerald-600 dark:text-cyan-50"
     >
       <h3 className="mt-20 text-center text-4xl font-bold">
         Selected Projects

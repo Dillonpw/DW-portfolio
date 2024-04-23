@@ -7,7 +7,7 @@ const MoreInfo = () => {
       initial={{ opacity: 0 }}
       transition={{ duration: 2 }}
       whileInView={{ opacity: 1 }}
-      className="flex flex-col bg-slate-200 pt-10 dark:bg-emerald-800"
+      className="flex flex-col bg-slate-200 pt-10 dark:bg-emerald-600 dark:text-cyan-50"
     >
       <p className="m-4 text-center text-4xl font-bold">There&apos;s More!</p>
       <p className="mx-8 text-left text-xl">

@@ -1,6 +1,6 @@
 "use client";
 import images from "../components/Images";
-import { useEffect } from "react";
+import { useState, useEffect } from "react";
 import ThemeToggle from "../components/theme";
 import Link from "next/link";
 import Image from "next/image";
@@ -14,6 +14,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const ProjectPage = () => {
   const { projectId } = useParams();
+  const [isLoaded, useIsLoaded] = useState(false);
 
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -22,12 +23,14 @@ const ProjectPage = () => {
   const renderContent = () => {
     const project = images.find((image) => image.id === projectId);
 
+    const toggleLoad = () => setIsLoaded(!isLoaded);
+
     switch (projectId) {
       case "dispatcher-cheat-sheet":
       case "ecommerce-site":
       case "pomodoro-timer-app":
         return (
-          <Skeleton>
+          <Skeleton className='rounded-xl' isLoaded={isLoaded} >
 
           <motion.main
             className="bg-gradient-to-br from-gray-300 to-emerald-400 text-slate-900 dark:bg-gradient-to-br dark:from-sky-950 dark:to-slate-900 dark:text-cyan-200"
