@@ -8,7 +8,7 @@ import { useParams } from "next/navigation";
 import { motion } from "framer-motion";
 import logo from "/public/logo.svg";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
-import { Skeleton } from "@nextui-org/skeleton";
+import {Skeleton} from "@nextui-org/skeleton";
 import { faUpRightFromSquare } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
