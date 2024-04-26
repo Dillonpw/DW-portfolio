@@ -1,5 +1,6 @@
 import "./globals.css";
 import robots from "./robots";
+import { Analytics } from "@vercel/analytics/react"
 import Footer from "./components/Footer";
 
 /** @type {import("next").Metadata} */
@@ -77,6 +78,7 @@ export default function RootLayout({ children }) {
         {children}
         <Footer />
       </body>
+      <Analytics />
     </html>
   );
 }
