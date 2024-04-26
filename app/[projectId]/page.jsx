@@ -44,7 +44,7 @@ const ProjectPage = () => {
             </div>
             <div className="flex flex-col items-center justify-center px-4 xl:flex-row">
               <Image
-                className="w-100 m-2 h-auto animate-pulse items-center justify-center rounded-2xl border-2 border-black bg-slate-700 dark:border-white"
+                className="w-100 m-2 h-auto items-center justify-center rounded-2xl border-2 border-black bg-slate-700 dark:border-white"
                 src={project.src}
                 alt={project.title}
                 width={500}
@@ -52,7 +52,7 @@ const ProjectPage = () => {
               />
               {project.mobileImg && (
                 <Image
-                  className="h-100 w-auto animate-pulse items-center justify-center rounded-2xl border-2 border-black bg-slate-700 dark:border-white"
+                  className="h-100 w-auto items-center justify-center rounded-2xl border-2 border-black bg-slate-700 dark:border-white"
                   src={project.mobileImg}
                   alt={project.title}
                   width={300}
