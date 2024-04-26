@@ -46,7 +46,7 @@ const Projects = () => {
               ))}
             </div>
             <div className="p-4 text-lg opacity-50">
-              <p>{image.description}</p>
+              <p>{image.about}</p>
             </div>{" "}
           </div>
         ))}

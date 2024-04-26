@@ -99,7 +99,7 @@ const ProjectPage = () => {
 
               <h3 className="mt-8 text-xl font-bold">About This Project</h3>
               <p className="max-w-100 px-4 text-left opacity-60">
-                {project.description}
+                {project.about}
               </p>
               <h3 className="mt-8 text-xl font-bold">Challenges</h3>
               <p className="max-w-100 mb-10 px-4 text-left opacity-60">
