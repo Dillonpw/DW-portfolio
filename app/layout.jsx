@@ -63,18 +63,21 @@ export const metadata = {
   authors: ["Dillon Walsh"],
   creator: "Dillon Walsh",
   publisher: "Dillon Walsh",
-  robots: {
-    index: true,
-    nocache: true,
-    follow: true,
-    googleBot:
-      "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
-  },
   metadataBase: new URL("https://www.dillonwalsh.com"),
   alternates: {
     canonical: "/",
   },
 };
+
+export function robots() {
+  return {
+    rules: {
+      userAgent: "*",
+      allow: "/",
+    },
+    sitemap: 'https://www.dillonwalsh.com/sitemap.xml',
+  };
+}
 
 export default function RootLayout({ children }) {
   return (

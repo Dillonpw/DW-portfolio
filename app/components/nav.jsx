@@ -47,18 +47,18 @@ const NavBar = () => {
         />
       </Link>
       <div className="justify-center px-2 text-xl">
-        <a className="m-2 cursor-pointer hover:underline" onClick={scrollAbout}>
+        <button className="m-2 cursor-pointer hover:underline" onClick={scrollAbout}>
           About
-        </a>
-        <a
+        </button>
+        <button
           className="m-2 cursor-pointer hover:underline "
           onClick={scrollProjects}
         >
           Projects
-        </a>
-        <a className="m-2 cursor-pointer hover:underline" onClick={scrollTech}>
+        </button>
+        <button className="m-2 cursor-pointer hover:underline" onClick={scrollTech}>
           Tech
-        </a>
+        </button>
       </div>
 
       <ThemeToggle />
