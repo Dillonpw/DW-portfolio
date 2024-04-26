@@ -20,6 +20,7 @@ const Header = () => {
             alt="cartoon"
             width={200}
             height={200}
+            loading="eager"
             className="mx-5 rounded-full border-2 dark:border-blue-400"
           />
           <h1 id="home" className="px-5 text-5xl">
