@@ -1,4 +1,5 @@
 import "./globals.css";
+import robots from "./robots";
 import Footer from "./components/Footer";
 
 /** @type {import("next").Metadata} */
@@ -67,17 +68,10 @@ export const metadata = {
   alternates: {
     canonical: "/",
   },
+  robots: robots(),
 };
 
-export function robots() {
-  return {
-    rules: {
-      userAgent: "*",
-      allow: "/",
-    },
-    sitemap: 'https://www.dillonwalsh.com/sitemap.xml',
-  };
-}
+
 
 export default function RootLayout({ children }) {
   return (
