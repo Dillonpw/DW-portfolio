@@ -5,12 +5,11 @@ import Footer from "./components/Footer";
 /** @type {import("next").Metadata} */
 export const metadata = {
   title: "Dillon Walsh - Web Developer",
+  description:
+    "Dillon Walsh- Professional Web Developer. Come see what I've been up to!",
   openGraph: {
     title: "Dillon Walsh - Web Developer",
   },
-  description:
-    "Dillon Walsh- Professional Web Developer. Come see what I've been up to!",
-
   keywords: [
     "Dillon",
     "Walsh",
@@ -70,8 +69,6 @@ export const metadata = {
   },
   robots: robots(),
 };
-
-
 
 export default function RootLayout({ children }) {
   return (
