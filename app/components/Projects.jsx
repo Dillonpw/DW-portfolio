@@ -21,14 +21,14 @@ const Projects = () => {
 
       <div className="m-6 grid grid-cols-1 gap-4 lg:grid-cols-2">
         {images.map((image) => (
-          <div key={image.id} className="mb-4 flex flex-col items-center">
+          <div key={image.id} className="mb-4 flex flex-col items-center ">
             <Link
               description="More info about projects"
               className="hover-scale block "
               href={`/${image.id}`}
             >
               <Image
-                className="rounded-xl border-2 border-white"
+                className="rounded-xl border-2 border-black dark:border-white"
                 src={image.src}
                 alt={image.title}
                 width={565}

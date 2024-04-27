@@ -61,10 +61,10 @@ const Header = () => {
               />
             </a>
           </div>
-        </div>
 
+        </div>
         <div className="fade-in-4 mt-30 flex w-full flex-col items-center px-6 md:w-1/2">
-          <p className="mb-5 mt-20 px-6 pt-10 text-xl opacity-60">
+          <p className="mb-5 mt-20 rounded-xl bg-slate-200 p-6 pt-10 text-xl dark:bg-emerald-600 dark:text-cyan-50">
             In 2019, after completing my college education, I took on a position
             as a 911 emergency dispatcher. While this role was challenging, it
             also afforded me the time to explore my budding interest in web

@@ -3,6 +3,7 @@ import Projects from "./Projects.jsx";
 import MoreInfo from "./moreInfo.jsx";
 import Tech from "./Tech.jsx";
 
+
 const Content = () => {
   const scrollTop = () => {
     window.scrollTo({
@@ -23,6 +24,7 @@ const Content = () => {
         >
           &uarr;
         </button>
+
         <Projects />
         <Tech />
         <MoreInfo />
