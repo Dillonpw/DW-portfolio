@@ -1,5 +1,6 @@
 import NavBar from "./nav.jsx";
 import Image from "next/image";
+import Dogs from "./dogs.jsx";
 import { faGithub, faLinkedinIn } from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { motion } from "framer-motion";
@@ -28,10 +29,7 @@ const Header = () => {
           <h2 className="fade-in-2 px-5 text-3xl opacity-60">
             Full Stack Web Developer
           </h2>
-          <h3 className="fade-in-2 px-5 text-xl opacity-60">
-            I&apos;m probably walking my dogs
-          </h3>
-
+          <Dogs />
           <div
             id="links"
             className="fade-in-3 ml-1 px-5 pt-4 text-slate-900 opacity-60 dark:text-cyan-100"
@@ -61,7 +59,6 @@ const Header = () => {
               />
             </a>
           </div>
-
         </div>
         <div className="fade-in-4 mt-30 flex w-full flex-col items-center px-6 md:w-1/2">
           <p className="mb-5 mt-20 rounded-xl bg-slate-200 p-6 pt-10 text-xl dark:bg-emerald-600 dark:text-cyan-50">
