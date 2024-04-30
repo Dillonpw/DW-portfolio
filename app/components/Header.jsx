@@ -15,7 +15,7 @@ const Header = () => {
         whileInView={{ opacity: 1 }}
         className="mx-8 mt-40 flex flex-col items-center justify-center lg:flex-row"
       >
-        <div className="flex w-full flex-col items-center justify-center gap-4 px-6 md:w-1/2 lg:items-start lg:justify-start">
+        <div className="flex w-full flex-col items-center justify-center gap-4 px-6 lg:w-1/2 lg:items-start lg:justify-start">
           <Image
             src="/Cartoon.jpeg"
             alt="cartoon"
@@ -29,10 +29,9 @@ const Header = () => {
           <h2 className="fade-in-2 px-5 text-3xl opacity-60">
             Full Stack Web Developer
           </h2>
-          <Dogs />
           <div
             id="links"
-            className="fade-in-3 ml-1 px-5 pt-4 text-slate-900 opacity-60 dark:text-cyan-100"
+            className="fade-in-3 pr-5 text-slate-900 opacity-60 dark:text-cyan-200 md:ml-5"
           >
             <a
               id="githubLink"
@@ -59,9 +58,10 @@ const Header = () => {
               />
             </a>
           </div>
+          <Dogs />
         </div>
-        <div className="fade-in-4 mt-30 flex w-full flex-col items-center px-6 md:w-1/2">
-          <p className="mb-5 mt-20 rounded-xl bg-slate-200 p-6 pt-10 text-xl dark:bg-emerald-600 dark:text-cyan-50">
+        <div className="fade-in-4 mt-30 flex w-full flex-col items-center px-6 lg:w-1/2">
+          <p className="mb-5 mt-20 rounded-xl  p-6 pt-10 text-xl text-slate-900 dark:text-cyan-200">
             In 2019, after completing my college education, I took on a position
             as a 911 emergency dispatcher. While this role was challenging, it
             also afforded me the time to explore my budding interest in web

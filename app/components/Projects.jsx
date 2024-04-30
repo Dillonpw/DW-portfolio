@@ -12,7 +12,7 @@ const Projects = () => {
       whileInView={{ opacity: 1 }}
       className="mt-60 flex flex-col bg-slate-200 dark:bg-emerald-600 dark:text-cyan-50"
     >
-      <h3 className="mt-20 text-center text-4xl font-bold">
+      <h3 className="mt-20 text-center font-mono text-4xl font-bold">
         Selected Projects
       </h3>
       <p className=" mb-6 text-center text-lg opacity-50">

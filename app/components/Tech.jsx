@@ -35,7 +35,7 @@ const Tech = () => {
     >
       <div className="grid w-full grid-cols-1 gap-x-10 gap-y-10 pt-10 text-xl sm:grid-cols-1 md:grid-cols-3">
         <div>
-          <p className="pb-2 text-3xl font-bold">Current Stack</p>
+          <p className="pb-2 font-mono text-3xl font-bold">Current Stack</p>
           <ul className="list-none space-y-2">
             {devTools.map((dt) => (
               <li className="opacity-50" key={dt}>
@@ -45,7 +45,7 @@ const Tech = () => {
           </ul>
         </div>
         <div>
-          <p className="pb-2 text-3xl font-bold">Other Tools</p>
+          <p className="pb-2 font-mono text-3xl font-bold">Other Tools</p>
           <ul className="list-none space-y-2">
             {otherTools.map((ot) => (
               <li className="opacity-50" key={ot}>
@@ -55,7 +55,7 @@ const Tech = () => {
           </ul>
         </div>
         <div>
-          <p className="pb-2 text-3xl font-bold">Coming Soon</p>
+          <p className="pb-2 font-mono text-3xl font-bold">Coming Soon</p>
           <ul className="list-none space-y-2">
             {learning.map((le) => (
               <li className="opacity-50" key={le}>

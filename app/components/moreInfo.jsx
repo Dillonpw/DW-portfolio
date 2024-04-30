@@ -11,9 +11,9 @@ const MoreInfo = () => {
     >
       <p className="m-4 text-center text-4xl font-bold">There&apos;s More!</p>
       <p className="mx-8 text-left text-xl">
-        I&apos;m always looking for new jobs and projects to take on, feel free to reach
-        out with your questions or ideas and I&apos;ll get back to you as soon as
-        I can!
+        I&apos;m always looking for new jobs and projects to take on, feel free
+        to reach out with your questions or ideas and I&apos;ll get back to you
+        as soon as I can!
       </p>
       <Contact />
     </motion.div>

@@ -36,7 +36,7 @@ const NavBar = () => {
     }
   };
   return (
-    <nav className="fixed top-0 z-50 flex w-full flex-row items-center justify-between rounded-b-md bg-emerald-700 p-4 text-white dark:bg-slate-900">
+    <nav className="fixed top-0 z-50 flex w-full flex-row items-center justify-between rounded-b-md bg-emerald-700 p-4 font-mono text-white dark:bg-slate-900">
       <Link href="/" id="logo" className="justify-start px-2">
         <Image
           className="hover:scale-105"
@@ -47,7 +47,10 @@ const NavBar = () => {
         />
       </Link>
       <div className="justify-center px-2 text-xl">
-        <button className="m-2 cursor-pointer hover:underline" onClick={scrollAbout}>
+        <button
+          className="m-2 cursor-pointer hover:underline"
+          onClick={scrollAbout}
+        >
           About
         </button>
         <button
@@ -56,7 +59,10 @@ const NavBar = () => {
         >
           Projects
         </button>
-        <button className="m-2 cursor-pointer hover:underline" onClick={scrollTech}>
+        <button
+          className="m-2 cursor-pointer hover:underline"
+          onClick={scrollTech}
+        >
           Tech
         </button>
       </div>
