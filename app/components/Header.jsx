@@ -1,6 +1,7 @@
 import NavBar from "./nav.jsx";
 import Image from "next/image";
 import Dogs from "./dogs.jsx";
+import Link from "next/link.js";
 import { faGithub, faLinkedinIn } from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { motion } from "framer-motion";
@@ -60,8 +61,8 @@ const Header = () => {
           </div>
           <Dogs />
         </div>
-        <div className="fade-in-4 mt-30 flex w-full flex-col items-center px-6 lg:w-1/2">
-          <p className="mb-5 mt-20 rounded-xl  p-6 pt-10 text-xl text-slate-900 dark:text-cyan-200">
+        <div className="fade-in-4 mt-30 flex w-full flex-col items-start px-6 lg:w-1/2">
+          <p className="mb-5 mt-20 rounded-xl pt-5 text-xl text-slate-900 dark:text-cyan-200">
             In 2019, after completing my college education, I took on a position
             as a 911 emergency dispatcher. While this role was challenging, it
             also afforded me the time to explore my budding interest in web
@@ -74,6 +75,13 @@ const Header = () => {
             you visit my Github you may notice I&apos;ve been diving into Mobile
             development and having a blast!
           </p>
+          {/* <p className="text-xl">Click here for the component library</p>
+          <Link
+            className="rounded-xl bg-white px-6 py-3 dark:bg-cyan-200 dark:text-sky-900"
+            href="/library"
+          >
+            Go
+          </Link>*/}
         </div>
       </motion.div>
     </section>
