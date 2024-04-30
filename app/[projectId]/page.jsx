@@ -27,7 +27,7 @@ const ProjectPage = () => {
       case "pomodoro-timer-app":
         return (
           <motion.main
-            className="bg-gradient-to-br from-gray-300 to-emerald-400 text-slate-900 dark:bg-gradient-to-br dark:from-sky-950 dark:to-slate-900 dark:text-cyan-200"
+            className=""
             initial={{ opacity: 0 }}
             transition={{ duration: 1 }}
             whileInView={{ opacity: 1 }}
