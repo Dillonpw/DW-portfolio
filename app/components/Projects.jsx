@@ -8,8 +8,9 @@ const Projects = () => {
     <motion.section
       id="projects"
       initial={{ opacity: 0 }}
-      transition={{ duration: 2 }}
+      transition={{ duration: 1 }}
       whileInView={{ opacity: 1 }}
+      animate={{ y:-30 }}
       className="mt-60 flex flex-col bg-slate-200 dark:bg-emerald-600 dark:text-cyan-50"
     >
       <h3 className="mt-20 text-center font-mono text-4xl font-bold">

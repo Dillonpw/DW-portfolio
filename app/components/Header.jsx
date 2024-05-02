@@ -12,16 +12,17 @@ const Header = () => {
       <NavBar />
       <motion.div
         initial={{ opacity: 0 }}
-        transition={{ duration: 2 }}
+        transition={{ duration: 1 }}
         whileInView={{ opacity: 1 }}
-        className="mx-8 mt-40 flex flex-col items-center justify-center lg:flex-row"
+        animate={{ x: 20 }}
+        className="mx-8 mt-60 flex flex-col items-center justify-center lg:flex-row"
       >
         <div className="flex w-full flex-col items-center justify-center gap-4 px-6 lg:w-1/2 lg:items-start lg:justify-start">
           <Image
             src="/Cartoon.jpeg"
             alt="cartoon"
-            width={200}
-            height={200}
+            width={300}
+            height={300}
             className="mx-5 rounded-full border-2 dark:border-blue-400"
           />
           <h1 id="home" className="px-5 text-5xl">
@@ -61,8 +62,8 @@ const Header = () => {
           </div>
           <Dogs />
         </div>
-        <div className="fade-in-4 mt-30 flex w-full flex-col items-start px-6 lg:w-1/2">
-          <p className="mb-5 mt-20 rounded-xl pt-5 text-xl text-slate-900 dark:text-cyan-200">
+        <div className="fade-in-4 flex w-full flex-col items-start px-6 lg:w-1/2">
+          <p className="mb-5 rounded-xl pt-5 text-xl text-slate-900 dark:text-cyan-200">
             In 2019, after completing my college education, I took on a position
             as a 911 emergency dispatcher. While this role was challenging, it
             also afforded me the time to explore my budding interest in web
@@ -79,7 +80,8 @@ const Header = () => {
             href="/library"
           >
             Go
-          </Link>*/}
+          </Link>
+          */}
         </div>
       </motion.div>
     </section>
