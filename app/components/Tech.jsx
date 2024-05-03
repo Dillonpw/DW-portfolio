@@ -31,12 +31,12 @@ const Tech = () => {
       transition={{ duration: 2 }}
       whileInView={{ opacity: 1 }}
       id="tech"
-      className=" flex flex-col items-center justify-center rounded-md p-10 text-center  md:mb-40"
+      className="flex flex-col items-center justify-center p-10 md:mb-40 text-center"
     >
-      <div className="grid w-full grid-cols-1 gap-x-10 gap-y-10 pt-10 text-xl sm:grid-cols-1 md:grid-cols-3">
+      <div className="flex flex-col gap-20">
         <div>
           <p className="pb-2 font-mono text-3xl font-bold">Current Stack</p>
-          <ul className="list-none space-y-2">
+          <ul className="list-none flex flex-shrink-0 text-xl pt-5 gap-5 items-center justify-center flex-col lg:flex-row">
             {devTools.map((dt) => (
               <li className="opacity-50" key={dt}>
                 {dt}
@@ -46,7 +46,7 @@ const Tech = () => {
         </div>
         <div>
           <p className="pb-2 font-mono text-3xl font-bold">Other Tools</p>
-          <ul className="list-none space-y-2">
+          <ul className="list-none flex flex-shrink-0 text-xl pt-5 gap-5 items-center justify-center flex-col lg:flex-row ">
             {otherTools.map((ot) => (
               <li className="opacity-50" key={ot}>
                 {ot}
@@ -56,7 +56,7 @@ const Tech = () => {
         </div>
         <div>
           <p className="pb-2 font-mono text-3xl font-bold">Coming Soon</p>
-          <ul className="list-none space-y-2">
+          <ul className="list-none flex flex-shrink-0 text-xl pt-5 gap-5 items-center justify-center flex-col lg:flex-row">
             {learning.map((le) => (
               <li className="opacity-50" key={le}>
                 {le}
