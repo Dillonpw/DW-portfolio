@@ -66,10 +66,10 @@ const Header = () => {
           <p className="mb-5 rounded-xl pt-5 text-xl text-slate-900 dark:text-cyan-200">
             In 2019, after completing my college education, I took on a position
             as a 911 emergency dispatcher. While this role was challenging, it
-            also afforded me the time to explore my budding interest in web
-            development. Relying entirely on free resources like
+            also afforded me the time to explore my budding interests in web
+            development and Technical Support. Relying on resources like
             freeCodeCamp, The Odin Project, and official documentation to hone
-            my skills while working a full time job outise of tech. Recently, my focus has
+            my skills while working a full time job outside of tech. Recently, my focus has
             shifted towards contributing to open source learning projects and
             their documentation, and developing personal projects, as well as
             providing web development services for some really great people.

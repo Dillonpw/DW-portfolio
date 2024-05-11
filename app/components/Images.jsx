@@ -37,6 +37,15 @@ const images = [
     about:
       "A simple but daily use Pomodoro Timer for productivity and time management consisting of an indicator, an active timer, two buttons and two inputs. Designed to take up very little desktop space and a basic UI to avoid being a distraction. The App loads quickly and begins counting on load, unless directed to reset and the allow for time adjustment.",
   },
+
+  {
+    id: "dcs-m",
+    src: "/DCS-m.png",
+    title: "Dispatcher Cheat Sheet iOS app",
+    tags: ["TypeScript", "React Native", "Tailwind", "Expo Router"],
+    challenge:
+      "At the time, mobile development was entirely new to me, this was one of my first attmepts at creating anything designed",
+  },
 ];
 
 export default images;
