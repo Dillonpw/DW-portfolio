@@ -40,7 +40,7 @@ const images = [
 
   {
     id: "dcs-m",
-    src: "/DCS-m.png",
+    src: "/dcs-m.png",
     title: "Dispatcher Cheat Sheet iOS app",
     tags: ["TypeScript", "React Native", "Tailwind", "Expo Router"],
     challenge:
