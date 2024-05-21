@@ -1,7 +1,6 @@
 import NavBar from "./nav.jsx";
 import Image from "next/image";
 import Dogs from "./dogs.jsx";
-import Link from "next/link.js";
 import { faGithub, faLinkedinIn } from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { motion } from "framer-motion";
