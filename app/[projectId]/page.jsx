@@ -25,6 +25,7 @@ const ProjectPage = () => {
       case "dispatcher-cheat-sheet":
       case "ecommerce-site":
       case "pomodoro-timer-app":
+      case "dcs-m":
         return (
           <motion.main
             className=""

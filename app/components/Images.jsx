@@ -41,10 +41,12 @@ const images = [
   {
     id: "dcs-m",
     src: "/dcs-m.png",
+    githubLink: "https://github.com/Dillonpw/DCS-M",
     title: "Dispatcher Cheat Sheet iOS app",
     tags: ["TypeScript", "React Native", "Tailwind", "Expo Router"],
+    about:'A modern, mobile version of the Dispatcher Chest Sheet website built using Nativewind for styles simple and minimal UI designed to be for quick referencing. So far the rotating schedule function id the primary aspect, but there are more features on the way.',
     challenge:
-      "At the time, mobile development was entirely new to me, this was one of my first attmepts at creating anything designed",
+      "At the time, mobile development was entirely new to me, this is my first fully-fledged mobile application. I ran into some confusion at the start of the process as I learned the React Native specific elements, but once that clicked the adjustment to mobile was straight forward.",
   },
 ];
 

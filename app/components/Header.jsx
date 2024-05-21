@@ -67,12 +67,12 @@ const Header = () => {
             In 2019, after completing my college education, I took on a position
             as a 911 emergency dispatcher. While this role was challenging, it
             also afforded me the time to explore my budding interests in web
-            development and Technical Support. Relying on resources like
-            freeCodeCamp, The Odin Project, and official documentation to hone
-            my skills while working a full time job outside of tech. Recently, my focus has
-            shifted towards contributing to open source learning projects and
-            their documentation, and developing personal projects, as well as
-            providing web development services for some really great people.
+            development and Cyber Security relying on resources like freeCodeCamp, The Odin
+            Project, and official documentation to hone my skills while working
+            a full time job outside of tech. Recently, my focus has shifted
+            towards contributing to open source learning projects and their
+            documentation, and developing personal projects, as well as
+            providing web development and support services for some really great people.
           </p>
           {/* <p className="text-xl">Click here for the component library</p>
           <Link
