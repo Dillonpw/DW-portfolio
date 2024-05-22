@@ -1,4 +1,4 @@
-// components/LoadingSkeleton.js
+'use client'
 const Skeleton = () => {
     return (
       <div className="animate-pulse flex flex-col items-center space-y-4">
