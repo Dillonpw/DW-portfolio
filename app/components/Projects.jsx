@@ -2,7 +2,8 @@ import Link from "next/link";
 import Image from "next/image";
 import images from "./Images";
 import { motion } from "framer-motion";
-
+import { Suspense } from "react";
+import Skeleton from "./Skeleton";
 const Projects = () => {
   return (
     <motion.section
@@ -17,7 +18,7 @@ const Projects = () => {
         Selected Projects
       </h3>
       <p className=" mb-6 text-center text-lg opacity-50">
-        Click on the images for more infomation about each listed project
+        Click on the images for more information about each listed project
       </p>
 
       <div className="m-6 grid grid-cols-1 gap-4 lg:grid-cols-2">
@@ -28,13 +29,15 @@ const Projects = () => {
               className="hover-scale block "
               href={`/${image.id}`}
             >
-              <Image
-                className="rounded-xl border-2 border-black dark:border-white"
-                src={image.src}
-                alt={image.title}
-                width={565}
-                height={311}
-              />
+              <Suspense fallback={<Skeleton />}>
+                <Image
+                  className="rounded-xl border-2 border-black dark:border-white"
+                  src={image.src}
+                  alt={image.title}
+                  width={565}
+                  height={311}
+                />
+              </Suspense>
             </Link>
             <div className="mt-8 flex flex-wrap items-center justify-center ">
               {image.tags.map((tag) => (
