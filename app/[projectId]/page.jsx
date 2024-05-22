@@ -1,8 +1,9 @@
 "use client";
 import images from "../components/Images";
-import { useEffect } from "react";
+import { Suspense, useEffect } from "react";
 import ThemeToggle from "../components/theme";
 import Link from "next/link";
+import Skeleton from "../components/Skeleton";
 import Image from "next/image";
 import { useParams } from "next/navigation";
 import { motion } from "framer-motion";
@@ -44,21 +45,26 @@ const ProjectPage = () => {
               <ThemeToggle />
             </div>
             <div className="flex flex-col items-center justify-center px-4 xl:flex-row">
-              <Image
-                className="w-100 m-2 h-auto items-center justify-center rounded-2xl border-2 border-black bg-slate-700 dark:border-white"
-                src={project.src}
-                alt={project.title}
-                width={500}
-                height={300}
-              />
-              {project.mobileImg && (
+              <Suspense fallback={<Skeleton />}>
                 <Image
-                  className="h-100 w-auto items-center justify-center rounded-2xl border-2 border-black bg-slate-700 dark:border-white"
-                  src={project.mobileImg}
+                  className="w-100 m-2 h-auto items-center justify-center rounded-2xl border-2 border-black bg-slate-700 dark:border-white"
+                  src={project.src}
                   alt={project.title}
-                  width={300}
-                  height={500}
+                  width={500}
+                  height={300}
                 />
+              </Suspense>
+
+              {project.mobileImg && (
+                <Suspense fallback={<Skeleton />}>
+                  <Image
+                    className="h-100 w-auto items-center justify-center rounded-2xl border-2 border-black bg-slate-700 dark:border-white"
+                    src={project.mobileImg}
+                    alt={project.title}
+                    width={300}
+                    height={500}
+                  />
+                </Suspense>
               )}
             </div>
 
