@@ -31,7 +31,7 @@ const Tech = () => {
       transition={{ duration: 2 }}
       whileInView={{ opacity: 1 }}
       id="tech"
-      className="flex flex-col items-center justify-center p-10 md:mb-40 text-center"
+      className="flex flex-col items-center justify-center p-10 md:mb-20 text-center"
     >
       <div className="flex flex-col gap-20">
         <div>

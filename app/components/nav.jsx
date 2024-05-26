@@ -48,19 +48,19 @@ const NavBar = () => {
       </Link>
       <div className="justify-center px-2 text-xl">
         <button
-          className="m-2 cursor-pointer hover:underline"
+          className="m-2 cursor-pointer hover:scale-110"
           onClick={scrollAbout}
         >
           About
         </button>
         <button
-          className="m-2 cursor-pointer hover:underline "
+          className="m-2 cursor-pointer hover:scale-110"
           onClick={scrollProjects}
         >
           Projects
         </button>
         <button
-          className="m-2 cursor-pointer hover:underline"
+          className="m-2 cursor-pointer hover:scale-110"
           onClick={scrollTech}
         >
           Tech
