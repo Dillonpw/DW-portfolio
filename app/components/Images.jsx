@@ -14,6 +14,18 @@ const images = [
   },
 
   {
+    id: "small-bis",
+    src: "/small-bis.png",
+    livePreviewLink: "https://small-bis.vercel.app/",
+    githubLink: "https://github.com/Dillonpw/small-bis",
+    title: "Small Business Template",
+    tags: ["TypeScript", "React", "Tailwind CSS", "Astro"],
+    challenge: "",
+    about:
+      "A small business website template showing a potentail design for clients, fully customizable with built in light/dark toggle and already mobile responsive.",
+  },
+
+  {
     id: "dispatcher-cheat-sheet",
     src: "/DCS-home.png",
     mobileImg: "/DCS-home-m.png",
@@ -44,7 +56,8 @@ const images = [
     githubLink: "https://github.com/Dillonpw/DCS-M",
     title: "Dispatcher Cheat Sheet iOS app",
     tags: ["TypeScript", "React Native", "Tailwind", "Expo Router"],
-    about:'A modern, mobile version of the Dispatcher Chest Sheet website built using Nativewind for styles simple and minimal UI designed to be for quick referencing. So far the rotating schedule function id the primary aspect, but there are more features on the way.',
+    about:
+      "A modern, mobile version of the Dispatcher Chest Sheet website built using Nativewind for styles simple and minimal UI designed to be for quick referencing. So far the rotating schedule function id the primary aspect, but there are more features on the way.",
     challenge:
       "At the time, mobile development was entirely new to me, this is my first fully-fledged mobile application. I ran into some confusion at the start of the process as I learned the React Native specific elements, but once that clicked the adjustment to mobile was straight forward.",
   },
