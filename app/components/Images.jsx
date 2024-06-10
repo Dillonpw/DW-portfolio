@@ -23,7 +23,7 @@ const images = [
     challenge:
       "This was a fun little experiment into using Astro, and more precise UI design",
     about:
-      "A small business website template showing a potentail design for clients, fully customizable with built in light/dark toggle and already mobile responsive.",
+      "A small business website template showing a potentail design for clients, fully customizable with built in light/dark toggle and already mobile responsive. This page is designed to be sutomizable and reusaed with clients according to their needs.",
   },
 
   {
