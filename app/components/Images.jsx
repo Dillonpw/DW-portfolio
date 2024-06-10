@@ -20,7 +20,8 @@ const images = [
     githubLink: "https://github.com/Dillonpw/small-bis",
     title: "Small Business Template",
     tags: ["TypeScript", "React", "Tailwind CSS", "Astro"],
-    challenge: "",
+    challenge:
+      "This was a fun little experiment into using Astro, and more precise UI design",
     about:
       "A small business website template showing a potentail design for clients, fully customizable with built in light/dark toggle and already mobile responsive.",
   },
