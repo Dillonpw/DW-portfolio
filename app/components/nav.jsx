@@ -46,7 +46,7 @@ const NavBar = () => {
           height={50}
         />
       </Link>
-      <div className="justify-center px-2 text-xl">
+      <div className="justify-center px-2 text-lg md:text-xl lg:text-2xl">
         <button
           className="m-2 cursor-pointer hover:scale-110"
           onClick={scrollAbout}

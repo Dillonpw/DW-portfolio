@@ -1,9 +1,12 @@
+import dynamic from "next/dynamic";
 import NavBar from "./nav.jsx";
 import Image from "next/image";
 import Dogs from "./dogs.jsx";
 import { faGithub, faLinkedinIn } from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { motion } from "framer-motion";
+
+const LoadParagraph = dynamic(() => import("./paragraph.jsx"), { ssr: false });
 
 const Header = () => {
   return (
@@ -14,7 +17,7 @@ const Header = () => {
         transition={{ duration: 1 }}
         whileInView={{ opacity: 1 }}
         animate={{ x: 10 }}
-        className="mx-8 mt-60 flex flex-col items-center justify-center lg:flex-row"
+        className="lg:mx-20 mx-8 mt-40 flex flex-col items-center justify-center lg:flex-row"
       >
         <div className="flex w-full flex-col items-center justify-center gap-4 px-6 lg:w-1/2 lg:items-start lg:justify-start">
           <Image
@@ -61,27 +64,7 @@ const Header = () => {
           </div>
           <Dogs />
         </div>
-        <div className="fade-in-4 flex w-full flex-col items-start px-6 lg:w-1/2">
-          <p className="mb-5 rounded-xl pt-5 text-xl text-slate-900 dark:text-cyan-200">
-            In 2019, after completing my college education, I took on a position
-            as a 911 emergency dispatcher. While this role was challenging, it
-            also afforded me the time to explore my budding interests in web
-            development and Cyber Security relying on resources like freeCodeCamp, The Odin
-            Project, and official documentation to hone my skills while working
-            a full time job outside of tech. Recently, my focus has shifted
-            towards contributing to open source learning projects and their
-            documentation, and developing personal projects, as well as
-            providing web development and support services for some really great people.
-          </p>
-          {/* <p className="text-xl">Click here for the component library</p>
-          <Link
-            className="rounded-xl bg-white px-6 py-3 dark:bg-cyan-200 dark:text-sky-900"
-            href="/library"
-          >
-            Go
-          </Link>
-          */}
-        </div>
+        <LoadParagraph />
       </motion.div>
     </section>
   );

@@ -21,24 +21,11 @@ const images = [
     title: "Small Business Template",
     tags: ["TypeScript", "React", "Tailwind CSS", "Astro"],
     challenge:
-      "This was a fun little experiment into using Astro, and more precise UI design",
+      "This was a fun little experiment into using Astro, and more precise UI design.",
     about:
       "A small business website template showing a potentail design for clients, fully customizable with built in light/dark toggle and already mobile responsive. This page is designed to be sutomizable and reusaed with clients according to their needs.",
   },
 
-  {
-    id: "dispatcher-cheat-sheet",
-    src: "/DCS-home.png",
-    mobileImg: "/DCS-home-m.png",
-    livePreviewLink: "https://www.911dcs.net/",
-    githubLink: "https://github.com/Dillonpw/DCS",
-    title: "Dispatcher Cheat Sheet",
-    tags: ["TypeScript", "React", "CSS", "Astro"],
-    challenge:
-      " I originally built this project using vanilla JavaScript, and after deciding to build the project up a bit I wanted to challenge myself and covert it to TypeScript for some practice. This was the first project I built using TypeScript and I struggled a bit at first with typing things correctly and sometimes skipped types but as I moved through the documentation things becmae clear and the error responses turned into a tool as I converted the code.",
-    about:
-      "A live and public site with returning users, styled with a brutaslist theme in mind. Consisting of a few useful tools for 911 dispatchers, a job I worked for several years. I built the app to help with my efficiency as a dispatcher and as a send off gift to my former coworkers. The primary funciton is a work schedule generator. As a 911 dispatcher, my schedule was different every week due to the need for 24/7 uptime, and to prevent the same poeple from always working weekends we worked on a rotation of 4 work days followed by 3 days off, which required a great deal of effort to schedule anything in advance. I plan to add more tools to the page as they come to mind and offer this project up to other 911 dispatchers to hopefully make their jobs and lives easier as well.",
-  },
   {
     id: "pomodoro-timer-app",
     src: "/pomodoro.png",
@@ -61,6 +48,20 @@ const images = [
       "A modern, mobile version of the Dispatcher Chest Sheet website built using Nativewind for styles simple and minimal UI designed to be for quick referencing. So far the rotating schedule function id the primary aspect, but there are more features on the way.",
     challenge:
       "At the time, mobile development was entirely new to me, this is my first fully-fledged mobile application. I ran into some confusion at the start of the process as I learned the React Native specific elements, but once that clicked the adjustment to mobile was straight forward.",
+  },
+
+  {
+    id: "dispatcher-cheat-sheet",
+    src: "/DCS-home.png",
+    mobileImg: "/DCS-home-m.png",
+    livePreviewLink: "https://www.911dcs.net/",
+    githubLink: "https://github.com/Dillonpw/DCS",
+    title: "Dispatcher Cheat Sheet",
+    tags: ["TypeScript", "React", "CSS", "Astro"],
+    challenge:
+      " I originally built this project using vanilla JavaScript, and after deciding to build the project up a bit I wanted to challenge myself and covert it to TypeScript for some practice. This was the first project I built using TypeScript and I struggled a bit at first with typing things correctly and sometimes skipped types but as I moved through the documentation things becmae clear and the error responses turned into a tool as I converted the code.",
+    about:
+      "A live and public site with returning users, styled with a brutaslist theme in mind. Consisting of a few useful tools for 911 dispatchers, a job I worked for several years. I built the app to help with my efficiency as a dispatcher and as a send off gift to my former coworkers. The primary funciton is a work schedule generator. As a 911 dispatcher, my schedule was different every week due to the need for 24/7 uptime, and to prevent the same poeple from always working weekends we worked on a rotation of 4 work days followed by 3 days off, which required a great deal of effort to schedule anything in advance. I plan to add more tools to the page as they come to mind and offer this project up to other 911 dispatchers to hopefully make their jobs and lives easier as well.",
   },
 ];
 
