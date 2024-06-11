@@ -17,7 +17,7 @@ const Header = () => {
         transition={{ duration: 1 }}
         whileInView={{ opacity: 1 }}
         animate={{ x: 10 }}
-        className="lg:mx-20 mx-8 mt-40 flex flex-col items-center justify-center lg:flex-row"
+        className="mx-8 mt-40 flex flex-col items-center justify-center lg:mx-20 lg:flex-row"
       >
         <div className="flex w-full flex-col items-center justify-center gap-4 px-6 lg:w-1/2 lg:items-start lg:justify-start">
           <Image
@@ -30,7 +30,7 @@ const Header = () => {
           <h1 id="home" className="px-5 text-5xl">
             Dillon Walsh
           </h1>
-          <h2 className="fade-in-2 px-5 text-3xl opacity-60">
+          <h2 className="fade-in-2 px-5 text-2xl opacity-60 md:text-3xl">
             Full Stack Web Developer
           </h2>
           <div
