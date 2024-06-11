@@ -27,6 +27,7 @@ const ProjectPage = () => {
       case "ecommerce-site":
       case "pomodoro-timer-app":
       case "dcs-m":
+      case "small-bis":
         return (
           <motion.main
             className=""
