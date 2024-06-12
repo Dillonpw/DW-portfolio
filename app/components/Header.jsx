@@ -1,12 +1,10 @@
-import dynamic from "next/dynamic";
+"use client";
 import NavBar from "./nav.jsx";
 import Image from "next/image";
 import Dogs from "./dogs.jsx";
 import { faGithub, faLinkedinIn } from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { motion } from "framer-motion";
-
-const LoadParagraph = dynamic(() => import("./paragraph.jsx"), { ssr: false });
 
 const Header = () => {
   return (
@@ -64,7 +62,15 @@ const Header = () => {
           </div>
           <Dogs />
         </div>
-        <LoadParagraph />
+        <div className="fade-in-4 flex w-full flex-col items-center px-6 lg:w-1/2 xl:w-1/3">
+          <p className="mb-5 rounded-xl pt-5 text-xl text-slate-900 dark:text-cyan-200 lg:text-2xl">
+            In 2019, after completing my college education, I took on a position
+            as a 911 emergency dispatcher. While this role was challenging, it
+            also afforded me the time to explore the many facets of web
+            development. Now as a professional web developer I now provide web
+            development and support services for some really great people.
+          </p>
+        </div>
       </motion.div>
     </section>
   );
