@@ -6,7 +6,7 @@ const images = [
     livePreviewLink: "https://shop-red-eta.vercel.app/",
     githubLink: "https://github.com/Dillonpw/ecommerce",
     title: "Ecommerce Site",
-    tags: ["TypeScript", "React", "Tailwind", "TailwindUI", "Shadcn/ui"],
+    tags: ["TypeScript", "React", "Tailwind CSS", "TailwindUI", "Shadcn/ui"],
     challenge:
       "This project was rather large and with that came some challenges: for one I struggled a bit with sharing state between components and pages, I failed to realize that the concept I was inventing in my head and almost in my code already existed in the form of useContex... Once that was out of the way I found some difficulty in positioniing certain elements exactly where I wanted them so they looked presentable both on desktop and mobile but a few tailwind size adjustements sorted that out.",
     about:
@@ -31,7 +31,7 @@ const images = [
     src: "/pomodoro.png",
     githubLink: "https://github.com/Dillonpw/pomodoro",
     title: "Pomodoro Timer App",
-    tags: ["TypeScript", "React", "Tailwind", "Tauri"],
+    tags: ["TypeScript", "React", "Tailwind CSS", "Tauri"],
     challenge:
       "This project did not pose much in the way of challeneges outside of making sure the countdown functioned as expected, I spent most of the time on this project making sure the UI was both noticeable but not a distraction to the user by choosing neutral colors and a visible change between work-time and break-time.",
     about:
@@ -43,7 +43,7 @@ const images = [
     src: "/dcs-m.png",
     githubLink: "https://github.com/Dillonpw/DCS-M",
     title: "Dispatcher Cheat Sheet iOS app",
-    tags: ["TypeScript", "React Native", "Tailwind", "Expo Router"],
+    tags: ["TypeScript", "React Native", "Tailwind CSS", "Expo Router"],
     about:
       "A modern, mobile version of the Dispatcher Chest Sheet website built using Nativewind for styles simple and minimal UI designed to be for quick referencing. So far the rotating schedule function id the primary aspect, but there are more features on the way.",
     challenge:
