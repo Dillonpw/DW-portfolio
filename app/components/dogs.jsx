@@ -4,11 +4,11 @@ const Dogs = () => {
   const [isHovered, setIsHovered] = useState(false);
 
   return (
-    <div className="h-[110px] mb-10">
+    <div className="h-[110px] mb-8">
       <h3
         onMouseEnter={() => setIsHovered(true)}
         onMouseLeave={() => setIsHovered(false)}
-        className="fade-in-2 px-5 text-2xl opacity-60 cursor-pointer"
+        className="fade-in-3 px-5 text-2xl opacity-60 cursor-pointer"
       >
         I&apos;m probably walking my dogs
       </h3>

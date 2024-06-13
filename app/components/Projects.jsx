@@ -12,7 +12,7 @@ const Projects = () => {
       transition={{ duration: 1 }}
       whileInView={{ opacity: 1 }}
       animate={{ y:-30 }}
-      className="mt-20 flex flex-col dark:text-cyan-50"
+      className="mt-20 flex flex-col dark:text-cyan-200"
     >
       <h3 className="mt-20 text-center font-mono text-4xl font-bold">
         Selected Projects

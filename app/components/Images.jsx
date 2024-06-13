@@ -16,6 +16,7 @@ const images = [
   {
     id: "small-bis",
     src: "/small-bis.png",
+    mobileImg: "/small-bis-m.png",
     livePreviewLink: "https://small-bis.vercel.app/",
     githubLink: "https://github.com/Dillonpw/small-bis",
     title: "Small Business Template",

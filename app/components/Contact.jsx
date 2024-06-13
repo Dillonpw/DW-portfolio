@@ -28,7 +28,7 @@ const Contact = () => {
   };
 
   return isEmailSubmitted ? (
-    <div className="m-8 text-3xl">
+    <div className="m-8 text-3xl text-cyan-200">
       <p>{result}</p>
       <h1 className="text-3xl">Thank you for reaching out!</h1>
     </div>
@@ -37,7 +37,7 @@ const Contact = () => {
       initial={{ opacity: 0 }}
       transition={{ duration: 2 }}
       whileInView={{ opacity: 1 }}
-      className="m-8 border-cyan-200 md:max-w-[700px]"
+      className="m-8 md:max-w-[700px]"
     >
       <form className="flex flex-col" onSubmit={onSubmit}>
         <label className="font-bold" htmlFor="email">
