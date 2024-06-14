@@ -78,7 +78,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body
-        className={`${inter.className} relative min-h-full bg-gradient-to-br from-gray-300 to-emerald-400 p-0 text-slate-900 dark:bg-gradient-to-br dark:from-sky-950 dark:to-slate-900 dark:text-cyan-200`}
+        className={`${inter.className} relative min-h-full bg-gradient-to-br from-gray-300 to-emerald-400 p-0 text-slate-900 transition-all dark:bg-gradient-to-br dark:from-sky-950 dark:to-slate-900 dark:text-cyan-200`}
       >
         {children}
         <Footer />
