@@ -37,14 +37,14 @@ const Contact = () => {
       initial={{ opacity: 0 }}
       transition={{ duration: 2 }}
       whileInView={{ opacity: 1 }}
-      className="m-8 md:max-w-[700px]"
+      className="m-8  "
     >
-      <form className="flex flex-col" onSubmit={onSubmit}>
+      <form className="flex flex-col max-w-[600px] lg:mx-auto" onSubmit={onSubmit}>
         <label className="font-bold" htmlFor="email">
           Email:
         </label>
         <input
-          className="my-2 h-10 w-[50%] rounded-md p-2 text-black"
+          className="my-2 h-10  rounded-md p-2 text-black"
           type="email"
           name="email"
           id="email"
@@ -56,7 +56,7 @@ const Contact = () => {
           Message:
         </label>
         <textarea
-          className="my-2 w-[70%] rounded-lg p-2 text-black"
+          className="my-2 rounded-lg p-2 text-black"
           name="message"
           id="message"
           rows="6"

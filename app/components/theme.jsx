@@ -1,13 +1,15 @@
 import { useEffect, useState } from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faSun, faMoon } from "@fortawesome/free-solid-svg-icons";
 
 const ThemeToggle = () => {
-  const [darkMode, setDarkMode] = useState(false);
+  const [darkMode, setDarkMode] = useState(() => {
+    return localStorage.getItem("theme") === "dark";
+  });
 
   useEffect(() => {
-    const isDarkMode = localStorage.getItem("theme") === "dark";
-    setDarkMode(isDarkMode);
-    document.documentElement.classList.toggle("dark", isDarkMode);
-  }, []);
+    document.documentElement.classList.toggle("dark", darkMode);
+  }, [darkMode]);
 
   const toggleTheme = () => {
     const isDarkMode = !darkMode;
@@ -17,9 +19,14 @@ const ThemeToggle = () => {
   };
 
   return (
-    <button className="m-1 text-2xl font-bold" onClick={toggleTheme}>
-      {darkMode ? "🌞" : "🌙"}
-    </button>
+    <div className="mx-2">
+      <button
+        className="mt-2 flex h-10 w-10 items-center justify-center text-2xl font-bold transition-transform duration-300 ease-in-out"
+        onClick={toggleTheme}
+      >
+        <FontAwesomeIcon className="theme-icon" icon={darkMode ? faSun : faMoon} />
+      </button>
+    </div>
   );
 };
 

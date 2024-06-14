@@ -27,7 +27,7 @@ const Header = () => {
           />
           <div
             id="links"
-            className="fade-in-2 pr-5 text-slate-900 opacity-60 dark:text-cyan-200 md:ml-5"
+            className="fade-in-2 pr-5 text-slate-900 opacity-60 dark:text-cyan-200 text-2xl md:ml-5"
           >
             <a
               id="githubLink"
