@@ -55,7 +55,7 @@ const images = [
     id: "dispatcher-cheat-sheet",
     src: "/DCS-home.png",
     mobileImg: "/DCS-home-m.png",
-    livePreviewLink: "https://www.911dcs.net/",
+    livePreviewLink: "https://dcs-psi.vercel.app/",
     githubLink: "https://github.com/Dillonpw/DCS",
     title: "Dispatcher Cheat Sheet",
     tags: ["TypeScript", "React", "CSS", "Astro"],
