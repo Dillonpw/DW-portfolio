@@ -10,7 +10,7 @@ const images = [
     challenge:
       "This project was rather large and with that came some challenges: for one I struggled a bit with sharing state between components and pages, I failed to realize that the concept I was inventing in my head and almost in my code already existed in the form of useContex... Once that was out of the way I found some difficulty in positioniing certain elements exactly where I wanted them so they looked presentable both on desktop and mobile but a few tailwind size adjustements sorted that out.",
     about:
-      "This template is part of The Odin Project React curriculum You will notice a checkout area if you decide to go through te motions of the website, it does not submit anything, it clears the cart. Engaging in this project introduced me to many new concepts within React. I dove headfirst into the useContext hook and scoured the React documentation to gain what I believe is a working grasp of its uses. In the end, I am happy with the outcome. The goal was to create something purposely generic and minimal, and I believe that’s what I have achieved.",
+      "You will notice a checkout area if you decide to go through te motions of the website, it does not submit anything, it clears the cart. Engaging in this project introduced me to many new concepts within React. I dove headfirst into the useContext hook and scoured the React documentation to gain what I believe is a working grasp of its uses. In the end, I am happy with the outcome. The goal was to create something purposely generic and minimal, and I believe that’s what I have achieved.",
   },
 
   {
@@ -22,9 +22,9 @@ const images = [
     title: "Small Business Template",
     tags: ["TypeScript", "React", "Tailwind CSS", "Astro"],
     challenge:
-      "This was a fun little experiment into using Astro, and more precise UI design.",
+      "This project was another valuable learning experience in using Astro, my favorite framework for static site generation and server-side rendering. One of the primary challenges was ensuring the UI design was both precise and aesthetically pleasing, which required attention to detail and careful planning. Additionally, integrating TypeScript and ensuring the template was fully responsive across different devices were significant tasks that demanded thorough testing and iteration.",
     about:
-      "A small business website template showing a potentail design for clients, fully customizable with built in light/dark toggle and already mobile responsive. This page is designed to be sutomizable and reusaed with clients according to their needs.",
+      "This is a fully customizable website template designed specifically for small businesses. It features a simple and clean layout, with a built-in light/dark mode toggle to cater to user preferences. The template is fully responsive whether it's a desktop, tablet, or smartphone. The template sis designed to serve as a starting point for small business websites, allowing clients to personalize the content and style to meet their specific needs. It showcases potential design ideas for clients, demonstrating how their business can have a professional and attractive online presence.",
   },
 
   {

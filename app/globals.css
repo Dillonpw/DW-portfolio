@@ -130,3 +130,15 @@ html.dark .theme-icon {
 .transition-all {
   transition: all 0.3s;
 }
+
+.relative .tooltip {
+  display: none;
+}
+
+.relative:hover .tooltip {
+  display: block;
+}
+
+.group:hover .group-hover\:block {
+  display: block;
+}

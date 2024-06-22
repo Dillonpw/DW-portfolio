@@ -15,7 +15,7 @@ const Dogs = () => {
       <div className="flex flex-row items-center justify-center">
         {isHovered && (
           <Image
-            className="rounded-xl"
+            className="rounded-xl border-2 border-neutral-950"
             src="/Ollie-benny.webp"
             width={140}
             height={140}

@@ -35,18 +35,30 @@ const NavBar = () => {
       });
     }
   };
+
   return (
-    <nav className="fixed top-0 z-50 flex w-full flex-row items-center justify-between bg-neutral-50 p-4 shadow-md dark:border-b dark:border-neutral-700  dark:bg-neutral-950">
-      <Link href="/" id="logo" className="justify-start px-2">
-        <Image
-          className="hover:scale-105"
-          src={logo}
-          alt="Logo"
-          width={50}
-          height={50}
-        />
-      </Link>
-      <div className="justify-center px-2 text-lg md:text-xl lg:text-2xl">
+    <nav className="fixed top-0 z-50 flex w-full flex-row items-center justify-between bg-neutral-50 p-4 shadow-md dark:border-b dark:border-neutral-700 dark:bg-neutral-950">
+      <div className="flex flex-row items-center px-2">
+        <Link href="/" id="logo">
+          <Image
+            className="hover:scale-105"
+            src={logo}
+            alt="Logo"
+            width={50}
+            height={50}
+          />
+        </Link>
+        <div className="relative ml-2 flex items-center">
+          <div className="group relative">
+            <div className="h-2 w-2 animate-ping cursor-pointer rounded-full bg-emerald-500 p-2"></div>
+            <div className="absolute bottom-full mb-2 hidden w-max rounded-lg bg-black px-2 py-1 text-sm text-gray-200 group-hover:block dark:bg-gray-200 dark:text-neutral-950">
+              I&apos;m online!
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div className="text-md justify-center px-2 md:text-xl lg:text-2xl">
         <button
           className="m-2 cursor-pointer hover:scale-110"
           onClick={scrollAbout}
@@ -66,9 +78,9 @@ const NavBar = () => {
           Tech
         </button>
       </div>
-
       <ThemeToggle />
     </nav>
   );
 };
+
 export default NavBar;
