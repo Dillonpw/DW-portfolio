@@ -28,9 +28,9 @@ const Tech = () => {
       transition={{ duration: 2 }}
       whileInView={{ opacity: 1 }}
       id="tech"
-      className="flex items-center justify-center p-10 text-center md:mb-20"
+      className="flex mt-40 items-center justify-center p-10 text-center md:mb-20"
     >
-      <div className="mt-10 flex flex-col gap-20">
+      <div className="flex flex-col gap-20">
         <div>
           <p className="pb-2 font-mono text-3xl font-bold lg:text-5xl">
             Tech Stack

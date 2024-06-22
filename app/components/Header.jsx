@@ -15,7 +15,7 @@ const Header = () => {
         transition={{ duration: 1 }}
         whileInView={{ opacity: 1 }}
         animate={{ x: 10 }}
-        className="mx-8 mt-40 flex flex-col items-center justify-center text-center lg:mx-20 lg:flex-row"
+        className="mx-8 mt-28 flex flex-col items-center justify-center text-center lg:mx-20 lg:flex-row"
       >
         <div className="flex w-full flex-col items-center justify-center gap-4 px-6 lg:w-1/2 lg:items-start lg:justify-start">
           <Image

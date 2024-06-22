@@ -13,9 +13,9 @@ const Projects = () => {
       transition={{ duration: 1 }}
       whileInView={{ opacity: 1 }}
       animate={{ y: -30 }}
-      className="mt-20 flex flex-col "
+      className="mt-60 flex flex-col "
     >
-      <h3 className="mt-20 text-center font-mono text-4xl font-bold">
+      <h3 className="text-center font-mono text-4xl font-bold">
         Highlights
       </h3>
       <p className="m-6 text-center text-lg opacity-50">
@@ -56,7 +56,7 @@ const Projects = () => {
           </div>
         ))}
       </div>
-      <div className="mt-4 flex justify-center">
+      <div className="mt-2 flex justify-center">
         <Link
           className="rounded-xl border-2 border-neutral-950 px-6 py-2 text-lg font-bold transition duration-300 hover:scale-105 hover:bg-neutral-950 hover:text-gray-200"
           href="/projects"
