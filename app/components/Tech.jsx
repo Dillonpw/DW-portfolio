@@ -39,7 +39,7 @@ const Tech = () => {
           </p>
           <ul className="flex list-none flex-col items-center justify-center gap-5 pt-5 text-xl lg:flex-row">
             {devTools.map((dt) => (
-              <li className="opacity-50" key={dt}>
+              <li className="opacity-60" key={dt}>
                 {dt}
               </li>
             ))}
@@ -51,7 +51,7 @@ const Tech = () => {
           </p>
           <ul className="flex list-none flex-col items-center justify-center gap-5 pt-5 text-xl lg:flex-row ">
             {otherTools.map((ot) => (
-              <li className="opacity-50" key={ot}>
+              <li className="opacity-60" key={ot}>
                 {ot}
               </li>
             ))}

@@ -24,7 +24,7 @@ const Projects = () => {
       <h3 className="mt-20 text-center font-mono text-5xl font-bold">
         Selected Projects
       </h3>
-      <p className="m-6 text-center text-lg opacity-50">
+      <p className="m-6 text-center text-lg opacity-60">
         Click on the images for more information about each listed project
       </p>
       <div className="m-6 grid grid-cols-1 gap-4 lg:grid-cols-2">
@@ -55,7 +55,7 @@ const Projects = () => {
                 </span>
               ))}
             </div>
-            <div className="p-4 text-lg opacity-50">
+            <div className="p-4 text-lg opacity-60">
               <p>{image.about}</p>
             </div>{" "}
           </div>

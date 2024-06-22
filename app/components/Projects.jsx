@@ -18,7 +18,7 @@ const Projects = () => {
       <h3 className="text-center font-mono text-4xl font-bold">
         Highlights
       </h3>
-      <p className="m-6 text-center text-lg opacity-50">
+      <p className="m-6 text-center text-lg opacity-60">
         Click on the images for more information about each listed project
       </p>
 
@@ -50,7 +50,7 @@ const Projects = () => {
                 </span>
               ))}
             </div>
-            <div className="p-4 text-lg opacity-50">
+            <div className="p-4 text-lg opacity-60">
               <p>{image.about}</p>
             </div>
           </div>

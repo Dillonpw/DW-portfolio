@@ -29,13 +29,13 @@ const Header = () => {
             Dillon Walsh
           </h1>
 
-          <h2 className="fade-in-3 px-5 text-xl opacity-50 md:text-2xl">
+          <h2 className="fade-in-3 px-5 text-xl opacity-60 md:text-2xl">
             Full Stack Web Developer
           </h2>
           <Dogs />
         </div>
         <div className="fade-in-3 flex w-full flex-col items-center px-6 lg:w-1/2 xl:w-1/3">
-          <p className="mb-5 rounded-xl pt-5 text-center text-xl opacity-50 md:text-left lg:text-2xl">
+          <p className="mb-5 rounded-xl pt-5 text-center text-xl opacity-60 md:text-left lg:text-2xl">
             In 2019, after completing my college education, I took on a position
             as a 911 emergency dispatcher. While this role was challenging, it
             also afforded me the time to explore the many facets of web
@@ -60,7 +60,7 @@ const Header = () => {
           </p>
           <div
             id="links"
-            className="fade-in-2 flex items-center space-x-8 text-2xl opacity-50 dark:text-gray-200 md:ml-5"
+            className="fade-in-2 flex items-center space-x-8 text-2xl opacity-60 dark:text-gray-200 md:ml-5"
           >
             <div className="group relative">
               <a
