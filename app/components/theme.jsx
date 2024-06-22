@@ -24,7 +24,10 @@ const ThemeToggle = () => {
         className="mt-2 flex h-10 w-10 items-center justify-center text-2xl font-bold transition-transform duration-300 ease-in-out"
         onClick={toggleTheme}
       >
-        <FontAwesomeIcon className="theme-icon" icon={darkMode ? faSun : faMoon} />
+        <FontAwesomeIcon
+          className="theme-icon"
+          icon={darkMode ? faSun : faMoon}
+        />
       </button>
     </div>
   );

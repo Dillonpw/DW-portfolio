@@ -11,8 +11,8 @@ const Projects = () => {
       initial={{ opacity: 0 }}
       transition={{ duration: 1 }}
       whileInView={{ opacity: 1 }}
-      animate={{ y:-30 }}
-      className="mt-20 flex flex-col dark:text-cyan-200"
+      animate={{ y: -30 }}
+      className="mt-20 flex flex-col "
     >
       <h3 className="mt-20 text-center font-mono text-4xl font-bold">
         Selected Projects
@@ -43,7 +43,7 @@ const Projects = () => {
               {image.tags.map((tag) => (
                 <span
                   key={tag}
-                  className="m-2 cursor-default rounded-2xl border-2 border-cyan-200 bg-slate-800 px-3 py-2 text-cyan-200 dark:bg-cyan-200 dark:text-slate-800"
+                  className="m-2 cursor-default rounded-2xl border-2  bg-neutral-950 px-3 py-2 text-gray-200 dark:bg-gray-200 dark:text-neutral-950"
                 >
                   {tag}
                 </span>

@@ -36,7 +36,7 @@ const NavBar = () => {
     }
   };
   return (
-    <nav className="fixed top-0 z-50 flex w-full flex-row items-center justify-between rounded-b-md bg-emerald-700 p-4 text-white dark:bg-slate-900">
+    <nav className="fixed top-0 z-50 flex w-full flex-row items-center justify-between bg-neutral-50 p-4 shadow-md dark:border-b dark:border-neutral-700  dark:bg-neutral-950">
       <Link href="/" id="logo" className="justify-start px-2">
         <Image
           className="hover:scale-105"

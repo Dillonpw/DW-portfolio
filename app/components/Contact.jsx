@@ -28,7 +28,7 @@ const Contact = () => {
   };
 
   return isEmailSubmitted ? (
-    <div className="m-8 text-3xl text-cyan-200">
+    <div className="m-8 text-3xl ">
       <p>{result}</p>
       <h1 className="text-3xl">Thank you for reaching out!</h1>
     </div>
@@ -39,12 +39,15 @@ const Contact = () => {
       whileInView={{ opacity: 1 }}
       className="m-8  "
     >
-      <form className="flex flex-col max-w-[600px] lg:mx-auto" onSubmit={onSubmit}>
+      <form
+        className="flex max-w-[600px] flex-col lg:mx-auto"
+        onSubmit={onSubmit}
+      >
         <label className="font-bold" htmlFor="email">
           Email:
         </label>
         <input
-          className="my-2 h-10  rounded-md p-2 text-black"
+          className="my-2 h-10 rounded-md border-2 p-2 text-neutral-950"
           type="email"
           name="email"
           id="email"
@@ -56,7 +59,7 @@ const Contact = () => {
           Message:
         </label>
         <textarea
-          className="my-2 rounded-lg p-2 text-black"
+          className="my-2 rounded-md border-2 p-2 text-black"
           name="message"
           id="message"
           rows="6"
@@ -65,7 +68,7 @@ const Contact = () => {
         ></textarea>
 
         <button
-          className="w-fit items-center justify-center rounded-lg bg-slate-900 px-8 py-4 text-cyan-200 opacity-90 hover:scale-105 hover:opacity-100 dark:bg-cyan-200 dark:text-sky-950"
+          className="w-fit items-center justify-center rounded-lg bg-slate-900 px-8 py-4 text-gray-200 opacity-90 hover:scale-105 hover:opacity-100 dark:bg-gray-200 dark:text-neutral-950"
           type="submit"
         >
           Submit

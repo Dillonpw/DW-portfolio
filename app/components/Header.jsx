@@ -15,7 +15,7 @@ const Header = () => {
         transition={{ duration: 1 }}
         whileInView={{ opacity: 1 }}
         animate={{ x: 10 }}
-        className="mx-8 mt-40 flex flex-col items-center justify-center lg:mx-20 text-center sm:text-left lg:flex-row"
+        className="mx-8 mt-40 flex flex-col items-center justify-center text-center lg:mx-20 lg:flex-row"
       >
         <div className="flex w-full flex-col items-center justify-center gap-4 px-6 lg:w-1/2 lg:items-start lg:justify-start">
           <Image
@@ -23,11 +23,30 @@ const Header = () => {
             alt="cartoon"
             width={300}
             height={300}
-            className="mx-5 rounded-full border-2 dark:border-blue-400"
+            className="mx-5 rounded-full border-2 dark:border-gray-200"
           />
+
+          <h1 id="home" className="fade-in-2 px-5 text-5xl">
+            Dillon Walsh
+          </h1>
+          <h2 className="fade-in-3 px-5 text-xl opacity-50 md:text-2xl">
+            Full Stack Web Developer
+          </h2>
+
+          <Dogs />
+        </div>
+        <div className="fade-in-3 flex w-full flex-col items-center px-6 lg:w-1/2 xl:w-1/3">
+          <p className="mb-5 rounded-xl pt-5 text-xl opacity-50 lg:text-2xl">
+            In 2019, after completing my college education, I took on a position
+            as a 911 emergency dispatcher. While this role was challenging, it
+            also afforded me the time to explore the many facets of web
+            development. Now as a professional web developer I provide web
+            development and support services for some really great people doing
+            really great things.
+          </p>
           <div
             id="links"
-            className="fade-in-2 pr-5 text-slate-900 opacity-60 dark:text-cyan-200 text-2xl md:ml-5"
+            className="fade-in-2 dark:text-gryay-200 text-2xl opacity-50 md:ml-5"
           >
             <a
               id="githubLink"
@@ -54,24 +73,6 @@ const Header = () => {
               />
             </a>
           </div>
-          <h1 id="home" className="fade-in-2 px-5 text-5xl">
-            Dillon Walsh
-          </h1>
-          <h2 className="fade-in-3 px-5 text-xl opacity-60 md:text-2xl">
-            Full Stack Web Developer
-          </h2>
-
-          <Dogs />
-        </div>
-        <div className="fade-in-3 flex w-full flex-col items-center px-6 lg:w-1/2 xl:w-1/3">
-          <p className="mb-5 rounded-xl pt-5 text-xl text-slate-900 dark:text-cyan-200 lg:text-2xl">
-            In 2019, after completing my college education, I took on a position
-            as a 911 emergency dispatcher. While this role was challenging, it
-            also afforded me the time to explore the many facets of web
-            development. Now as a professional web developer I provide web
-            development and support services for some really great people doing
-            really great things.
-          </p>
         </div>
       </motion.div>
     </section>

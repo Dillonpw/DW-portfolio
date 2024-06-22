@@ -1,12 +1,12 @@
 const Footer = () => {
   return (
     <>
-      <footer className="flex flex-col items-center justify-center bg-emerald-700 pb-6 pt-20 text-center text-sm text-white dark:bg-sky-950">
+      <footer className="flex flex-col items-center justify-center pb-6 pt-20 text-center text-sm">
         <p className="mx-6">
-          Built using <b>React</b> <b>Next.JS</b> and <b>Tailwind</b>, with some
-          elements designed in Figma, Deployed through Vercel.
+          Built using <b>React</b>, <b>Next.JS</b> and <b>Tailwind</b>, with
+          some elements designed in Figma.
           <br />
-          Created by Dillon Walsh &copy;2024 All Rights Reserved
+          &copy;2024 All Rights Reserved
         </p>
       </footer>
     </>
