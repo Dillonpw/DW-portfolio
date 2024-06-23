@@ -27,7 +27,7 @@ const Tech = () => {
   return (
     <motion.section
       initial={{ opacity: 0 }}
-      transition={{ duration: 2 }}
+      transition={{ duration: 1 }}
       whileInView={{ opacity: 1 }}
       id="tech"
       className="flex mt-40 items-center justify-center p-10 text-center md:mb-20"
