@@ -34,7 +34,7 @@ const Tech = () => {
     >
       <div className="flex flex-col gap-20">
         <div>
-          <p className="pb-2 font-mono text-3xl font-bold lg:text-5xl">
+          <p className="pb-2 text-3xl font-bold lg:text-5xl">
             Daily Use
           </p>
           <ul className="flex list-none flex-col items-center justify-center gap-5 pt-5 text-xl lg:flex-row">
@@ -46,7 +46,7 @@ const Tech = () => {
           </ul>
         </div>
         <div>
-          <p className="pb-2 font-mono text-3xl font-bold lg:text-5xl">
+          <p className="pb-2 text-3xl font-bold lg:text-5xl">
             Other Tools
           </p>
           <ul className="flex list-none flex-col items-center justify-center gap-5 pt-5 text-xl lg:flex-row ">

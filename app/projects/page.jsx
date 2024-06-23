@@ -21,7 +21,7 @@ const Projects = () => {
         </Link>
         <ThemeToggle />
       </div>
-      <h3 className="mt-20 text-center font-mono text-5xl font-bold">
+      <h3 className="mt-20 text-center text-5xl font-bold">
         Selected Projects
       </h3>
       <p className="m-6 text-center text-lg opacity-60">
