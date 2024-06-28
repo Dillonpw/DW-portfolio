@@ -12,10 +12,10 @@ const Header = () => {
         initial={{ opacity: 0 }}
         transition={{ duration: 1 }}
         whileInView={{ opacity: 1 }}
-        animate={{ x: 10 }}
-        className="mt-28 flex flex-col items-center justify-center w-[100%] lg:mx-20 lg:flex-row"
+        animate={{ y: 10 }}
+        className="mt-28 flex flex-col items-center justify-center lg:mx-20 lg:flex-row"
       >
-        <div className="flex w-full flex-col items-center justify-center gap-4 mr-6 lg:w-1/2 lg:items-start lg:justify-start">
+        <div className="flex w-full flex-col items-center justify-center gap-4 lg:w-1/2 lg:items-start lg:justify-start">
           <Image
             src="/Cartoon.jpeg"
             alt="cartoon"
@@ -23,11 +23,11 @@ const Header = () => {
             height={300}
             className="rounded-full border-2 dark:border-gray-200"
           />
-          <h1 id="home" className="fade-in-2 items-center text-5xl">
+          <h1 id="home" className="fade-in-2 items-center px-5 text-5xl">
             Dillon Walsh
           </h1>
 
-          <h2 className="fade-in-3 text-xl opacity-60 md:text-2xl">
+          <h2 className="fade-in-3  text-xl opacity-60 md:text-2xl">
             Full Stack Web Developer
           </h2>
           <Dogs />

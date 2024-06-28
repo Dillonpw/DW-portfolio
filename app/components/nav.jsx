@@ -37,7 +37,7 @@ const NavBar = () => {
   };
 
   return (
-    <nav className="fixed top-0 z-50 flex w-full flex-row items-center justify-between bg-neutral-50 p-4 shadow-md dark:border-b dark:border-neutral-700 dark:bg-neutral-950">
+    <nav className="fixed top-0 z-50 flex w-[100vw] flex-row items-center justify-between bg-neutral-50 p-4 shadow-md dark:border-b dark:border-neutral-700 dark:bg-neutral-950">
       <div className="flex flex-row items-center px-2">
         <Link href="/" id="logo">
           <Image
