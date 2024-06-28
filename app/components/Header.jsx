@@ -8,8 +8,7 @@ import { motion } from "framer-motion";
 
 const Header = () => {
   return (
-    <section>
-      <NavBar />
+    <section className="px-4">
       <motion.div
         initial={{ opacity: 0 }}
         transition={{ duration: 1 }}
@@ -60,7 +59,7 @@ const Header = () => {
           </p>
           <div
             id="links"
-            className="fade-in-2 flex items-center space-x-8 text-2xl opacity-60 dark:text-gray-200 md:ml-5"
+            className="fade-in-2 flex items-center space-x-8 text-2xl opacity-60 dark:text-gray-200"
           >
             <div className="group relative">
               <a

@@ -1,3 +1,4 @@
+import NavBar from "./nav.jsx";
 import Header from "./Header.jsx";
 import Projects from "./Projects.jsx";
 import MoreInfo from "./moreInfo.jsx";
@@ -12,6 +13,8 @@ const Content = () => {
   return (
     <>
       <main>
+      <NavBar />
+
         <Header />
         <button
           id="arrow"
