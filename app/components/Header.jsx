@@ -23,11 +23,11 @@ const Header = () => {
             height={300}
             className="rounded-full border-2 dark:border-gray-200"
           />
-          <h1 id="home" className="fade-in-2 items-center px-5 text-5xl">
+          <h1 id="home" className="fade-in-2 items-center text-5xl">
             Dillon Walsh
           </h1>
 
-          <h2 className="fade-in-3  text-xl opacity-60 md:text-2xl">
+          <h2 className="fade-in-3 text-xl opacity-60 md:text-2xl">
             Full Stack Web Developer
           </h2>
           <Dogs />

@@ -8,7 +8,7 @@ const Dogs = () => {
       <h3
         onMouseEnter={() => setIsHovered(true)}
         onMouseLeave={() => setIsHovered(false)}
-        className="fade-in-3 cursor-pointer px-5 text-2xl opacity-60"
+        className="fade-in-3 cursor-pointer text-2xl opacity-60"
       >
         I&apos;m probably walking my dogs
       </h3>
