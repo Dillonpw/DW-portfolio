@@ -15,17 +15,17 @@ const Header = () => {
         transition={{ duration: 1 }}
         whileInView={{ opacity: 1 }}
         animate={{ x: 10 }}
-        className="mx-8 mt-28 flex flex-col items-center justify-center text-center lg:mx-20 lg:flex-row"
+        className="mt-28 flex flex-col items-center justify-center text-center lg:mx-20 lg:flex-row"
       >
-        <div className="flex w-full flex-col items-center justify-center gap-4 px-6 lg:w-1/2 lg:items-start lg:justify-start">
+        <div className="flex w-full flex-col items-center justify-center gap-4 lg:w-1/2 lg:items-start lg:justify-start">
           <Image
             src="/Cartoon.jpeg"
             alt="cartoon"
             width={300}
             height={300}
-            className="mx-5 rounded-full border-2 dark:border-gray-200"
+            className="rounded-full border-2 dark:border-gray-200"
           />
-          <h1 id="home" className="ade-in-2 items-center px-5 text-5xl">
+          <h1 id="home" className="fade-in-2 items-center px-5 text-5xl">
             Dillon Walsh
           </h1>
 
