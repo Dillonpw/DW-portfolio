@@ -8,15 +8,14 @@ import { motion } from "framer-motion";
 
 const Header = () => {
   return (
-    <section className="px-4">
       <motion.div
         initial={{ opacity: 0 }}
         transition={{ duration: 1 }}
         whileInView={{ opacity: 1 }}
         animate={{ x: 10 }}
-        className="mt-28 flex flex-col items-center justify-center text-center lg:mx-20 lg:flex-row"
+        className="mt-28 flex flex-col items-center justify-center w-[100%] lg:mx-20 lg:flex-row"
       >
-        <div className="flex w-full flex-col items-center justify-center gap-4 lg:w-1/2 lg:items-start lg:justify-start">
+        <div className="flex w-full flex-col items-center justify-center gap-4 mr-6 lg:w-1/2 lg:items-start lg:justify-start">
           <Image
             src="/Cartoon.jpeg"
             alt="cartoon"
@@ -28,12 +27,12 @@ const Header = () => {
             Dillon Walsh
           </h1>
 
-          <h2 className="fade-in-3 px-5 text-xl opacity-60 md:text-2xl">
+          <h2 className="fade-in-3  text-xl opacity-60 md:text-2xl">
             Full Stack Web Developer
           </h2>
           <Dogs />
         </div>
-        <div className="fade-in-3 flex w-full flex-col items-center px-6 lg:w-1/2 xl:w-1/3">
+        <div className="fade-in-3 flex w-full flex-col items-center  lg:w-1/2 xl:w-1/3">
           <p className="mb-5 rounded-xl pt-5 text-center text-xl opacity-60 md:text-left lg:text-2xl">
             In 2019, after completing my college education, I took on a position
             as a 911 emergency dispatcher. While this role was challenging, it
@@ -98,7 +97,6 @@ const Header = () => {
           </div>
         </div>
       </motion.div>
-    </section>
   );
 };
 
