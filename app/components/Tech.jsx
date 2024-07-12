@@ -7,14 +7,12 @@ const Tech = () => {
     "Tailwind CSS",
     "Astro",
     "Next",
-    "PostgresSQL",
+    "Supabase",
     "Prisma",
+    "PostgresSQL",
     "VS Code",
     "GitHub",
     "Vercel",
-
-
-
   ];
   const otherTools = [
     "Git",
