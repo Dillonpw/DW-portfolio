@@ -3,9 +3,9 @@ import Link from "next/link";
 import Image from "next/image";
 import { motion } from "framer-motion";
 import { Suspense } from "react";
-import images from "../components/Images";
-import Skeleton from "../components/Skeleton";
-import ThemeToggle from "../components/theme";
+import images from "../../components/Images";
+import Skeleton from "../../components/Skeleton";
+import ThemeToggle from "../../components/theme";
 import logo from "/public/logo.svg";
 const Projects = () => {
   return (

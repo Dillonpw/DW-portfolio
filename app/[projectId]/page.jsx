@@ -1,9 +1,9 @@
 "use client";
-import images from "../components/Images";
+import images from "../../components/Images";
 import { Suspense, useEffect } from "react";
-import ThemeToggle from "../components/theme";
+import ThemeToggle from "../../components/theme";
 import Link from "next/link";
-import Skeleton from "../components/Skeleton";
+import Skeleton from "../../components/Skeleton";
 import Image from "next/image";
 import { useParams } from "next/navigation";
 import { motion } from "framer-motion";

@@ -14,13 +14,7 @@ const Tech = () => {
     "GitHub",
     "Vercel",
   ];
-  const otherTools = [
-    "Git",
-    "Vite",
-    "Figma",
-    "Expo",
-    "Tauri",
-  ];
+  const otherTools = ["Git", "Vite", "Figma", "Expo", "Tauri"];
 
   return (
     <motion.section
@@ -28,14 +22,12 @@ const Tech = () => {
       transition={{ duration: 1 }}
       whileInView={{ opacity: 1 }}
       id="tech"
-      className="flex mt-40 items-center justify-center p-10 text-center md:mb-20"
+      className="m-40 flex items-center justify-center p-10 text-center md:mb-20"
     >
       <div className="flex flex-col gap-20">
         <div>
-          <p className="pb-2 text-3xl font-bold lg:text-5xl">
-            Daily Use
-          </p>
-          <ul className="flex list-none flex-col items-center justify-center gap-5 pt-5 text-xl lg:flex-row">
+          <p className="pb-2 text-3xl font-bold lg:text-5xl">Daily Use</p>
+          <ul className="flex list-none flex-col flex-wrap items-center justify-center gap-5 pt-5 text-xl lg:flex-row">
             {devTools.map((dt) => (
               <li className="opacity-60" key={dt}>
                 {dt}
@@ -44,9 +36,7 @@ const Tech = () => {
           </ul>
         </div>
         <div>
-          <p className="pb-2 text-3xl font-bold lg:text-5xl">
-            Other Tools
-          </p>
+          <p className="pb-2 text-3xl font-bold lg:text-5xl">Other Tools</p>
           <ul className="flex list-none flex-col items-center justify-center gap-5 pt-5 text-xl lg:flex-row ">
             {otherTools.map((ot) => (
               <li className="opacity-60" key={ot}>

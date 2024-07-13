@@ -48,14 +48,6 @@ const NavBar = () => {
             height={50}
           />
         </Link>
-        <div className="relative ml-2 flex items-center">
-          <div className="group relative">
-            <div className="h-2 w-2 animate-ping cursor-pointer rounded-full bg-emerald-500 p-2"></div>
-            <div className="absolute bottom-full mb-2 hidden w-max rounded-lg bg-black px-2 py-1 text-sm text-gray-200 group-hover:block dark:bg-gray-200 dark:text-neutral-950">
-              I&apos;m online!
-            </div>
-          </div>
-        </div>
       </div>
 
       <div className="text-md justify-center px-2 md:text-xl lg:text-2xl">

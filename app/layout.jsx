@@ -2,7 +2,7 @@ import "./globals.css";
 import { Inter } from "next/font/google";
 import robots from "./robots";
 import { Analytics } from "@vercel/analytics/react";
-import Footer from "./components/Footer";
+import Footer from "../components/Footer";
 
 /** @type {import("next").Metadata} */
 export const metadata = {
