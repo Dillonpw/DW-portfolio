@@ -1,6 +1,5 @@
 import "./globals.css";
 import { Inter } from "next/font/google";
-import robots from "./robots";
 import { Analytics } from "@vercel/analytics/react";
 import Footer from "../components/Footer";
 
@@ -69,7 +68,6 @@ export const metadata = {
   alternates: {
     canonical: "/",
   },
-  robots: robots(),
 };
 
 const inter = Inter({ subsets: ["latin"] });

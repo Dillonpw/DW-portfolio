@@ -11,7 +11,8 @@ import {
   TooltipProvider,
   TooltipTrigger,
 } from "@/components/ui/tooltip";
-
+import { Button } from "./ui/button.jsx";
+import Link from "next/link";
 const Header = () => {
   return (
     <motion.div
@@ -19,9 +20,8 @@ const Header = () => {
       transition={{ duration: 1 }}
       whileInView={{ opacity: 1 }}
       animate={{ y: 10 }}
-      className="mt-28 flex flex-col items-center justify-center lg:mx-20 lg:flex-row"
+      className="mt-28 flex flex-col items-center justify-center"
     >
-      <div className="flex w-full flex-col items-center justify-center gap-4 lg:w-1/2 lg:items-start lg:justify-start">
         <Image
           src="/Cartoon.jpeg"
           alt="cartoon"
@@ -29,42 +29,13 @@ const Header = () => {
           height={300}
           className="rounded-full border-2 dark:border-gray-200"
         />
-        <h1 id="home" className="fade-in-2 font-semibold text-5xl">
+        <h1 id="home" className="fade-in-2 text-5xl font-semibold">
           Dillon Walsh
         </h1>
 
-        <h2 className="fade-in-3 text-xl opacity-60 md:text-2xl">
-          Full Stack Web Developer
-        </h2>
-        <Dogs />
-      </div>
-      <div className="fade-in-3 flex w-full flex-col items-center  lg:w-1/2 xl:w-1/3">
-        <p className="mb-5 rounded-xl px-10 pt-5 text-center text-xl opacity-60 md:text-left lg:text-2xl">
-          In 2019, after completing my college education, I took on a position
-          as a 911 emergency dispatcher. While this role was challenging, it
-          also afforded me the time to explore the many facets of web
-          development. Now as a professional web developer I provide web
-          development services for some really great people doing really great
-          things and contribute to my favorite open source projects like{" "}
-          <a
-            href="https://astro.build/"
-            target="_blank"
-            className="cursor-pointer font-bold text-black underline dark:text-gray-50"
-          >
-            Astro
-          </a>{" "}
-          and{" "}
-          <a
-            href="https://www.theodinproject.com"
-            target="_blank"
-            className="cursor-pointer font-bold text-black underline dark:text-gray-50"
-          >
-            The Odin Project
-          </a>
-        </p>
         <div
           id="links"
-          className="fade-in-2 flex items-center space-x-8 text-2xl opacity-60 dark:text-gray-200"
+          className="fade-in-2 flex items-center justify-center space-x-8 text-2xl dark:text-gray-200"
         >
           <TooltipProvider>
             <Tooltip>
@@ -106,6 +77,15 @@ const Header = () => {
             </Tooltip>
           </TooltipProvider>
         </div>
+
+      <div className="fade-in-3 flex w-full flex-col items-center lg:w-1/2 xl:w-1/3">
+        <h2 className="fade-in-3 text-2xl opacity-60">
+          Full Stack Web Developer
+        </h2>
+        <Dogs />
+        <Button variant="default" asChild>
+          <Link href="/about">About Me</Link>
+        </Button>
       </div>
     </motion.div>
   );
