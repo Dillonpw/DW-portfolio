@@ -4,7 +4,6 @@ import Image from "next/image";
 import { motion } from "framer-motion";
 import { Suspense } from "react";
 import images from "../../components/Images";
-import Skeleton from "../../components/Skeleton";
 import ThemeToggle from "../../components/theme";
 import logo from "/public/logo.svg";
 const Projects = () => {
@@ -35,7 +34,6 @@ const Projects = () => {
               className="hover-scale block "
               href={`/${image.id}`}
             >
-              <Suspense fallback={<Skeleton />}>
                 <Image
                   className="rounded-xl border-2 border-black dark:border-white"
                   src={image.src}
@@ -43,7 +41,6 @@ const Projects = () => {
                   width={565}
                   height={311}
                 />
-              </Suspense>
             </Link>
             <div className="mt-8 flex flex-wrap items-center justify-center ">
               {image.tags.map((tag) => (
