@@ -17,7 +17,7 @@ const images = [
     id: "small-bis",
     src: "/small-bis.png",
     mobileImg: "/small-bis-m.png",
-    livePreviewLink: "https://small-bis.vercel.app/",
+    livePreviewLink: "https://t1.dillonwalsh.com/",
     githubLink: "https://github.com/Dillonpw/small-bis",
     title: "Small Business Template",
     tags: ["TypeScript", "React", "Tailwind CSS", "Astro"],

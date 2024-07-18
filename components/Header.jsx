@@ -83,9 +83,9 @@ const Header = () => {
           Full Stack Web Developer
         </h2>
         <Dogs />
-        <Button variant="default" asChild>
+       {/*} <Button variant="default" asChild>
           <Link href="/about">About Me</Link>
-        </Button>
+        </Button> */}
       </div>
     </motion.div>
   );
