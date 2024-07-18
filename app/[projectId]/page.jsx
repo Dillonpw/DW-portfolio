@@ -51,10 +51,18 @@ const ProjectPage = () => {
             className="w-100 m-2 h-auto items-center justify-center rounded-2xl border-2 border-black bg-slate-700 dark:border-white"
             src={project.src}
             alt={project.title}
-            width={500}
+            width={1000}
             height={300}
           />
-
+          {project.src2 && (
+            <Image
+            className="w-100 m-2 h-auto items-center justify-center rounded-2xl border-2 border-black bg-slate-700 dark:border-white"
+              src={project.src2}
+              alt={project.title}
+              width={1000}
+              height={300}
+            />
+          )}
           {project.mobileImg && (
             <Image
               className="h-100 w-auto items-center justify-center rounded-2xl border-2 border-black bg-slate-700 dark:border-white"

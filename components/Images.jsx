@@ -1,7 +1,30 @@
 const images = [
   {
+    id: "recipe-book",
+    src: "/recipes.png",
+    src2: "/recipes-log.png",
+    mobileImg: "/recipes-m.png",
+    livePreviewLink: "https://recipe-book-sepia.vercel.app/",
+    githubLink: "https://github.com/Dillonpw/recipe-book",
+    title: "Recipe Book",
+    tags: [
+      "TypeScript",
+      "React",
+      "Tailwind CSS",
+      "Next.js",
+      "Shadcn/ui",
+      "Auth.js",
+      "Prisma",
+      "Neon Postgres",
+    ],
+    challenge:
+      "One of my first real full stack applications. relied heavily on official docs for guidance with the API routes, authentication, Database management and schemas. Styles are farily generic, but the point of the project wasn't to be a beautiful app, it was to make a utility tool. ",
+    about: "A full stack application built with next.js app router and several other tools for both frontend and backend efficiency, the recipe book allows users to log in using OAuth, store their personal recipes, find other peoples recipes and use this app to read, find and store recipes without the clutter of ads and blog posts on recipe websites.",
+  },
+  {
     id: "ecommerce-site",
     src: "/ecommerce.png",
+    src2: "/ecommerce-2.png",
     mobileImg: "/ecommerce-m.png",
     livePreviewLink: "https://shop-red-eta.vercel.app/",
     githubLink: "https://github.com/Dillonpw/ecommerce",
@@ -51,19 +74,6 @@ const images = [
       "At the time, mobile development was entirely new to me, this is my first fully-fledged mobile application. I ran into some confusion at the start of the process as I learned the React Native specific elements, but once that clicked the adjustment to mobile was straight forward.",
   },
 
-  {
-    id: "dispatcher-cheat-sheet",
-    src: "/DCS-home.png",
-    mobileImg: "/DCS-home-m.png",
-    livePreviewLink: "https://dcs-psi.vercel.app/",
-    githubLink: "https://github.com/Dillonpw/DCS",
-    title: "Dispatcher Cheat Sheet",
-    tags: ["TypeScript", "React", "CSS", "Astro"],
-    challenge:
-      " I originally built this project using vanilla JavaScript, and after deciding to build the project up a bit I wanted to challenge myself and covert it to TypeScript for some practice. This was the first project I built using TypeScript and I struggled a bit at first with typing things correctly and sometimes skipped types but as I moved through the documentation things becmae clear and the error responses turned into a tool as I converted the code.",
-    about:
-      "A live and public site with returning users, styled with a brutaslist theme in mind. Consisting of a few useful tools for 911 dispatchers, a job I worked for several years. I built the app to help with my efficiency as a dispatcher and as a send off gift to my former coworkers. The primary funciton is a work schedule generator. As a 911 dispatcher, my schedule was different every week due to the need for 24/7 uptime, and to prevent the same poeple from always working weekends we worked on a rotation of 4 work days followed by 3 days off, which required a great deal of effort to schedule anything in advance. I plan to add more tools to the page as they come to mind and offer this project up to other 911 dispatchers to hopefully make their jobs and lives easier as well.",
-  },
 ];
 
 export default images;
