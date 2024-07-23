@@ -12,7 +12,7 @@ const Projects = () => {
       transition={{ duration: 1 }}
       whileInView={{ opacity: 1 }}
       animate={{ y: -30 }}
-      className="mt-60 flex flex-col "
+      className="mt-40 flex flex-col "
     >
       <h3 className="text-center text-4xl font-bold">Highlights</h3>
       <p className="m-6 text-center text-lg opacity-60">

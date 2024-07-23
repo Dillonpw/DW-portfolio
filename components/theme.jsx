@@ -3,43 +3,46 @@
 import { useEffect, useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faSun, faMoon } from "@fortawesome/free-solid-svg-icons";
+import { useTheme } from "next-themes";
 
 const ThemeToggle = () => {
-  const [darkMode, setDarkMode] = useState(false);
+  const [mounted, setMounted] = useState(false);
+  const { setTheme, resolvedTheme } = useTheme();
 
-  useEffect(() => {
-    if (typeof window !== "undefined" && window.localStorage) {
-      const storedTheme = localStorage.getItem("theme");
-      if (storedTheme === "dark") {
-        setDarkMode(true);
-        document.documentElement.classList.add("dark");
-      }
-    }
-  }, []);
+  useEffect(() => setMounted(true), []);
 
-  const toggleTheme = () => {
-    const isDarkMode = !darkMode;
-    setDarkMode(isDarkMode);
-    if (typeof window !== "undefined" && window.localStorage) {
-      localStorage.setItem("theme", isDarkMode ? "dark" : "light");
-      document.documentElement.classList.toggle("dark", isDarkMode);
-    }
-  };
+  if (!mounted)
+    return (
+      <div className="mx-2 p-1 bg-slate-700 w-8 h-8 rounded-lg animate-pulse">
+        </div>
 
-  return (
-    <div className="mx-2">
+    );
+
+  if (resolvedTheme === "dark") {
+    return (
       <button
-        className="mt-2 flex h-10 w-10 items-center justify-center text-4xl font-bold transition-transform duration-300 ease-in-out"
-        onClick={toggleTheme}
         aria-label="Toggle Dark Mode"
+        type="button"
+        className="mx-4 h-8 w-8 rounded p-1 text-3xl"
+        onClick={() => setTheme("light")}
       >
-        <FontAwesomeIcon
-          className="theme-icon"
-          icon={darkMode ? faSun : faMoon}
-        />
+        <FontAwesomeIcon icon={faSun} />
       </button>
-    </div>
-  );
+    );
+  }
+
+  if (resolvedTheme === "light") {
+    return (
+      <button
+        aria-label="Toggle Dark Mode"
+        type="button"
+        className="mx-4 h-8 w-8 rounded p-1 text-3xl"
+        onClick={() => setTheme("dark")}
+      >
+        <FontAwesomeIcon icon={faMoon} />
+      </button>
+    );
+  }
 };
 
 export default ThemeToggle;
