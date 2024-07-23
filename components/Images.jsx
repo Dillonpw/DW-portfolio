@@ -1,5 +1,27 @@
 const images = [
   {
+    id: "rotating-schedule",
+    src: "/schedule-dt.webp",
+    mobileImg: "/schedule-m.webp",
+    livePreviewLink: "https://dillonpw.vercel.app/",
+    githubLink: "https://github.com/Dillonpw/schedule",
+    title: "Rotating Scheuedule Builder",
+    tags: [
+      "Next.js",
+      "Tailwind CSS",
+      "TypeScript",
+      "React",
+      "Shadcn/ui",
+      "Auth.js",
+      "Drizzle",
+      "Neon Postrgres",
+    ],
+    challenge:
+      "This project was fun getting deeper into the server side, working with a new ORM and preparing to provide an actual utility tool, for now the product remains free with ads but a paid version may come down the pipleline. I referenced several previouds projects to make sure I was on the right track as well as docs of course.",
+    about:
+      "A shcedule generator app similar for people who work rotations based on a 24-hour basis instead of a Monday-Friday schedule. This app accept input and returns a schedule based on the type of rotation the user needs to bulid around, with output displayed in either a list format or calendar view. Thi project allows for either Google log in or magic link log in weith email address.",
+  },
+  {
     id: "recipe-book",
     src: "/recipes.png",
     src2: "/recipes-log.png",
@@ -19,7 +41,8 @@ const images = [
     ],
     challenge:
       "One of my first real full stack applications. relied heavily on official docs for guidance with the API routes, authentication, Database management and schemas. Styles are farily generic, but the point of the project wasn't to be a beautiful app, it was to make a utility tool. ",
-    about: "A full stack application built with next.js app router and several other tools for both frontend and backend efficiency, the recipe book allows users to log in using OAuth, store their personal recipes, find other peoples recipes and use this app to read, find and store recipes without the clutter of ads and blog posts on recipe websites.",
+    about:
+      "A full stack application built with next.js app router and several other tools for both frontend and backend efficiency, the recipe book allows users to log in using OAuth, store their personal recipes, find other peoples recipes and use this app to read, find and store recipes without the clutter of ads and blog posts on recipe websites.",
   },
   {
     id: "ecommerce-site",
@@ -73,7 +96,6 @@ const images = [
     challenge:
       "At the time, mobile development was entirely new to me, this is my first fully-fledged mobile application. I ran into some confusion at the start of the process as I learned the React Native specific elements, but once that clicked the adjustment to mobile was straight forward.",
   },
-
 ];
 
 export default images;
