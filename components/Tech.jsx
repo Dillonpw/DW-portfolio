@@ -10,11 +10,19 @@ const Tech = () => {
     "Supabase",
     "Prisma",
     "PostgresSQL",
+    "Express",
+  ];
+  const otherTools = [
+    "Git",
+    "Vite",
+    "Figma",
+    "Expo",
+    "Tauri",
+    "Drizzle",
     "VS Code",
     "GitHub",
     "Vercel",
   ];
-  const otherTools = ["Git", "Vite", "Figma", "Expo", "Tauri"];
 
   return (
     <motion.section
