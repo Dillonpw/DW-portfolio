@@ -14,7 +14,7 @@ const Projects = () => {
       animate={{ y: -30 }}
       className="mt-40 flex flex-col "
     >
-      <h3 className="text-center text-4xl font-bold">Highlights</h3>
+      <h3 className="text-center text-2xl font-bold">Highlights</h3>
       <p className="m-6 text-center text-lg opacity-60">
         Click on the images for more information about each listed project
       </p>

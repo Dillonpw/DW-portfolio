@@ -34,8 +34,8 @@ const Tech = () => {
     >
       <div className="flex flex-col gap-20">
         <div>
-          <p className="pb-2 text-3xl font-bold lg:text-5xl">Daily Use</p>
-          <ul className="flex list-none flex-col flex-wrap items-center justify-center gap-5 pt-5 text-xl lg:flex-row">
+          <p className="pb-2 text-2xl font-bold lg:text-3xl">Daily Use</p>
+          <ul className="flex list-none flex-col flex-wrap items-center justify-center gap-5 pt-5 text-lg lg:flex-row">
             {devTools.map((dt) => (
               <li className="opacity-60" key={dt}>
                 {dt}
@@ -44,8 +44,10 @@ const Tech = () => {
           </ul>
         </div>
         <div>
-          <p className="pb-2 text-3xl font-bold lg:text-5xl">Other Tools</p>
-          <ul className="flex list-none flex-col items-center justify-center gap-5 pt-5 text-xl lg:flex-row ">
+          <p className="text-nowrap pb-2 text-2xl font-bold lg:text-3xl">
+            Other Tools
+          </p>
+          <ul className="flex list-none flex-col items-center justify-center gap-5 pt-5 text-lg lg:flex-row ">
             {otherTools.map((ot) => (
               <li className="opacity-60" key={ot}>
                 {ot}
