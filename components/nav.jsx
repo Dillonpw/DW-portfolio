@@ -46,6 +46,7 @@ const NavBar = () => {
             alt="Logo"
             width={50}
             height={50}
+            loading="eager"
           />
         </Link>
       </div>
