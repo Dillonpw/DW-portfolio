@@ -22,7 +22,7 @@ const Header = () => {
       transition={{ duration: 1 }}
       whileInView={{ opacity: 1 }}
       animate={{ y: 10 }}
-      className="mt-28 md:mx-20 flex flex-col items-center justify-center md:flex-row md:justify-between"
+      className="mt-28 md:mx-10 flex flex-col items-center justify-center md:flex-row md:justify-evenly"
     >
       <Image
         src="/Cartoon.jpeg"
@@ -31,7 +31,7 @@ const Header = () => {
         height={300}
         className="rounded-full border-2 dark:border-gray-200"
       />
-      <div className=" md:mt-40 flex flex-col items-center justify-center text-nowrap">
+      <div className="md:mt-10 flex flex-col items-center justify-center text-nowrap">
         <h1 id="home" className="fade-in-2 text-2xl font-semibold lg:text-3xl">
           Dillon Walsh
         </h1>
