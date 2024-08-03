@@ -14,7 +14,7 @@ import {
   TooltipContent,
   TooltipProvider,
   TooltipTrigger,
-} from "@/components/ui/tooltip";
+} from "./ui/tooltip";
 const Header = () => {
   return (
     <motion.div
@@ -51,7 +51,7 @@ const Header = () => {
                   aria-label="redirect to X"
                 >
                   <FontAwesomeIcon
-                    className="h-6 w-6 hover:scale-110"
+                    className="h-10 w-10 hover:scale-110"
                     icon={faXTwitter}
                   />
                 </a>
@@ -71,7 +71,7 @@ const Header = () => {
                   aria-label="redirect to Github"
                 >
                   <FontAwesomeIcon
-                    className="h-6 w-6 hover:scale-110"
+                    className="h-10 w-10 hover:scale-110"
                     icon={faGithub}
                   />
                 </a>
@@ -90,7 +90,7 @@ const Header = () => {
                   aria-label="redirect to Linkedin"
                 >
                   <FontAwesomeIcon
-                    className="h-6 w-6 hover:scale-110"
+                    className="h-10 w-10 hover:scale-110"
                     icon={faLinkedinIn}
                   />
                 </a>
