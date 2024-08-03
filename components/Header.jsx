@@ -38,7 +38,7 @@ const Header = () => {
 
         <div
           id="links"
-          className="fade-in-2 flex items-center justify-center space-x-8 text-xl dark:text-gray-200"
+          className="fade-in-2 space-y-4 flex items-end justify-center space-x-8 text-xl dark:text-gray-200"
         >
           <TooltipProvider>
             <Tooltip>
