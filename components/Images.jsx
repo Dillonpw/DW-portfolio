@@ -72,30 +72,6 @@ const images = [
     about:
       "This is a fully customizable website template designed specifically for small businesses. It features a simple and clean layout, with a built-in light/dark mode toggle to cater to user preferences. The template is fully responsive whether it's a desktop, tablet, or smartphone. The template sis designed to serve as a starting point for small business websites, allowing clients to personalize the content and style to meet their specific needs. It showcases potential design ideas for clients, demonstrating how their business can have a professional and attractive online presence.",
   },
-
-  {
-    id: "pomodoro-timer-app",
-    src: "/pomodoro.png",
-    githubLink: "https://github.com/Dillonpw/pomodoro",
-    title: "Pomodoro Timer App",
-    tags: ["TypeScript", "React", "Tailwind CSS", "Tauri"],
-    challenge:
-      "This project did not pose much in the way of challeneges outside of making sure the countdown functioned as expected, I spent most of the time on this project making sure the UI was both noticeable but not a distraction to the user by choosing neutral colors and a visible change between work-time and break-time.",
-    about:
-      "A simple but daily use Pomodoro Timer for productivity and time management consisting of an indicator, an active timer, two buttons and two inputs. Designed to take up very little desktop space and a basic UI to avoid being a distraction. The App loads quickly and begins counting on load, unless directed to reset and the allow for time adjustment.",
-  },
-
-  {
-    id: "dcs-m",
-    src: "/dcs-m.png",
-    githubLink: "https://github.com/Dillonpw/DCS-M",
-    title: "Dispatcher Cheat Sheet iOS app",
-    tags: ["TypeScript", "React Native", "Tailwind CSS", "Expo Router"],
-    about:
-      "A modern, mobile version of the Dispatcher Chest Sheet website built using Nativewind for styles simple and minimal UI designed to be for quick referencing. So far the rotating schedule function id the primary aspect, but there are more features on the way.",
-    challenge:
-      "At the time, mobile development was entirely new to me, this is my first fully-fledged mobile application. I ran into some confusion at the start of the process as I learned the React Native specific elements, but once that clicked the adjustment to mobile was straight forward.",
-  },
 ];
 
 export default images;

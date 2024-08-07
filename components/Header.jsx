@@ -2,6 +2,7 @@
 
 import Image from "next/image";
 import Dogs from "./dogs.jsx";
+import Links from "./Links.jsx";
 import {
   faGithub,
   faLinkedinIn,
@@ -32,13 +33,9 @@ const Header = () => {
         className="rounded-full border-2 dark:border-gray-200"
       />
       <div className="flex flex-col items-center justify-center text-nowrap md:mt-10">
-        <h1 id="home" className="fade-in-2 text-2xl font-semibold lg:text-3xl">
-          Dillon Walsh
-        </h1>
-
         <div
           id="links"
-          className="fade-in-2 flex items-end justify-center space-x-8 space-y-8 text-xl dark:text-gray-200"
+          className="fade-in-2 flex items-end justify-center space-x-8 space-y-8 dark:text-gray-200"
         >
           <TooltipProvider>
             <Tooltip>
@@ -51,7 +48,7 @@ const Header = () => {
                   aria-label="redirect to X"
                 >
                   <FontAwesomeIcon
-                    className="h-10 w-10 hover:scale-110"
+                    className="h-8 w-8 hover:scale-110"
                     icon={faXTwitter}
                   />
                 </a>
@@ -71,7 +68,7 @@ const Header = () => {
                   aria-label="redirect to Github"
                 >
                   <FontAwesomeIcon
-                    className="h-10 w-10 hover:scale-110"
+                    className="h-8 w-8 hover:scale-110"
                     icon={faGithub}
                   />
                 </a>
@@ -90,7 +87,7 @@ const Header = () => {
                   aria-label="redirect to Linkedin"
                 >
                   <FontAwesomeIcon
-                    className="h-10 w-10 hover:scale-110"
+                    className="h-8 w-8 hover:scale-110"
                     icon={faLinkedinIn}
                   />
                 </a>
@@ -101,13 +98,14 @@ const Header = () => {
         </div>
 
         <div className="fade-in-3 flex w-full flex-col items-center lg:w-1/2 xl:w-1/3">
+          <h1 id="home" className="fade-in-2 text-2xl font-semibold">
+            Dillon Walsh
+          </h1>
           <h2 className="fade-in-3 text-xl opacity-60">
             Full Stack Web Developer
           </h2>
           <Dogs />
-          {/*} <Button variant="default" asChild>
-          <Link href="/about">About Me</Link>
-        </Button> */}
+          <Links />
         </div>
       </div>
     </motion.div>

@@ -9,7 +9,7 @@ import {
 const Dogs = () => {
   return (
     <>
-      <TooltipProvider className="mb-8 h-[110px]">
+      <TooltipProvider>
         <Tooltip>
           <TooltipTrigger>
             <h3 className="fade-in-3 cursor-pointer text-xl opacity-60">

@@ -2,19 +2,17 @@ import Link from "next/link";
 import Image from "next/image";
 import images from "./Images";
 import { motion } from "framer-motion";
-import { Button } from "./ui/button";
 
 const Projects = () => {
   return (
     <motion.section
-      id="projects"
       initial={{ opacity: 0 }}
       transition={{ duration: 1 }}
       whileInView={{ opacity: 1 }}
       animate={{ y: -30 }}
       className="mt-40 flex flex-col "
     >
-      <h3 className="text-center text-2xl font-bold">Highlights</h3>
+      <h3 className="text-center text-2xl font-bold">Recent Work</h3>
       <p className="m-6 text-center text-lg opacity-60">
         Click on the images for more information about each listed project
       </p>
@@ -50,11 +48,6 @@ const Projects = () => {
             </div>
           </div>
         ))}
-      </div>
-      <div className="mt-2 flex justify-center">
-        <Button variant="default" asChild>
-          <Link href="/projects">More Projects</Link>
-        </Button>
       </div>
     </motion.section>
   );

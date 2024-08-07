@@ -13,9 +13,7 @@ const ThemeToggle = () => {
 
   if (!mounted)
     return (
-      <div className="mx-2 p-1 bg-slate-700 w-8 h-8 rounded-lg animate-pulse">
-        </div>
-
+      <div className="mx-2 h-8 w-8 animate-pulse rounded-lg bg-slate-700 p-1"></div>
     );
 
   if (resolvedTheme === "dark") {

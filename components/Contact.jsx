@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
+import { Button } from "./ui/button";
 
 const Contact = () => {
   const [result, setResult] = useState("");
@@ -28,7 +29,7 @@ const Contact = () => {
   };
 
   return isEmailSubmitted ? (
-    <div className="m-8 text-3xl ">
+    <div className="m-8 text-3xl">
       <p>{result}</p>
       <h1 className="text-3xl">Thank you for reaching out!</h1>
     </div>
@@ -37,7 +38,7 @@ const Contact = () => {
       initial={{ opacity: 0 }}
       transition={{ duration: 2 }}
       whileInView={{ opacity: 1 }}
-      className="m-8  "
+      className="mx-8 mt-4"
     >
       <form
         className="flex max-w-[600px] flex-col lg:mx-auto"
@@ -67,12 +68,7 @@ const Contact = () => {
           placeholder="Your message..."
         ></textarea>
 
-        <button
-          className="w-fit items-center justify-center rounded-lg bg-slate-900 px-8 py-4 text-gray-200 opacity-90 hover:scale-105 hover:opacity-100 dark:bg-gray-200 dark:text-neutral-950"
-          type="submit"
-        >
-          Submit
-        </button>
+        <Button type="submit">Submit</Button>
       </form>
       <span className="text-center">{result}</span>
     </motion.aside>

@@ -29,25 +29,19 @@ const Tech = () => {
       initial={{ opacity: 0 }}
       transition={{ duration: 1 }}
       whileInView={{ opacity: 1 }}
-      id="tech"
-      className="m-20 flex items-center justify-center p-10 text-center md:mb-20"
+      className="mt-10 flex items-center justify-center px-10 text-center"
     >
-      <div className="flex flex-col gap-20 mt-20">
+      <div className="flex flex-col items-center justify-center gap-10">
         <div>
-          <p className="pb-2 text-2xl font-bold lg:text-3xl">Daily Use</p>
-          <ul className="flex list-none flex-col flex-wrap items-center justify-center gap-5 pt-5 text-lg lg:flex-row">
+          <p className="text-xl font-bold lg:text-2xl">Working with</p>
+          <ul className="text-md flex list-none flex-row flex-wrap items-center justify-center gap-3 pt-5">
             {devTools.map((dt) => (
               <li className="opacity-60" key={dt}>
                 {dt}
               </li>
             ))}
           </ul>
-        </div>
-        <div>
-          <p className="text-nowrap pb-2 text-2xl font-bold lg:text-3xl">
-            Other Tools
-          </p>
-          <ul className="flex list-none flex-col items-center justify-center gap-5 pt-5 text-lg lg:flex-row ">
+          <ul className="text-md flex list-none flex-row items-center justify-center gap-3">
             {otherTools.map((ot) => (
               <li className="opacity-60" key={ot}>
                 {ot}
