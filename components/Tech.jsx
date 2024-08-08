@@ -34,14 +34,12 @@ const Tech = () => {
       <div className="flex flex-col items-center justify-center gap-10">
         <div>
           <p className="text-xl font-bold lg:text-2xl">Working with</p>
-          <ul className="text-md flex list-none flex-row flex-wrap items-center justify-center gap-3 pt-5">
+          <ul className="text-md mx-6 flex list-none flex-row flex-wrap items-center justify-center gap-3 pt-5 lg:mx-40">
             {devTools.map((dt) => (
               <li className="opacity-60" key={dt}>
                 {dt}
               </li>
             ))}
-          </ul>
-          <ul className="text-md flex list-none flex-row items-center justify-center gap-3">
             {otherTools.map((ot) => (
               <li className="opacity-60" key={ot}>
                 {ot}
