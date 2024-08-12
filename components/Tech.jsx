@@ -8,8 +8,6 @@ const Tech = () => {
     "VS Code",
     "Tailwind CSS",
     "PostgresSQL",
-  ];
-  const otherTools = [
     "Git",
     "Vite",
     "Express",
@@ -39,11 +37,6 @@ const Tech = () => {
             {devTools.map((dt) => (
               <li className="opacity-60" key={dt}>
                 {dt}
-              </li>
-            ))}
-            {otherTools.map((ot) => (
-              <li className="opacity-60" key={ot}>
-                {ot}
               </li>
             ))}
           </ul>
