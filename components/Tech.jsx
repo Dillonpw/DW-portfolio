@@ -3,23 +3,24 @@ import { motion } from "framer-motion";
 const Tech = () => {
   const devTools = [
     "TypeScript",
+    "Playwright",
     "React",
+    "VS Code",
     "Tailwind CSS",
-    "Astro",
-    "Next",
-    "Supabase",
-    "Prisma",
     "PostgresSQL",
-    "Express",
   ];
   const otherTools = [
     "Git",
     "Vite",
+    "Express",
     "Figma",
     "Expo",
+    "Astro",
+    "Next",
+    "Supabase",
+    "Prisma",
     "Tauri",
     "Drizzle",
-    "VS Code",
     "GitHub",
     "Vercel",
   ];

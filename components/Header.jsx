@@ -1,5 +1,5 @@
 "use client";
-
+import Switcher from "./Switcher.jsx";
 import Image from "next/image";
 import Dogs from "./dogs.jsx";
 import Links from "./Links.jsx";
@@ -102,7 +102,7 @@ const Header = () => {
             Dillon Walsh
           </h1>
           <h2 className="fade-in-3 text-xl opacity-60">
-            Full Stack Web Developer
+            <Switcher />
           </h2>
           <Dogs />
           <Links />
