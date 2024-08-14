@@ -15,6 +15,7 @@ const MoreInfo = () => {
         as soon as I can!
       </p>
       <Contact />
+      <p className="text-md mx-12 text-left opacity-60 lg:mx-60 lg:text-center">Or you can reach me at Dillonpwalsh10@gmail.com</p>
     </motion.div>
   );
 };

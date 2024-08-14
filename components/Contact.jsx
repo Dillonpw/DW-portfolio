@@ -1,5 +1,8 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
+import { Input } from "./ui/input";
+import { Textarea } from "./ui/textarea";
+import { Label } from "./ui/label";
 import { Button } from "./ui/button";
 
 const Contact = () => {
@@ -44,10 +47,10 @@ const Contact = () => {
         className="flex max-w-[600px] flex-col md:mx-auto justify-center"
         onSubmit={onSubmit}
       >
-        <label className="font-bold" htmlFor="email">
+        <Label className="font-bold" htmlFor="email">
           Email:
-        </label>
-        <input
+        </Label>
+        <Input
           className="my-2 h-10 rounded-md border-2 p-2 text-neutral-950"
           type="email"
           name="email"
@@ -56,17 +59,17 @@ const Contact = () => {
           placeholder="Email@address.com"
         />
 
-        <label className="font-bold" htmlFor="message">
+        <Label className="font-bold" htmlFor="message">
           Message:
-        </label>
-        <textarea
+        </Label>
+        <Textarea
           className="my-2 rounded-md border-2 p-2 text-black"
           name="message"
           id="message"
           rows="6"
           required
           placeholder="Your message..."
-        ></textarea>
+        ></Textarea>
 
         <Button type="submit">Submit</Button>
       </form>

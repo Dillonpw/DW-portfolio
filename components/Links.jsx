@@ -14,7 +14,7 @@ export default function Links() {
       {/* <Button className="w-24 font-bold" variant="default" asChild>
         <Link href="https://blog.dillonwalsh.com">Blog</Link>
       </Button> */}
-      <Button className="w-24 font-bold" variant="default" asChild>
+      <Button className="w-24 font-bold " variant="default" asChild>
         <Link href="/projects">Projects</Link>
       </Button>
     </motion.section>
