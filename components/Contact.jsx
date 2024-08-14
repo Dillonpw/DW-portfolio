@@ -41,7 +41,7 @@ const Contact = () => {
       className="mx-8 mt-4"
     >
       <form
-        className="flex max-w-[600px] flex-col lg:mx-auto"
+        className="flex max-w-[600px] flex-col md:mx-auto justify-center"
         onSubmit={onSubmit}
       >
         <label className="font-bold" htmlFor="email">
