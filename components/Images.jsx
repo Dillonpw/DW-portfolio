@@ -13,8 +13,9 @@ const images = [
       "React",
       "Shadcn/ui",
       "Auth.js",
-      "Drizzle",
+      "Drizzle ORM",
       "Neon Postrgres",
+      "Playwright",
     ],
     challenge:
       "This project was fun getting deeper into the server side, working with a new ORM and preparing to provide an actual utility tool, for now the product remains free with ads but a paid version may come down the pipleline. I referenced several previouds projects to make sure I was on the right track as well as docs of course.",
@@ -36,7 +37,7 @@ const images = [
       "Next.js",
       "Shadcn/ui",
       "Auth.js",
-      "Prisma",
+      "Prisma ORM",
       "Neon Postgres",
     ],
     challenge:
@@ -66,7 +67,7 @@ const images = [
     livePreviewLink: "https://t1.dillonwalsh.com/",
     githubLink: "https://github.com/Dillonpw/small-bis",
     title: "Small Business Template",
-    tags: ["TypeScript", "React", "Tailwind CSS", "Astro"],
+    tags: ["TypeScript", "React", "Tailwind CSS", "Astro", "Playwright"],
     challenge:
       "This project was another valuable learning experience in using Astro, my favorite framework for static site generation and server-side rendering. One of the primary challenges was ensuring the UI design was both precise and aesthetically pleasing, which required attention to detail and careful planning. Additionally, integrating TypeScript and ensuring the template was fully responsive across different devices were significant tasks that demanded thorough testing and iteration.",
     about:
