@@ -2,7 +2,7 @@ const images = [
   {
     id: "rotating-schedule",
     src: "/schedule-dt.webp",
-    mobileImg: "/schedule-m.webp",
+    mobileImg: "/Schedule-m.webp",
     livePreviewLink: "https://dillonpw.vercel.app/",
     githubLink: "https://github.com/Dillonpw/schedule",
     title: "Rotating Scheuedule Builder",
