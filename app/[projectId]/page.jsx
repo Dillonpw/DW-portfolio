@@ -95,11 +95,11 @@ const ProjectPage = () => {
         </div>
         <section className="ml-4 flex flex-col items-center justify-center">
           <h3 className="mt-8 text-xl font-bold">About This Project</h3>
-          <p className="max-w-100 px-40 text-left text-lg opacity-60">
+          <p className="max-w-100 md:px-40 xs:px-8 sm:px-12 text-left text-lg opacity-60">
             {project.about}
           </p>
           <h3 className="mt-8 text-xl font-bold">Challenges</h3>
-          <p className="max-w-100 mb-10 px-40 text-left text-lg opacity-60">
+          <p className="max-w-100 mb-10 xs:px-8 sm:px-12 md:px-40 text-left text-lg opacity-60">
             {project.challenge}
           </p>
         </section>
