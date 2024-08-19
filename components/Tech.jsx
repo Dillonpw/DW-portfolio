@@ -2,25 +2,27 @@ import { motion } from "framer-motion";
 
 const Tech = () => {
   const devTools = [
-    "Playwright",
     "TypeScript",
     "React",
+    "Playwright",
+    "Node.JS",
+    "Python",
     "VS Code",
+    "Selenium",
     "Tailwind CSS",
     "PostgresSQL",
     "Git",
     "Vite",
     "Express",
     "Figma",
-    "Expo",
     "Astro",
     "Next",
     "Supabase",
     "Prisma",
-    "Tauri",
     "Drizzle",
     "GitHub",
     "Vercel",
+    "AWS",
   ];
 
   return (
@@ -33,7 +35,7 @@ const Tech = () => {
       <div className="flex flex-col items-center justify-center gap-6">
         <div>
           <p className="text-xl font-bold lg:text-2xl">Working with</p>
-          <ul className="text-md mx-6 xl:text-xl flex list-none flex-row flex-wrap items-center justify-center gap-3 pt-2 lg:mx-40 xl:px-60">
+          <ul className="text-md mx-6 flex list-none flex-row flex-wrap items-center justify-center gap-3 pt-2 lg:mx-40 xl:px-60 xl:text-xl">
             {devTools.map((dt) => (
               <li className="opacity-60" key={dt}>
                 {dt}
