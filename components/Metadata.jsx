@@ -70,7 +70,7 @@ const Metadata = {
     description: "Dillon Walsh- Professional Web Developer.",
     images: [
       {
-        url: "https://www.dillonwalsh.com/",
+        url: "https://www.dillonwalsh.com/logo.svg",
         width: 1200,
         height: 630,
         alt: "Dillon Walsh | Web Developer",
