@@ -1,10 +1,10 @@
 /** @type {import("next").Metadata} */
 const Metadata = {
-  title: "Dillon Walsh - Web Developer",
+  title: "Dillon Walsh | Web Developer",
   description:
-    "Dillon Walsh- Professional Web Developer. Come see what I've been up to!",
+    "Dillon Walsh - Professional Web Developer. Come see what I've been up to!",
   openGraph: {
-    title: "Dillon Walsh - Web Developer",
+    title: "Dillon Walsh | Web Developer",
   },
   keywords: [
     "Dillon",
@@ -62,6 +62,20 @@ const Metadata = {
   metadataBase: new URL("https://www.dillonwalsh.com"),
   alternates: {
     canonical: "/",
+  },
+  twitter: {
+    card: "summary_large_image",
+    site: "@dillonpw_",
+    title: "Dillon Walsh | Web Developer",
+    description: "Dillon Walsh- Professional Web Developer.",
+    images: [
+      {
+        url: "https://www.dillonwalsh.com/",
+        width: 1200,
+        height: 630,
+        alt: "Dillon Walsh | Web Developer",
+      }
+    ]
   },
 };
 
