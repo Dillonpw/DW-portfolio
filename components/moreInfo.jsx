@@ -13,7 +13,7 @@ const MoreInfo = () => {
         free to reach out with your questions or ideas and I&apos;ll get back to
         you as soon as I can!
       </p>
-      <p className="text-md mx-12 text-center opacity-60 sm:text-left lg:text-center">
+      <p className="text-md mx-12 px-2 text-center opacity-60">
         You can reach me at Dillonpwalsh10@gmail.com
       </p>
     </motion.div>
