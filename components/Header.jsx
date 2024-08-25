@@ -101,9 +101,21 @@ const Header = () => {
           <h1 id="home" className="fade-in-2 text-2xl font-semibold">
             Dillon Walsh
           </h1>
-          <h2 className="fade-in-3 text-xl opacity-60">
-            <Switcher />
-          </h2>
+
+          <Switcher />
+          <TooltipProvider>
+            <Tooltip>
+              <TooltipTrigger>
+                <h3 className="fade-in-3 cursor-pointer text-xl opacity-60">
+                  If I&apos;m not building{" "}
+                  <a className="hover:underline" href="www/schedtrack.com">
+                    Schedtrack.com
+                  </a>{" "}
+                </h3>
+              </TooltipTrigger>
+              <TooltipContent>Schedtrack.com</TooltipContent>
+            </Tooltip>
+          </TooltipProvider>
           <Dogs />
           <Links />
         </div>

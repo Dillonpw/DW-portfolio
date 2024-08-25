@@ -21,6 +21,7 @@ const Tech = () => {
     "Drizzle",
     "GitHub",
     "Vite",
+    "Stripe",
     "Vercel",
     "AWS",
   ];

@@ -18,9 +18,9 @@ const images = [
       "Playwright",
     ],
     challenge:
-      "This project was fun getting deeper into the server side, working with a new ORM and preparing to provide an actual utility tool, for now the product remains free with ads but a paid version may come down the pipleline. I referenced several previouds projects to make sure I was on the right track as well as docs of course.",
+      "This project was fun getting deeper into the server side, working with a new ORM and preparing to provide an actual utility tool, for now the product remains free with stripe donation options but a paid version may come down the pipleline if it becomes too expensive to manage. I referenced several previouds projects to make sure I was on the right track throughout development as well as relevant documentation.",
     about:
-      "A shcedule generator app similar for people who work rotations based on a 24-hour basis instead of a Monday-Friday schedule. This app accept input and returns a schedule based on the type of rotation the user needs to bulid around, with output displayed in either a list format or calendar view. Thi project allows for either Google log in or magic link log in weith email address.",
+      "A free schedule generator app for people who work rotation shifts based on a 24-hour basis instead of a Monday-Friday schedule. This app accept input and returns a schedule based on the type of rotation the user needs to bulid around, with output displayed in either a list format or calendar view. This project allows for either Google log-in, Github or magic link log in with email address.",
   },
   {
     id: "recipe-book",
