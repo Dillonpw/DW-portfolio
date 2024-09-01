@@ -108,7 +108,11 @@ const Header = () => {
               <TooltipTrigger>
                 <h3 className="fade-in-3 cursor-pointer text-xl opacity-60">
                   If I&apos;m not building{" "}
-                  <a className="hover:underline" href="www/schedtrack.com">
+                  <a
+                    className="hover:underline"
+                    href="https://www.schedtrack.com"
+                    target="_blank"
+                  >
                     Schedtrack.com
                   </a>{" "}
                 </h3>
