@@ -5,7 +5,7 @@ const images = [
     mobileImg: "/Schedule-m.webp",
     livePreviewLink: "https://dillonpw.vercel.app/",
     githubLink: "https://github.com/Dillonpw/schedule",
-    title: "Rotating Scheuedule Builder",
+    title: "Rotating Schedule Builder",
     tags: [
       "Next.js",
       "Tailwind CSS",

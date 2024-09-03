@@ -8,6 +8,13 @@ test("has correct title", async ({ page }) => {
   await expect(page).toHaveTitle("Dillon Walsh - Web Developer");
 });
 
+test("home page redirect", async ({ page }) => {
+  await page.goto("http://localhost:3000/projects");
+  await page.locator(`a[href="/"]`).click();
+  await expect(page).toHaveURL("http://localhost:3000/");
+})
+
+
 test.describe("Social and other links", () => {
   //requires logged in acc to view profiles
   test("X link should be visible and open in new tab", async ({
@@ -72,4 +79,13 @@ test.describe("Social and other links", () => {
     await page.getByRole("button", { name: "Projects" }).click();
     await expect(page).toHaveURL("http://localhost:3000/projects");
   })
+
 });
+
+test.only("projects should redirect to projects page", async ({ page }) => {
+  await page.getByRole("link", { name: "Projects" }).click();
+  await expect(page).toHaveURL("http://localhost:3000/projects");
+  await page.getByRole('link', { name: 'Rotating Schedule Builder' }).click();
+  await expect(page).toHaveURL("http://localhost:3000/rotating-schedule");
+});
+
