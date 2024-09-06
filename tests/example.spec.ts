@@ -82,8 +82,8 @@ test.describe("Social and other links", () => {
 
 });
 
-test.only("projects should redirect to projects page", async ({ page }) => {
-  await page.getByRole("link", { name: "Projects" }).click();
+test("projects should redirect to projects page", async ({ page }) => {
+  await page.getByRole("button", { name: "Projects" }).click();
   await expect(page).toHaveURL("http://localhost:3000/projects");
   await page.getByRole('link', { name: 'Rotating Schedule Builder' }).click();
   await expect(page).toHaveURL("http://localhost:3000/rotating-schedule");
