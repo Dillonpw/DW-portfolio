@@ -2,7 +2,7 @@ import "./globals.css";
 import { Inter } from "next/font/google";
 import { Analytics } from "@vercel/analytics/react";
 import Footer from "../components/Footer";
-import { Providers } from "./providers";
+import { ThemeProvider } from "../components/theme-provider";
 
 /** @type {import("next").Metadata} */
 export const metadata = {
@@ -79,10 +79,10 @@ export default function RootLayout({ children }) {
       <body
         className={`${inter.className} relative min-h-full bg-neutral-50 p-0 text-slate-900 transition-all dark:bg-neutral-950 dark:text-gray-200`}
       >
-        <Providers>
+        <ThemeProvider attribute="class" defaultTheme="system">
           {children}
           <Footer />
-        </Providers>
+        </ThemeProvider>
         <Analytics />
       </body>
     </html>

@@ -25,13 +25,12 @@ const ProjectPage = () => {
 
     return (
       <motion.main
-        className=""
         initial={{ opacity: 0 }}
         transition={{ duration: 1 }}
         whileInView={{ opacity: 1 }}
       >
         <Nav />
-        <div className="mt-20 flex flex-col items-center justify-center px-4 xl:flex-row">
+        <div className="mt-40 flex flex-col items-center justify-center px-4 xl:flex-row">
           <h2 className="m-6 text-center text-2xl font-bold">
             {project.title}
           </h2>
