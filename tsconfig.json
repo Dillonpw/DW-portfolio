@@ -27,7 +27,7 @@
     ".next/types/**/*.ts",
     "**/*.ts",
     "**/*.tsx"
-, "components/theme-provider.jsx"  ],
+, "components/theme-provider.jsx", "app/blog/page.jsx"  ],
   "exclude": [
     "node_modules"
   ]
