@@ -9,7 +9,6 @@ const Content = () => {
       <main className="xl:text-xl">
         <NavBar />
         <Header />
-        <About />
         <Tech />
         <MoreInfo />
       </main>
