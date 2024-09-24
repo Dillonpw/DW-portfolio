@@ -6,7 +6,7 @@ const MoreInfo = () => {
       initial={{ opacity: 0 }}
       whileInView={{ opacity: 1 }}
       transition={{ duration: 1 }}
-      className="mt-10 flex flex-col gap-2 dark:text-gray-200 xl:text-xl"
+      className="flex flex-col gap-2 dark:text-gray-200 xl:text-xl"
     >
       <p className="text-md mx-12 text-center opacity-60 lg:mx-60 ">
         I&apos;m always looking for projects and opportunities to take on, feel

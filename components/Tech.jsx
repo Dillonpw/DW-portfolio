@@ -31,11 +31,34 @@ const Tech = () => {
       initial={{ opacity: 0 }}
       transition={{ duration: 1 }}
       whileInView={{ opacity: 1 }}
-      className="mt-10 flex items-center justify-center px-10 text-center"
+      className=" my-10 text-center"
     >
-      <div className="flex flex-col items-center justify-center gap-6">
+      <p className="text-xl font-bold lg:text-2xl mb-6">Working with</p>
+      <div className="relative hidden flex-col justify-center overflow-hidden bg-gray-50 pb-12 sm:mb-12 md:flex">
+        <div className="pointer-events-none relative flex gap-2 overflow-hidden">
+          <div className="animate-marquee flex min-w-full shrink-0 list-none items-center justify-around gap-2">
+            {devTools.map((dt, index) => (
+              <li className="p-2 opacity-60" key={index}>
+                {dt}
+              </li>
+            ))}
+          </div>
+
+          <div
+            aria-hidden="true"
+            className="animate-marquee flex min-w-full shrink-0 list-none items-center justify-around gap-2"
+          >
+            {devTools.map((dt, index) => (
+              <li className="p-2 opacity-60" key={index}>
+                {dt}
+              </li>
+            ))}
+          </div>
+        </div>
+      </div>
+      {/* small screens */}
+      <div className="flex flex-col items-center justify-center gap-6 md:hidden">
         <div>
-          <p className="text-xl font-bold lg:text-2xl">Working with</p>
           <ul className="text-md mx-6 flex list-none flex-row flex-wrap items-center justify-center gap-3 pt-2 lg:mx-40 xl:px-60 xl:text-xl">
             {devTools.map((dt) => (
               <li className="opacity-60" key={dt}>
