@@ -16,7 +16,7 @@ const ProjectsPage = () => {
       <Nav />
       <Projects />
       <div className="flex items-center justify-center gap-2">
-        <Button variant="link">More Projects </Button>
+        <Button variant="link"><a target="_blank" href="https://github.com/Dillonpw/">More Projects </a></Button>
         <TooltipProvider>
           <Tooltip>
             <TooltipTrigger>
