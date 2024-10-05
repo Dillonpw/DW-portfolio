@@ -10,7 +10,6 @@ const Tech = () => {
     "Express",
     "Playwright",
     "Vitest",
-    "Selenium",
     "VS Code",
     "PostgresSQL",
     "Git",
@@ -23,6 +22,7 @@ const Tech = () => {
     "Vite",
     "Stripe",
     "Vercel",
+    "Netlify",
     "AWS",
   ];
 
@@ -31,12 +31,12 @@ const Tech = () => {
       initial={{ opacity: 0 }}
       transition={{ duration: 1 }}
       whileInView={{ opacity: 1 }}
-      className=" my-10 text-center"
+      className="mb-10 mt-10  text-center md:mb-6"
     >
-      <p className="text-xl font-bold lg:text-2xl mb-6">Working with</p>
-      <div className="relative hidden flex-col justify-center overflow-hidden bg-gray-50 pb-12 sm:mb-12 md:flex">
-        <div className="pointer-events-none relative flex gap-2 overflow-hidden">
-          <div className="animate-marquee flex min-w-full shrink-0 list-none items-center justify-around gap-2">
+      <p className="mb-2 text-xl font-bold lg:text-2xl">Working with</p>
+      <div className="relative hidden flex-col justify-center overflow-hidden  md:flex">
+        <div className="pointer-events-none relative flex overflow-hidden">
+          <div className="flex min-w-full shrink-0 animate-marquee list-none items-center justify-around">
             {devTools.map((dt, index) => (
               <li className="p-2 opacity-60" key={index}>
                 {dt}
@@ -46,7 +46,7 @@ const Tech = () => {
 
           <div
             aria-hidden="true"
-            className="animate-marquee flex min-w-full shrink-0 list-none items-center justify-around gap-2"
+            className="flex min-w-full shrink-0 animate-marquee list-none items-center justify-around"
           >
             {devTools.map((dt, index) => (
               <li className="p-2 opacity-60" key={index}>
