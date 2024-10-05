@@ -73,6 +73,17 @@ const images = [
     about:
       "This is a fully customizable website template designed specifically for small businesses. It features a simple and clean layout, with a built-in light/dark mode toggle to cater to user preferences. The template is fully responsive whether it's a desktop, tablet, or smartphone. The template sis designed to serve as a starting point for small business websites, allowing clients to personalize the content and style to meet their specific needs. It showcases potential design ideas for clients, demonstrating how their business can have a professional and attractive online presence.",
   },
+  {
+    id: "Pomodoro Timer",
+    src: "/pomodoro.png",
+    githubLink: "https://github.com/Dillonpw/pomodoro",
+    title: "Pomodoro Timer Desktop Application",
+    tags: ["TypeScript", "React", "Tailwind CSS", "Tauri", "Shadcn/ui"],
+    challenge:
+      "This was my first project using Tauri, and it involved some learning curves around the build and deployment processes. Despite these challenges, it was an exciting learning experience. I learned a lot about desktop app development, and while the initial setup was a bit confusing, I was ultimately able to create a functional application with a great deal of personal utlilty.",
+    about:
+      "A simple yet effective Pomodoro Timer desktop application built with Tauri, designed to help users improve productivity by following the Pomodoro technique. The app offers an intuitive UI, customizable time intervals, and an efficient timer mechanism. It was a great introduction to desktop application development, and it serves as a useful tool for staying focused and productive throughout the workday.",
+  },
 ];
 
 export default images;

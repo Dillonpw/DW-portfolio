@@ -18,7 +18,7 @@ const Projects = () => {
         className="mt-20 flex flex-col"
       >
         <div className="m-6 grid grid-cols-1 gap-4 lg:grid-cols-2">
-          {images.slice(0, 4).map((image) => (
+          {images.slice(0, 5).map((image) => (
             <div key={image.id} className="mb-4 flex flex-col items-center">
               <Link
                 description="More info about projects"
