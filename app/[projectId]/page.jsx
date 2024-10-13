@@ -25,7 +25,7 @@ const ProjectPage = () => {
     return (
       <main>
         <Nav>
-          <h2 className="font-mono text-4xl">{project.title}</h2>
+          <h2 className="font-mono text-xl lg:text-2xl">{project.title}</h2>
         </Nav>
         <div className="flex flex-col items-center justify-center px-4 pt-40 xl:flex-row">
           <Image
