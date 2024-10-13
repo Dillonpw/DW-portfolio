@@ -35,7 +35,7 @@ const Header = () => {
       <div className="flex flex-col items-center justify-center text-nowrap md:mt-10">
         <div
           id="links"
-          className="fade-in-2 flex items-end justify-center space-x-8 space-y-8 dark:text-gray-200"
+          className="fade-in-2 flex items-end justify-center space-x-12 space-y-12 dark:text-gray-200"
         >
           <TooltipProvider>
             <Tooltip>
