@@ -6,7 +6,7 @@ export default function Blog() {
   return (
     <section>
       <NavBar>
-        <h1 className="text-4xl">
+        <h1 className=" text-center font-mono text-xl lg:text-2xl">
           <Link href="/blog">All Posts</Link>
         </h1>
       </NavBar>

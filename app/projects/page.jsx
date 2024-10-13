@@ -14,7 +14,9 @@ const ProjectsPage = () => {
   return (
     <>
       <Nav>
-        <h1 className="font-mono text-xl lg:text-2xl">Recent Work</h1>
+        <h1 className="text-center font-mono text-xl lg:text-2xl">
+          Recent Work
+        </h1>
       </Nav>
       <Projects />
       <div className="flex items-center justify-center gap-2">

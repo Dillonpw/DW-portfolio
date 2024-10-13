@@ -9,7 +9,7 @@ export default function Home() {
   return (
     <>
       <NavBar>
-        <h1 className="font-mono text-xl lg:text-2xl">
+        <h1 className="text-center font-mono text-xl lg:text-2xl">
           <Link href="/blog">blog</Link>
         </h1>
       </NavBar>
