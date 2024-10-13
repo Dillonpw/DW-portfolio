@@ -3,7 +3,7 @@ import logo from "/public/logo.svg";
 import Link from "next/link";
 import Image from "next/image";
 
-const NavBar = () => {
+const NavBar = ({children}) => {
   return (
     <nav className="fixed top-0  z-50 flex w-[100vw] flex-row items-center px-4 justify-between bg-transparent p-6 shadow-md backdrop-blur-sm dark:border-b dark:border-neutral-700 ">
       <div className="flex flex-row items-center ">
@@ -18,6 +18,7 @@ const NavBar = () => {
           />
         </Link>
       </div>
+      {children}
       <ThemeToggle />
     </nav>
   );
