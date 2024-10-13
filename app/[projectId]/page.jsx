@@ -4,7 +4,6 @@ import { useEffect } from "react";
 import Nav from "../../components/nav";
 import Image from "next/image";
 import { useParams } from "next/navigation";
-import { motion } from "framer-motion";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import { faUpRightFromSquare } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -24,17 +23,11 @@ const ProjectPage = () => {
     }
 
     return (
-      <motion.main
-        initial={{ opacity: 0 }}
-        transition={{ duration: 1 }}
-        whileInView={{ opacity: 1 }}
-      >
-        <Nav />
-        <div className="mt-40 flex flex-col items-center justify-center px-4 xl:flex-row">
-          <h2 className="m-6 text-center text-2xl font-bold">
-            {project.title}
-          </h2>
-
+      <main>
+        <Nav>
+          <h2 className="font-mono text-4xl">{project.title}</h2>
+        </Nav>
+        <div className="flex flex-col items-center justify-center px-4 pt-40 xl:flex-row">
           <Image
             className="w-100 m-2 h-auto items-center justify-center rounded-2xl border-2 border-black bg-slate-700 dark:border-white"
             src={project.src}
@@ -94,15 +87,15 @@ const ProjectPage = () => {
         </div>
         <section className="ml-4 flex flex-col items-center justify-center">
           <h3 className="mt-8 text-xl font-bold">About This Project</h3>
-          <p className="max-w-100 md:px-40 xs:px-8 sm:px-12 text-left text-lg opacity-60">
+          <p className="max-w-100 xs:px-8 text-left text-lg opacity-60 sm:px-12 md:px-40">
             {project.about}
           </p>
           <h3 className="mt-8 text-xl font-bold">Challenges</h3>
-          <p className="max-w-100 mb-10 xs:px-8 sm:px-12 md:px-40 text-left text-lg opacity-60">
+          <p className="max-w-100 xs:px-8 mb-10 text-left text-lg opacity-60 sm:px-12 md:px-40">
             {project.challenge}
           </p>
         </section>
-      </motion.main>
+      </main>
     );
   };
 

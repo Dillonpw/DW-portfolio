@@ -13,7 +13,9 @@ import { Button } from "../../components/ui/button";
 const ProjectsPage = () => {
   return (
     <>
-      <Nav />
+      <Nav>
+        <h1 className="font-mono text-4xl">Recent Work</h1>
+      </Nav>
       <Projects />
       <div className="flex items-center justify-center gap-2">
         <Button variant="link">

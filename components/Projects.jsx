@@ -6,7 +6,6 @@ import { motion } from "framer-motion";
 const Projects = () => {
   return (
     <div className="mt-48">
-      <h3 className="text-center text-2xl font-bold">Recent Work</h3>
       <p className="m-6 text-center text-lg opacity-60">
         Click on the images for more information about each listed project
       </p>
