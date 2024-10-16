@@ -77,7 +77,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en" suppressHydrationWarning>
       <body
-        className={`${inter.className} relative min-h-full bg-neutral-50 p-0 text-slate-900 transition-all dark:bg-neutral-950 dark:text-gray-200`}
+        className={`${inter.className} relative min-h-full bg-neutral-50 w-[100vw] p-0 text-slate-900 transition-all dark:bg-neutral-950 dark:text-gray-200`}
       >
         <ThemeProvider attribute="class" defaultTheme="system">
           {children}
