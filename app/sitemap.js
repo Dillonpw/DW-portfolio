@@ -27,6 +27,7 @@ export default async function sitemap() {
     '',
     'projects',
     't1',
+    'blog',
     'robots.txt',
     'sitemap.xml'
   ].map((route) => ({

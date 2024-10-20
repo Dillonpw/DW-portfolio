@@ -1,0 +1,68 @@
+---
+title: 'Creating a Scrolling Ticker Component'
+date: '2024-10-20'
+excerpt: 'Learn how to build a continuously scrolling news ticker component for your Next.js application.'
+coverImage: '/scroll-component.png'
+---
+
+import Image from "next/image";
+import Scroll from "../../../components/blogComponents/scroll";
+
+## Creating a Scrolling Ticker Component
+
+When you have a list of items to display—like sponsors or clients using your technology—you might want a way to showcase them without prioritizing any one item over the others. Unlike a grid, which naturally places some items higher than others, a more balanced approach would be ideal.
+
+Enter the solution: a continuously scrolling news ticker component. This allows you to display your items evenly, ensuring every entry gets the same level of visibility. While one item will always appear first, the continuous scroll ensures no single item gets more weight than another.
+
+I use this approach in my portfolio to display the various technologies I have experience with. Sure, I'm more proficient in some than others, but this way I don't have to rank or weigh my skills.
+
+### Example Implementation
+
+Here's a minimal example of the component:
+
+<Scroll />
+
+As you can see, the items we have placed in the component rotate seamlessly regardless of screen size. We accomplish this with surprisingly little CSS:
+
+1. A container section with the classes `flex` to place the arrays in a row and `overflow-hidden` so the arrays don't squeeze into the screen, but instead are hidden outside of the viewport.
+2. Two identical sections with the class `flex`.
+
+### The Code
+
+Let's look at the JSX for this component:
+
+<Image
+  src="/scroll-component.png"
+  alt="JSX code for the scrolling ticker component"
+  height={420}
+  width={820}
+  className="mx-auto flex justify-center rounded-lg"
+/>
+
+And here's the configuration file:
+
+<Image
+  src="/scroll-config.png"
+  alt="Configuration file for the scrolling ticker component"
+  height={420}
+  width={820}
+  className="mx-auto flex justify-center rounded-lg"
+/>
+
+### How It Works
+
+The component works by creating two identical lists of items and placing them side by side. The animation then moves both lists to the left continuously. When the first list has scrolled completely out of view, it seamlessly transitions to the second list, creating the illusion of infinite scrolling.
+
+### Customization
+
+You can easily customize this component by:
+
+1. Changing the items in the array
+2. Adjusting the animation speed
+3. Modifying the styles of the individual items
+
+### Conclusion
+
+This scrolling ticker component provides an elegant solution for displaying lists of items without hierarchy. It's particularly useful for showcasing skills, technologies, or clients in a portfolio or marketing website.
+
+Feel free to use and adapt this component in your own projects!
