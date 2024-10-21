@@ -16,9 +16,7 @@ const ProjectsPage = () => {
   return (
     <>
       <NavBar>
-        <Link className="text-center font-mono text-xl lg:text-2xl">
-          Recent Work
-        </Link>
+        <p className="text-center font-mono text-xl lg:text-2xl">Recent Work</p>
       </NavBar>
       <Projects />
       <div className="flex items-center justify-center gap-2">
