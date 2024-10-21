@@ -1,5 +1,5 @@
 import { getAllProjects } from "@/lib/projects";
-import { getAllPosts } from "@/lib/posts";
+import { getAllPosts } from "/lib/posts";
 
 export default async function sitemap() {
   const baseUrl = "https://dillonwalsh.com";
