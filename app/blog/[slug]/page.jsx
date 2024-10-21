@@ -1,7 +1,6 @@
 import BlogPost from "../../../components/BlogPost";
 import { allPosts } from "/lib/blogPosts";
 
-
 const getPostBySlug = (slug) => {
   return allPosts.find((post) => post.slug === slug);
 };
