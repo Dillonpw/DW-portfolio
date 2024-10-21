@@ -5,7 +5,7 @@ export default async function sitemap() {
   const baseUrl = "https://dillonwalsh.com";
 
   const projectUrls = images.map((project) => ({
-    url: `${baseUrl}/projects/${project.id}`,
+    url: `${baseUrl}/${project.id}`,
     lastModified: new Date(), 
     changeFrequency: "monthly",
     priority: 0.8,
