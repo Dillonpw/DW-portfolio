@@ -1,5 +1,5 @@
 import { getAllPosts } from "/lib/blogPosts";
-import images from "../components/imges";
+import images from "../components/images";
 
 export default async function sitemap() {
   const baseUrl = "https://dillonwalsh.com";
