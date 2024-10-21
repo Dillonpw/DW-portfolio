@@ -1,4 +1,4 @@
-import { getAllProjects } from "@/lib/projects";
+import { getAllProjects } from "/lib/projects";
 import { getAllPosts } from "/lib/blogPosts";
 
 export default async function sitemap() {
