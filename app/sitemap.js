@@ -1,29 +1,29 @@
-import { getAllPosts } from "/lib/blogPosts";
-import images from "../components/Images";
+import { getAllPosts } from "../lib/getPosts"
+import images from "../components/Images"
 
 export default async function sitemap() {
-  const baseUrl = "https://dillonwalsh.com";
+  const baseUrl = "https://dillonwalsh.com"
 
   const projectUrls = images.map((project) => ({
     url: `${baseUrl}/${project.id}`,
-    lastModified: new Date(), 
+    lastModified: new Date(),
     changeFrequency: "monthly",
     priority: 0.8,
     images: [
       {
-        loc: `${baseUrl}${project.src}`, 
+        loc: `${baseUrl}${project.src}`,
         title: project.title,
       },
     ],
-  }));
+  }))
 
-  const posts = await getAllPosts();
+  const posts = getAllPosts()
   const postUrls = posts.map((post) => ({
     url: `${baseUrl}/blog/${post.slug}`,
     lastModified: new Date(post.date),
     changeFrequency: "weekly",
     priority: 0.7,
-  }));
+  }))
 
   const routes = [
     "",
@@ -37,7 +37,7 @@ export default async function sitemap() {
     lastModified: new Date(),
     changeFrequency: "daily",
     priority: 1,
-  }));
+  }))
 
-  return [...routes, ...projectUrls, ...postUrls];
+  return [...routes, ...projectUrls, ...postUrls]
 }
