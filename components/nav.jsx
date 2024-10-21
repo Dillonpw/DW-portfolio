@@ -24,9 +24,9 @@ const NavBar = ({ children }) => {
   }, []);
 
   return (
-    <nav className="sticky left-0 top-0 z-50 flex justify-center w-full transition-all ovverlfo-x-auto">
+    <nav className="ovverlfo-x-auto sticky left-0 top-0 z-50 flex w-full justify-center transition-all">
       <header
-        className={`flex mx-4 items-center px-6 justify-between bg-transparent backdrop-blur-xl transition-all ${
+        className={`mx-4 flex items-center justify-between bg-transparent px-6 backdrop-blur-xl transition-all ${
           isScrolled
             ? "mt-4 h-16 w-[90%] rounded-full shadow-md"
             : "h-16 w-full"

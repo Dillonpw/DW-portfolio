@@ -1,11 +1,15 @@
 import BlogPostList from "../../components/BlogPostList";
+import Link from "next/link";
+import NavBar from "../../components/nav";
 import { allPosts } from "/lib/blogPosts";
 
 export default function BlogPage() {
   return (
-    <div className="prose dark:prose-dark mx-auto mt-10">
-      <h1 className="text-center text-4xl font-bold">Blog</h1>
+    <main>
+      <NavBar>
+        <Link href="/blog">blog</Link>
+      </NavBar>
       <BlogPostList posts={allPosts} />
-    </div>
+    </main>
   );
 }

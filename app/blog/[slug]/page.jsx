@@ -1,4 +1,6 @@
+import Link from "next/link";
 import BlogPost from "../../../components/BlogPost";
+import NavBar from "../../../components/nav";
 import { allPosts } from "/lib/blogPosts";
 
 const getPostBySlug = (slug) => {
@@ -12,13 +14,18 @@ export default function BlogPostPage({ params }) {
   if (!post) return <p>Post not found</p>;
 
   return (
-    <BlogPost
-      title={post.title}
-      date={post.date}
-      excerpt={post.excerpt}
-      coverImage={post.coverImage}
-    >
-      {post.content}
-    </BlogPost>
+    <>
+      <NavBar>
+        <Link
+          className="text-center font-mono text-xl lg:text-2xl"
+          href="/blog"
+        >
+          blog
+        </Link>
+      </NavBar>
+      <BlogPost title={post.title} date={post.date} excerpt={post.excerpt}>
+        {post.content}
+      </BlogPost>
+    </>
   );
 }

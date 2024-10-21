@@ -20,7 +20,7 @@ const Dogs = () => {
           className="border-none bg-transparent p-0"
         >
           <Image
-            className="rounded-md" 
+            className="rounded-md"
             src="/Ollie-benny.webp"
             width={180}
             height={180}

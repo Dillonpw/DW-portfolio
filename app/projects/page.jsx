@@ -1,5 +1,5 @@
 "use client";
-import Nav from "../../components/nav";
+import NavBar from "../../components/nav";
 import Projects from "../../components/Projects";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
@@ -10,16 +10,16 @@ import {
   TooltipContent,
 } from "../../components/ui/tooltip";
 import { Button } from "../../components/ui/button";
-
+import Link from "next/link";
 
 const ProjectsPage = () => {
   return (
     <>
-      <Nav>
-        <h1 className="text-center font-mono text-xl lg:text-2xl">
+      <NavBar>
+        <Link className="text-center font-mono text-xl lg:text-2xl">
           Recent Work
-        </h1>
-      </Nav>
+        </Link>
+      </NavBar>
       <Projects />
       <div className="flex items-center justify-center gap-2">
         <Button variant="link">
