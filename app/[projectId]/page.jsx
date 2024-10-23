@@ -31,7 +31,7 @@ const ProjectPage = () => {
         </Nav>
         <div className="flex flex-col items-center justify-center px-4 pt-40 xl:flex-row">
           <Image
-            className="w-100 m-2 h-auto items-center justify-center rounded-2xl border-2 border-black bg-slate-700 dark:border-white"
+            className="w-100 m-2 h-auto items-center justify-center rounded-lg border-2 border-black bg-slate-700 dark:border-white"
             src={project.src}
             alt={project.title}
             width={1000}
@@ -39,7 +39,7 @@ const ProjectPage = () => {
           />
           {project.src2 && (
             <Image
-              className="w-100 m-2 h-auto items-center justify-center rounded-2xl border-2 border-black bg-slate-700 dark:border-white"
+              className="w-100 m-2 h-auto items-center justify-center rounded-lg border-2 border-black bg-slate-700 dark:border-white"
               src={project.src2}
               alt={project.title}
               width={1000}
@@ -48,10 +48,10 @@ const ProjectPage = () => {
           )}
           {project.mobileImg && (
             <Image
-              className="h-100 w-auto items-center justify-center rounded-2xl border-2 border-black bg-slate-700 dark:border-white"
+              className="h-100 w-auto items-center justify-center rounded-lg border-2 border-black bg-slate-700 dark:border-white"
               src={project.mobileImg}
               alt={project.title}
-              width={300}
+              width={375}
               height={500}
             />
           )}

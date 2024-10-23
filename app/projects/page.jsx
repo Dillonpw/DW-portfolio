@@ -21,9 +21,9 @@ const ProjectsPage = () => {
       <Projects />
       <div className="flex items-center justify-center gap-2">
         <Button variant="link">
-          <a target="_blank" href="https://github.com/Dillonpw/">
+          <Link target="_blank" href="https://github.com/Dillonpw/">
             More Projects{" "}
-          </a>
+          </Link>
         </Button>
         <TooltipProvider>
           <Tooltip>

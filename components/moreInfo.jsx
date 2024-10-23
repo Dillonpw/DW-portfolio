@@ -14,10 +14,7 @@ const MoreInfo = () => {
         free to reach out with your questions or ideas and I&apos;ll get back to
         you as soon as I can!
       </p>
-      <div className="flex flex-col justify-center">
-        <h2 className="mt-10 text-center text-xl font-bold">Reach Me At:</h2>
-        <p className="text-md text-center">Dillonpwalsh10@gmail.com</p>
-      </div>
+      <p className="text-md text-center">Dillonpwalsh10@gmail.com</p>
     </motion.div>
   );
 };
