@@ -12,8 +12,7 @@ test("home page redirect", async ({ page }) => {
   await page.goto("http://localhost:3000/projects");
   await page.locator(`a[href="/"]`).click();
   await expect(page).toHaveURL("http://localhost:3000/");
-})
-
+});
 
 test.describe("Social and other links", () => {
   //requires logged in acc to view profiles
@@ -78,14 +77,35 @@ test.describe("Social and other links", () => {
   test("Projects button redirects to projects page", async ({ page }) => {
     await page.getByRole("button", { name: "Projects" }).click();
     await expect(page).toHaveURL("http://localhost:3000/projects");
-  })
+  });
 
+  test("Blog button redirects to projects page", async ({ page }) => {
+    await page.getByRole("button", { name: "Blog" }).click();
+    await expect(page).toHaveURL("http://localhost:3000/blog");
+  });
 });
 
-test("projects should redirect to projects page", async ({ page }) => {
-  await page.getByRole("button", { name: "Projects" }).click();
-  await expect(page).toHaveURL("http://localhost:3000/projects");
-  await page.getByRole('link', { name: 'Rotating Schedule Builder' }).click();
-  await expect(page).toHaveURL("http://localhost:3000/rotating-schedule");
-});
+test.beforeEach("set default to projects page", async ({ page }) => {
+  await page.goto("https://localhost:3000/projects");
 
+  test("projects should redirect to each projects page", async ({ page }) => {
+    await page.getByRole("link", { name: "Rotating Schedule Builder" }).click();
+    await expect(page).toHaveURL("http://localhost:3000/rotating-schedule");
+  });
+  test("projects should redirect to each projects page", async ({ page }) => {
+    await page.getByRole("link", { name: "Rotating Schedule Builder" }).click();
+    await expect(page).toHaveURL("http://localhost:3000/rotating-schedule");
+  });
+  test("projects should redirect to each projects page", async ({ page }) => {
+    await page.getByRole("link", { name: "Rotating Schedule Builder" }).click();
+    await expect(page).toHaveURL("http://localhost:3000/rotating-schedule");
+  });
+  test("projects should redirect to each projects page", async ({ page }) => {
+    await page.getByRole("link", { name: "Rotating Schedule Builder" }).click();
+    await expect(page).toHaveURL("http://localhost:3000/rotating-schedule");
+  });
+  test("projects should redirect to each projects page", async ({ page }) => {
+    await page.getByRole("link", { name: "Rotating Schedule Builder" }).click();
+    await expect(page).toHaveURL("http://localhost:3000/rotating-schedule");
+  });
+});
