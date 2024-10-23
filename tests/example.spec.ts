@@ -75,37 +75,46 @@ test.describe("Social and other links", () => {
   });
 
   test("Projects button redirects to projects page", async ({ page }) => {
-    await page.getByRole("button", { name: "Projects" }).click();
+    await page.getByRole("link", { name: "Projects" }).click();
     await expect(page).toHaveURL("http://localhost:3000/projects");
   });
 
   test("Blog button redirects to projects page", async ({ page }) => {
-    await page.getByRole("button", { name: "Blog" }).click();
+    await page.getByRole("link", { name: "Blog" }).click();
     await expect(page).toHaveURL("http://localhost:3000/blog");
   });
 });
 
-test.beforeEach("set default to projects page", async ({ page }) => {
-  await page.goto("https://localhost:3000/projects");
-
-  test("projects should redirect to each projects page", async ({ page }) => {
-    await page.getByRole("link", { name: "Rotating Schedule Builder" }).click();
-    await expect(page).toHaveURL("http://localhost:3000/rotating-schedule");
-  });
-  test("projects should redirect to each projects page", async ({ page }) => {
-    await page.getByRole("link", { name: "Rotating Schedule Builder" }).click();
-    await expect(page).toHaveURL("http://localhost:3000/rotating-schedule");
-  });
-  test("projects should redirect to each projects page", async ({ page }) => {
-    await page.getByRole("link", { name: "Rotating Schedule Builder" }).click();
-    await expect(page).toHaveURL("http://localhost:3000/rotating-schedule");
-  });
-  test("projects should redirect to each projects page", async ({ page }) => {
-    await page.getByRole("link", { name: "Rotating Schedule Builder" }).click();
-    await expect(page).toHaveURL("http://localhost:3000/rotating-schedule");
-  });
-  test("projects should redirect to each projects page", async ({ page }) => {
-    await page.getByRole("link", { name: "Rotating Schedule Builder" }).click();
-    await expect(page).toHaveURL("http://localhost:3000/rotating-schedule");
-  });
+test("projects should redirect to each projects page", async ({ page }) => {
+  await page.goto("http://localhost:3000/projects");
+  await page.getByRole("link", { name: "Sched Track" }).click();
+  await expect(page).toHaveURL("http://localhost:3000/rotating-schedule");
+});
+test("projects should redirect to each projects page nth(1)", async ({
+  page,
+}) => {
+  await page.goto("http://localhost:3000/projects");
+  await page.getByRole("link", { name: "Ecommerce Site" }).click();
+  await expect(page).toHaveURL("http://localhost:3000/ecommerce-site");
+});
+test("projects should redirect to each projects page nth(2)", async ({
+  page,
+}) => {
+  await page.goto("http://localhost:3000/projects");
+  await page.getByRole("link", { name: "Design File To Code" }).click();
+  await expect(page).toHaveURL("http://localhost:3000/FEM-LP1");
+});
+test("projects should redirect to each projects page nth(3)", async ({
+  page,
+}) => {
+  await page.goto("http://localhost:3000/projects");
+  await page.getByRole("link", { name: "Small Business Template" }).click();
+  await expect(page).toHaveURL("http://localhost:3000/small-bis");
+});
+test("projects should redirect to each projects page nth(4)", async ({
+  page,
+}) => {
+  await page.goto("http://localhost:3000/projects");
+  await page.getByRole("link", { name: "Pomodoro Timer Desktop" }).click();
+  await expect(page).toHaveURL("http://localhost:3000/pomodoro-timer");
 });

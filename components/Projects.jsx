@@ -6,10 +6,16 @@ import { motion } from "framer-motion";
 const Projects = () => {
   return (
     <div className="mt-32">
-      <p className="m-6 text-center text-lg opacity-60">
+      <motion.p
+        initial={{ opacity: 0, x: -30 }}
+        transition={{ duration: 1 }}
+        whileInView={{ opacity: 1 }}
+        animate={{ x: 0 }}
+        className="m-6 text-center text-lg opacity-60"
+      >
         Click on the images for more information about each listed project
-      </p>
-      <motion.div
+      </motion.p>
+      <motion.section
         initial={{ opacity: 0 }}
         transition={{ duration: 1 }}
         whileInView={{ opacity: 1 }}
@@ -48,7 +54,7 @@ const Projects = () => {
             </div>
           ))}
         </div>
-      </motion.div>
+      </motion.section>
     </div>
   );
 };

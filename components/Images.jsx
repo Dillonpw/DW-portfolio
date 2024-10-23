@@ -63,7 +63,7 @@ const images = [
       "This is a fully customizable website template designed specifically for small businesses. It features a simple and clean layout, with a built-in light/dark mode toggle to cater to user preferences. The template is fully responsive whether it's a desktop, tablet, or smartphone. The template is designed to serve as a starting point for small business websites, allowing clients to personalize the content and style to meet their specific needs. It showcases potential design ideas for clients, demonstrating how their business can have a professional and attractive online presence.",
   },
   {
-    id: "Pomodoro-timer",
+    id: "pomodoro-timer",
     src: "/pomodoro.png",
     githubLink: "https://github.com/Dillonpw/pomodoro",
     title: "Pomodoro Timer Desktop Application",
