@@ -1,4 +1,5 @@
 "use client";
+import { motion } from "framer-motion";
 import ThemeToggle from "./theme.jsx";
 import logo from "/public/logo.svg";
 import Link from "next/link";
@@ -24,7 +25,13 @@ const NavBar = ({ children }) => {
   }, []);
 
   return (
-    <nav className="ovverlfo-x-auto sticky left-0 top-0 z-50 flex w-full justify-center transition-all">
+    <motion.nav
+    initial={{ opacity: 0, y: -30 }}
+    transition={{ duration: 1 }}
+    whileInView={{ opacity: 1 }}
+    animate={{ y: 0 }}
+      className="overflow-x-auto sticky left-0 top-0 z-50 flex w-full justify-center transition-all"
+    >
       <header
         className={`mx-4 flex items-center justify-between bg-transparent px-6 backdrop-blur-xl transition-all ${
           isScrolled
@@ -46,7 +53,7 @@ const NavBar = ({ children }) => {
         <div className="flex items-center">{children}</div>
         <ThemeToggle />
       </header>
-    </nav>
+    </motion.nav>
   );
 };
 
