@@ -26,17 +26,16 @@ const NavBar = ({ children }) => {
 
   return (
     <motion.nav
-      initial={{ opacity: 0, y: -5 }}
+      initial={{ opacity: 0 }}
       transition={{ duration: 1 }}
       whileInView={{ opacity: 1 }}
-      animate={{ y: 0 }}
       className="sticky left-0 top-0 z-50 flex w-full justify-center transition-all"
     >
       <header
-        className={`mx-4 flex items-center justify-between bg-transparent px-6 backdrop-blur-xl transition-all ${
+        className={`mx-4 flex items-center justify-between px-6 backdrop-blur-xl transition-all ${
           isScrolled
-            ? "mt-4 h-16 w-[90%] rounded-full shadow-md"
-            : "h-16 w-full"
+            ? "mt-4 h-16 w-[90%] rounded-full bg-white text-black shadow-md dark:bg-neutral-900 dark:text-white"
+            : "h-16 w-full bg-transparent text-white dark:text-white"
         }`}
       >
         <Link href="/" id="logo">

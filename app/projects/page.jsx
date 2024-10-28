@@ -19,34 +19,34 @@ const ProjectsPage = () => {
         <p className="text-center font-mono text-xl lg:text-2xl">Recent Work</p>
       </NavBar>
       <Projects />
-      <div className="flex items-center justify-center gap-2">
-        <Button variant="link">
+      <div className="flex items-center justify-center mt-8 hover:scale-110">
+        <Button variant="ghost" className="flex items-center space-x-2"> {/* Adjusted flex container and spacing */}
           <Link target="_blank" href="https://github.com/Dillonpw/">
-            More Projects{" "}
+            More Projects
           </Link>
+          <TooltipProvider>
+            <Tooltip>
+              <TooltipTrigger>
+                <a
+                  id="githubLink"
+                  href="https://github.com/Dillonpw/"
+                  target="_blank"
+                  rel="noreferrer"
+                  aria-label="redirect to Github"
+                >
+                  <FontAwesomeIcon
+                    className="h-6 w-6 hover:scale-110"
+                    icon={faGithub}
+                  />
+                </a>
+              </TooltipTrigger>
+              <TooltipContent>Github</TooltipContent>
+            </Tooltip>
+          </TooltipProvider>
         </Button>
-        <TooltipProvider>
-          <Tooltip>
-            <TooltipTrigger>
-              {" "}
-              <a
-                id="githubLink"
-                href="https://github.com/Dillonpw/"
-                target="_blank"
-                rel="noreferrer"
-                aria-label="redirect to Github"
-              >
-                <FontAwesomeIcon
-                  className="h-6 w-6 hover:scale-110"
-                  icon={faGithub}
-                />
-              </a>
-            </TooltipTrigger>
-            <TooltipContent>Github</TooltipContent>
-          </Tooltip>
-        </TooltipProvider>{" "}
       </div>
     </>
   );
 };
+
 export default ProjectsPage;

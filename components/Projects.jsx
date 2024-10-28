@@ -31,7 +31,7 @@ const Projects = () => {
                 href={`/${image.id}`}
               >
                 <Image
-                  className="rounded-xl border-2 border-black dark:border-white"
+                  className="rounded-xl border-2 border-black transition-all hover:scale-105 dark:border-white"
                   src={image.src}
                   alt={image.title}
                   width={565}
@@ -39,13 +39,16 @@ const Projects = () => {
                 />
               </Link>
               <div className="mt-8 flex flex-wrap items-center justify-center">
-                {image.tags.map((tag) => (
-                  <span
+                {image.tags.map((tag, index) => (
+                  <motion.span
                     key={tag}
+                    initial={{ opacity: 0, x: index % 2 === 0 ? -30 : 30 }} // Alternate directions
+                    whileInView={{ opacity: 1, x: 0 }}
+                    transition={{ duration: 1, delay: index * 0.1 }} // delay for a staggered effect
                     className="m-2 cursor-default rounded-2xl border-2 bg-neutral-950 px-3 py-2 text-gray-200 dark:bg-gray-200 dark:text-neutral-950"
                   >
                     {tag}
-                  </span>
+                  </motion.span>
                 ))}
               </div>
               <div className="p-4 text-lg opacity-60">

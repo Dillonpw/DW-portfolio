@@ -28,9 +28,10 @@ const Tech = () => {
 
   return (
     <motion.section
-      initial={{ opacity: 0 }}
+      initial={{ opacity: 0, y: 10 }}
       transition={{ duration: 1 }}
       whileInView={{ opacity: 1 }}
+      animate={{ y: 0 }}
       className="mb-10 mt-10  text-center md:mb-6"
     >
       <p className="mb-2 text-xl font-bold lg:text-2xl">Working with</p>
