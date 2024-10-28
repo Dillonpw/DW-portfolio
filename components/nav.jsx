@@ -11,7 +11,7 @@ const NavBar = ({ children }) => {
 
   useEffect(() => {
     const handleScroll = () => {
-      if (window.scrollY > 40) {
+      if (window.scrollY > 20) {
         setIsScrolled(true);
       } else {
         setIsScrolled(false);
@@ -26,11 +26,11 @@ const NavBar = ({ children }) => {
 
   return (
     <motion.nav
-    initial={{ opacity: 0, y: -30 }}
-    transition={{ duration: 1 }}
-    whileInView={{ opacity: 1 }}
-    animate={{ y: 0 }}
-      className="overflow-x-auto sticky left-0 top-0 z-50 flex w-full justify-center transition-all"
+      initial={{ opacity: 0, y: -5 }}
+      transition={{ duration: 1 }}
+      whileInView={{ opacity: 1 }}
+      animate={{ y: 0 }}
+      className="sticky left-0 top-0 z-50 flex w-full justify-center transition-all"
     >
       <header
         className={`mx-4 flex items-center justify-between bg-transparent px-6 backdrop-blur-xl transition-all ${
