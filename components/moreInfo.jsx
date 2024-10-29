@@ -14,7 +14,7 @@ const MoreInfo = () => {
         free to reach out with your questions or ideas and I&apos;ll get back to
         you as soon as I can!
       </p>
-      <p className="text-md text-center">Dillcnpwalsh10@gmail.com</p>
+      <p className="text-md text-center">Dillonpwalsh10@gmail.com</p>
     </motion.section>
   );
 };
