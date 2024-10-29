@@ -1,7 +1,7 @@
 "use client";
 import images from "../../components/Images";
 import { motion } from "framer-motion";
-import { useEffect } from "react";
+import { Suspense } from "react";
 import Nav from "../../components/nav";
 import Image from "next/image";
 import { useParams } from "next/navigation";
@@ -34,30 +34,49 @@ const ProjectPage = () => {
           className="flex flex-col items-center justify-center px-4 pt-40
           xl:flex-row"
         >
-          <Image
-            className="w-100 m-2 h-auto items-center justify-center rounded-lg border-2 border-black bg-slate-700 dark:border-white"
-            src={project.src}
-            alt={project.title}
-            width={1000}
-            height={300}
-          />
-          {project.src2 && (
+          <Suspense
+            fallback={
+              <div className="w-100 h-auto animate-pulse bg-slate-700"></div>
+            }
+          >
             <Image
               className="w-100 m-2 h-auto items-center justify-center rounded-lg border-2 border-black bg-slate-700 dark:border-white"
-              src={project.src2}
+              src={project.src}
               alt={project.title}
               width={1000}
               height={300}
             />
+          </Suspense>
+
+          {project.src2 && (
+            <Suspense
+              fallback={
+                <div className="w-100 h-auto animate-pulse bg-slate-700"></div>
+              }
+            >
+              <Image
+                className="w-100 m-2 h-auto items-center justify-center rounded-lg border-2 border-black bg-slate-700 dark:border-white"
+                src={project.src2}
+                alt={project.title}
+                width={1000}
+                height={300}
+              />
+            </Suspense>
           )}
           {project.mobileImg && (
-            <Image
-              className="h-100 w-auto items-center justify-center rounded-lg border-2 border-black bg-slate-700 dark:border-white"
-              src={project.mobileImg}
-              alt={project.title}
-              width={375}
-              height={500}
-            />
+            <Suspense
+              fallback={
+                <div className="w-100 h-auto animate-pulse bg-slate-700"></div>
+              }
+            >
+              <Image
+                className="h-100 w-auto items-center justify-center rounded-lg border-2 border-black bg-slate-700 dark:border-white"
+                src={project.mobileImg}
+                alt={project.title}
+                width={375}
+                height={500}
+              />
+            </Suspense>
           )}
         </motion.div>
 
