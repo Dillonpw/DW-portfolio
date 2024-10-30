@@ -85,7 +85,7 @@ const ProjectPage = () => {
             <motion.span
               key={tag}
               initial={{ opacity: 0, x: index % 2 === 0 ? -30 : 30 }} // Alternate directions
-              animate={{ opacity: 1, x: 0 }}
+              whileInView={{ opacity: 1, x: 0 }}
               transition={{ duration: 1, delay: index * 0.1 }} // delay for a staggered effect
               className="m-2 cursor-default rounded-2xl border-2 bg-neutral-950 px-3 py-2 text-gray-200 dark:bg-gray-200 dark:text-neutral-950"
             >
