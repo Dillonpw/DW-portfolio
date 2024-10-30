@@ -7,7 +7,12 @@ export default function BlogPage() {
   return (
     <main>
       <NavBar>
-        <Link href="/blog">blog</Link>
+        <Link
+          href="/blog"
+          className="text-center font-mono text-xl lg:text-2xl"
+        >
+          blog
+        </Link>
       </NavBar>
       <BlogPostList posts={allPosts} />
     </main>
