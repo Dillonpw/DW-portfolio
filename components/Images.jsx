@@ -51,8 +51,8 @@ const images = [
   },
   {
     id: "small-bis",
-    src: "/small-bis.png",
-    mobileImg: "/small-bis-m.png",
+    src: "/small-bis.jpeg",
+    mobileImg: "/small-bis-m.jpeg",
     livePreviewLink: "https://t1.dillonwalsh.com/",
     githubLink: "https://github.com/Dillonpw/small-bis",
     title: "Small Business Template",
