@@ -21,7 +21,7 @@ const images = [
     challenge:
       "This project was fun getting deeper into the server side, working with a new ORM and preparing to provide an actual utility tool. For now, the product remains free with Stripe donation options, but a paid version may come down the pipeline if it becomes too expensive to manage. I referenced several previous projects to make sure I was on the right track throughout development, as well as relevant documentation.",
     about:
-      "A free schedule generator app for people who work rotation shifts based on a 24-hour basis instead of a Monday-Friday schedule. This app accepts input and returns a schedule based on the type of rotation the user needs to build around, with output displayed in either a list format or calendar view. This project allows for either Google login, GitHub, or magic link login with an email address.",
+      "A free schedule generator app for people who work rotating shifts based on a 24-hour basis instead of a Monday-Friday schedule. The app accepts input and returns a schedule based on the type of rotation the user needs to build around, with output displayed in the form of a simple, asthetic calendar. This project allows for either Google login, GitHub, or magic link login with an email address. The app has a built in light/dark/system toggle and intuitive navogation layout. There are plans to shift the user specific navigation into a sidebar, and to allow for more intricate schedule building and to update each individual day with adjustments such as vacation, appointments etc.",
   },
   {
     id: "ecommerce-site",
@@ -33,7 +33,7 @@ const images = [
     title: "Ecommerce Site",
     tags: ["TypeScript", "React", "Tailwind CSS", "TailwindUI", "Shadcn/ui"],
     challenge:
-      "This project was rather large, and with that came some challenges: for one, I struggled a bit with sharing state between components and pages. I failed to realize that the concept I was inventing in my head and almost in my code already existed in the form of useContext. Once that was out of the way, I found some difficulty in positioning certain elements exactly where I wanted them so they looked presentable both on desktop and mobile, but a few Tailwind size adjustments sorted that out.",
+      "This project was at the time the largest react application I'd built, and with that came some challenges: for one, I struggled a bit with sharing state between components and pages. I failed to realize that the concept I was inventing in my head and almost in my code already existed in the form of useContext. Once that was out of the way, I found some difficulty in positioning certain elements exactly where I wanted them so they looked presentable both on desktop and mobile, but a few Tailwind size adjustments sorted that out.",
     about:
       "Engaging in this project introduced me to many new concepts within React. I dove headfirst into the useContext hook and scoured the React documentation to gain what I believe is a working grasp of its uses. In the end, I am happy with the outcome. The goal was to create something purposely generic and minimal, and I believe that’s what I have achieved. You will notice a checkout area if you decide to go through the motions of the website; it does not submit anything, it just clears the cart.",
   },
