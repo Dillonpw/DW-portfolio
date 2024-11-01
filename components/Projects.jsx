@@ -26,25 +26,28 @@ const Projects = () => {
           {images.slice(0, 5).map((image) => (
             <div key={image.id} className="mb-4 flex flex-col items-center">
               <Link
-                description="More info about projects"
-                className="hover-scale block"
+                aria-label={`More info about ${image.title}`}
+                className="block overflow-hidden rounded-xl border-2 border-black transition-all dark:border-white"
                 href={`/${image.id}`}
               >
-                <Image
-                  className="rounded-xl border-2 border-black transition-all hover:scale-105 dark:border-white"
-                  src={image.src}
-                  alt={image.title}
-                  width={565}
-                  height={311}
-                />
+                <div className="relative h-[311px] w-[565px] overflow-hidden">
+                  <Image
+                    className="rounded-lg transition-all duration-300 ease-in-out hover:scale-110 hover:opacity-60"
+                    src={image.src}
+                    alt={image.title}
+                    width={565}
+                    height={311}
+                    objectFit="cover"
+                  />
+                </div>
               </Link>
               <div className="mt-8 flex flex-wrap items-center justify-center">
                 {image.tags.map((tag, index) => (
                   <motion.span
                     key={tag}
-                    initial={{ opacity: 0, x: index % 2 === 0 ? -30 : 30 }} // Alternate directions
+                    initial={{ opacity: 0, x: index % 2 === 0 ? -30 : 30 }}
                     whileInView={{ opacity: 1, x: 0 }}
-                    transition={{ duration: 1, delay: index * 0.1 }} // delay for a staggered effect
+                    transition={{ duration: 1, delay: index * 0.1 }}
                     className="m-2 cursor-default rounded-2xl border-2 bg-neutral-950 px-3 py-2 text-gray-200 dark:bg-gray-200 dark:text-neutral-950"
                   >
                     {tag}

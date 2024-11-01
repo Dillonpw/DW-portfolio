@@ -1,8 +1,9 @@
 const images = [
   {
     id: "rotating-schedule",
-    src: "/schedule-dt.webp",
-    mobileImg: "/Schedule-m.webp",
+    src: "/schedtrack-dt.jpeg",
+    src2: "/schedtrack-dt2.jpeg",
+    mobileImg: "/Schedtrack-m.jpeg",
     livePreviewLink: "https://dillonpw.vercel.app/",
     githubLink: "https://github.com/Dillonpw/schedule",
     title: "Sched Track",
