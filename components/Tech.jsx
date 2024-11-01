@@ -1,4 +1,5 @@
-"use client"
+"use client";
+
 import { motion } from "framer-motion";
 
 const Tech = () => {
@@ -33,42 +34,40 @@ const Tech = () => {
       transition={{ duration: 1, delay: 0.5 }}
       whileInView={{ opacity: 1 }}
       animate={{ y: 0 }}
-      className="mb-10 mt-10  text-center md:mb-6"
+      className="my-10 text-center md:mb-6"
     >
-      <p className="mb-2 text-xl font-bold lg:text-2xl">Working with</p>
-      <div className="relative hidden flex-col justify-center overflow-hidden  md:flex">
+      <h2 className="mb-4 text-xl font-bold lg:text-2xl">Working with</h2>
+      <div className="relative hidden md:block">
         <div className="pointer-events-none relative flex overflow-hidden">
-          <div className="flex min-w-full shrink-0 animate-marquee list-none items-center justify-around">
+          <div className="flex min-w-full shrink-0 animate-marquee items-center justify-around">
             {devTools.map((dt, index) => (
-              <li className="p-2 opacity-60" key={index}>
+              <span className="mx-4 opacity-60" key={index}>
                 {dt}
-              </li>
+              </span>
             ))}
           </div>
-
           <div
             aria-hidden="true"
-            className="flex min-w-full shrink-0 animate-marquee list-none items-center justify-around"
+            className="flex min-w-full shrink-0 animate-marquee items-center justify-around"
           >
             {devTools.map((dt, index) => (
-              <li className="p-2 opacity-60" key={index}>
+              <span className="mx-4 opacity-60" key={index}>
                 {dt}
-              </li>
+              </span>
             ))}
           </div>
         </div>
+        <div className="pointer-events-none absolute inset-y-0 left-0 w-1/6 bg-gradient-to-r from-background to-transparent"></div>
+        <div className="pointer-events-none absolute inset-y-0 right-0 w-1/6 bg-gradient-to-l from-background to-transparent"></div>
       </div>
-      {/* small screens */}
-      <div className="flex flex-col items-center justify-center gap-6 md:hidden">
-        <div>
-          <ul className="text-md mx-6 flex list-none flex-row flex-wrap items-center justify-center gap-3 pt-2 lg:mx-40 xl:px-60 xl:text-xl">
-            {devTools.map((dt) => (
-              <li className="opacity-60" key={dt}>
-                {dt}
-              </li>
-            ))}
-          </ul>
-        </div>
+      <div className="md:hidden">
+        <ul className="flex flex-wrap items-center justify-center gap-3 px-4">
+          {devTools.map((dt) => (
+            <li className="opacity-60" key={dt}>
+              {dt}
+            </li>
+          ))}
+        </ul>
       </div>
     </motion.section>
   );
