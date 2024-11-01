@@ -28,7 +28,7 @@ const NavBar = ({ children }) => {
     <motion.nav
       initial={{ opacity: 0 }}
       transition={{ duration: 1 }}
-      whileInView={{ opacity: 1 }}
+      animate={{ opacity: 1 }}
       className="sticky left-0 top-0 z-50 flex w-full justify-center transition-all"
     >
       <header

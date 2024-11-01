@@ -6,7 +6,7 @@ export default function Links() {
   return (
     <motion.section
       initial={{ opacity: 0 }}
-      transition={{ duration: 1 }}
+      transition={{ duration: 1, delay: 0.25 }}
       whileInView={{ opacity: 1 }}
       animate={{ y: -30 }}
       className="mt-10 flex items-center justify-center gap-4"
