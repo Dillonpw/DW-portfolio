@@ -11,9 +11,9 @@ const Dogs = () => {
     <TooltipProvider>
       <Tooltip>
         <TooltipTrigger>
-          <h4 className="fade-in-3 cursor-pointer text-xl opacity-60">
+          <h3 className="fade-in-3 cursor-pointer text-xl opacity-60">
             I&apos;m probably walking my dogs
-          </h4>
+          </h3>
         </TooltipTrigger>
         <TooltipContent
           side="bottom"

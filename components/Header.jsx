@@ -17,7 +17,6 @@ import {
   TooltipTrigger,
 } from "./ui/tooltip";
 
-
 const Header = () => {
   return (
     <motion.div
@@ -41,57 +40,52 @@ const Header = () => {
         >
           <TooltipProvider>
             <Tooltip>
-              <TooltipTrigger>
+              <TooltipTrigger asChild>
                 <a
                   id="xLink"
                   href="https://x.com/dillonpw_"
                   target="_blank"
                   rel="noreferrer"
-                  aria-label="redirect to X"
+                  aria-label="Twitter/X"
+                  className="block p-2 transition-transform hover:scale-110"
                 >
-                  <FontAwesomeIcon
-                    className="h-8 w-8 hover:scale-110"
-                    icon={faXTwitter}
-                  />
+                  <FontAwesomeIcon className="h-6 w-6" icon={faXTwitter} />
                 </a>
               </TooltipTrigger>
               <TooltipContent>Twitter/X</TooltipContent>
             </Tooltip>
           </TooltipProvider>
+
           <TooltipProvider>
             <Tooltip>
-              <TooltipTrigger>
-                {" "}
+              <TooltipTrigger asChild>
                 <a
                   id="githubLink"
                   href="https://github.com/Dillonpw/"
                   target="_blank"
                   rel="noreferrer"
-                  aria-label="redirect to Github"
+                  aria-label="GitHub"
+                  className="block p-2 transition-transform hover:scale-110"
                 >
-                  <FontAwesomeIcon
-                    className="h-8 w-8 hover:scale-110"
-                    icon={faGithub}
-                  />
+                  <FontAwesomeIcon className="h-6 w-6" icon={faGithub} />
                 </a>
               </TooltipTrigger>
-              <TooltipContent>Github</TooltipContent>
+              <TooltipContent>GitHub</TooltipContent>
             </Tooltip>
           </TooltipProvider>
+
           <TooltipProvider>
             <Tooltip>
-              <TooltipTrigger>
+              <TooltipTrigger asChild>
                 <a
-                  id="linkedinLnk"
+                  id="linkedinLink"
                   href="https://www.linkedin.com/in/dillon-walsh-50673b290/"
                   target="_blank"
                   rel="noreferrer"
-                  aria-label="redirect to Linkedin"
+                  aria-label="LinkedIn"
+                  className="block p-2 transition-transform hover:scale-110"
                 >
-                  <FontAwesomeIcon
-                    className="h-8 w-8 hover:scale-110"
-                    icon={faLinkedinIn}
-                  />
+                  <FontAwesomeIcon className="h-6 w-6" icon={faLinkedinIn} />
                 </a>
               </TooltipTrigger>
               <TooltipContent>LinkedIn</TooltipContent>
@@ -108,7 +102,7 @@ const Header = () => {
           <TooltipProvider>
             <Tooltip>
               <TooltipTrigger>
-                <h3 className="fade-in-3 cursor-pointer text-xl opacity-60">
+                <h2 className="fade-in-3 cursor-pointer text-xl opacity-60">
                   If I&apos;m not building{" "}
                   <a
                     className="hover:underline"
@@ -117,7 +111,7 @@ const Header = () => {
                   >
                     Schedtrack.com
                   </a>{" "}
-                </h3>
+                </h2>
               </TooltipTrigger>
               <TooltipContent>Schedtrack.com</TooltipContent>
             </Tooltip>
