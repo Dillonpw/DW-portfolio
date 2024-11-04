@@ -27,8 +27,7 @@ const Header = () => {
       className="mt-28 flex flex-col items-center justify-center md:mx-10 md:flex-row md:justify-evenly"
     >
       <Image
-      loading="eager"
-        src="/Cartoon.jpeg"
+        src="https://utfs.io/f/2x9MeROBnW8iOQeCQKVh4ogqGP9YIydZrTlvxQFDetMEbBfH"
         alt="cartoon"
         width={300}
         height={300}
