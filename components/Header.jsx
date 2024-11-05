@@ -32,6 +32,7 @@ const Header = () => {
         width={300}
         height={300}
         className="rounded-full border-2 dark:border-gray-200"
+        priority
       />
       <div className="flex flex-col items-center justify-center text-nowrap md:mt-10">
         <div
