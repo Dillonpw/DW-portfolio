@@ -20,14 +20,22 @@
       {
         "name": "next"
       }
-    ]
+    ],
+    "target": "ES2017"
   },
   "include": [
     "next-env.d.ts",
     ".next/types/**/*.ts",
     "**/*.ts",
-    "**/*.tsx"
-, "components/theme-provider.jsx", "app/blog/page.jsx", "components/blogComponents/header.jsx", "components/scroll.jsx", "components/blogComponents/textBox.jsx", "app/blog/ticker/page.jsx", "lib/api.js"  ],
+    "**/*.tsx",
+    "components/theme-provider.jsx",
+    "app/blog/page.jsx",
+    "components/blogComponents/header.jsx",
+    "components/scroll.jsx",
+    "components/blogComponents/textBox.jsx",
+    "app/blog/ticker/page.jsx",
+    "lib/api.js"
+  ],
   "exclude": [
     "node_modules"
   ]
