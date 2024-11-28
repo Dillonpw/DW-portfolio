@@ -5,8 +5,11 @@ const TextSwitcher = () => {
   // Cycle between two states
   const [text, cycleText] = useCycle(
     "Web Developer",
-    "QA Engineer",
+    "Mobile Developer",
+    "Frontend Developer",
     "Software Engineer",
+    "Full Stack Developer",
+    "React Developer",
   );
 
   useEffect(() => {
