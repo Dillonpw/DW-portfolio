@@ -28,7 +28,7 @@ const images = [
     src: "/ecommerce.png",
     src2: "/ecommerce-2.png",
     mobileImg: "/ecommerce-m.png",
-    livePreviewLink: "https://shop-red-eta.vercel.app/",
+    livePreviewLink: "shop-dillonpws-projects.vercel.app",
     githubLink: "https://github.com/Dillonpw/ecommerce",
     title: "Ecommerce Site",
     tags: ["TypeScript", "React", "Tailwind CSS", "TailwindUI", "Shadcn/ui"],
@@ -41,7 +41,7 @@ const images = [
     id: "FEM-LP1",
     src: "/home-dt.jpeg",
     mobileImg: "/home-m.jpeg",
-    livePreviewLink: "homefem-dillonpws-projects.vercel.app",
+    livePreviewLink: "https://homefem-dillonpws-projects.vercel.app",
     githubLink: "https://github.com/Dillonpw/FEM-LP1",
     title: "Design File To Code",
     tags: ["JavaScript", "React", "Tailwind CSS", "Vite"],
@@ -49,6 +49,19 @@ const images = [
       "The only challenge I ran into with this simple design-to-code project was after designing mobile first with Flexbox. In order to get the layout I needed for desktop, I had to rebuild using Grid instead. No huge issues with the transition, but it did set me back a bit. The purpose of this project for me was to test how quickly and how closely I could take a design file and produce a finished project.",
     about:
       "This project was taken from Frontendmentor.io, supplying the design and expected outcome. I used Tailwind and a few React components to bring the design file to life, in a form as close to pixel-perfect as I could get without excruciating adjustments. The project took approximately 3 hours of work from download to finished project. The time was mostly due to the experience I have with the tools I used.",
+  },
+  {
+    id: "tech-LP",
+    src: "/techLP.jpeg",
+    mobileImg: "/techLP-m.jpeg",
+    livePreviewLink: "spa-dillonpws-projects.vercel.app",
+    githubLink: "https://github.com/Dillonpw/spa",
+    title: "Tech start up landing page",
+    tags: ["JavaScript", "React", "Tailwind CSS", "Vite"],
+    challenge:
+      "Nothing about this project came as especially challenging, though I did dive heavily into motion(formerly known as framer-motion) as a tool for my page's animaitons where I usually throw something together with my own CSS.",
+    about:
+      "A single page application designed and built entirely by myself using, to display a sample of a tech start up's landing page to display my expanding experience as a Frontend Developer.",
   },
   {
     id: "small-bis",
