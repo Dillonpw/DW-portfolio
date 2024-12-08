@@ -7,8 +7,9 @@ const getPostBySlug = (slug) => {
   return allPosts.find((post) => post.slug === slug);
 };
 
-export default function BlogPostPage({ params }) {
-  const { slug } = params;
+export default async function BlogPostPage({ params }) {
+  const resolvedParams = await params; // Await `params` before using it
+  const { slug } = resolvedParams;
   const post = getPostBySlug(slug);
 
   if (!post) return <p>Post not found</p>;

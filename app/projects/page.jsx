@@ -12,6 +12,11 @@ import {
 import { Button } from "../../components/ui/button";
 import Link from "next/link";
 
+export const metadata = {
+  title: "Projects - Recent Work",
+  description: "Explore recent projects and see more work on GitHub.",
+};
+
 const ProjectsPage = () => {
   return (
     <>
@@ -20,7 +25,7 @@ const ProjectsPage = () => {
       </NavBar>
       <Projects />
       <div className="flex items-center justify-center mt-8 hover:scale-110">
-        <Button variant="ghost" className="flex items-center space-x-2"> {/* Adjusted flex container and spacing */}
+        <Button variant="ghost" className="flex items-center space-x-2">
           <Link target="_blank" href="https://github.com/Dillonpw/">
             More Projects
           </Link>
