@@ -1,4 +1,3 @@
-"use client";
 import NavBar from "../../components/nav";
 import Projects from "../../components/Projects";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
