@@ -35,6 +35,11 @@ export const metadata = {
   keywords: [
     "Dillon",
     "Walsh",
+    "dillonwalsh.com",
+    "dillonwalsh",
+    "dylan",
+    "dillonpw",
+    "dylanwalsh",
     "portfolio",
     "web",
     "developer",
