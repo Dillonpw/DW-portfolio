@@ -1,9 +1,11 @@
-import { getAllPosts } from "../lib/getPosts"
-import images from "../components/Images"
+import { MetadataRoute } from "next";
+import { getAllPosts } from "../lib/getPosts";
+import images from "../components/Images";
 
 export default async function sitemap() {
-  const baseUrl = "https://dillonwalsh.com"
+  const baseUrl = "https://dillonwalsh.com";
 
+  // Dynamic project pages
   const projectUrls = images.map((project) => ({
     url: `${baseUrl}/${project.id}`,
     lastModified: new Date(),
@@ -15,16 +17,18 @@ export default async function sitemap() {
         title: project.title,
       },
     ],
-  }))
+  }));
 
-  const posts = getAllPosts()
+  // Dynamic blog posts
+  const posts = getAllPosts();
   const postUrls = posts.map((post) => ({
     url: `${baseUrl}/blog/${post.slug}`,
     lastModified: new Date(post.date),
     changeFrequency: "weekly",
     priority: 0.7,
-  }))
+  }));
 
+  // Static routes
   const routes = [
     "",
     "projects",
@@ -32,12 +36,25 @@ export default async function sitemap() {
     "blog",
     "robots.txt",
     "sitemap.xml",
+    "about", // Adding common app router pages
+    "contact",
+    "services",
+    "reviews",
+    "faq",
   ].map((route) => ({
     url: `${baseUrl}${route ? `/${route}` : ""}`,
     lastModified: new Date(),
     changeFrequency: "daily",
     priority: 1,
-  }))
+  }));
 
-  return [...routes, ...projectUrls, ...postUrls]
+  // Subdomain routes
+  const subdomainRoutes = ["t1"].map((route) => ({
+    url: `https://${route}.dillonwalsh.com`,
+    lastModified: new Date(),
+    changeFrequency: "daily",
+    priority: 1,
+  }));
+
+  return [...subdomainRoutes, ...routes, ...projectUrls, ...postUrls];
 }
