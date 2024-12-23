@@ -31,8 +31,7 @@ const ProjectPage = () => {
           transition={{ duration: 1 }}
           whileInView={{ opacity: 1 }}
           animate={{ y: -30 }}
-          className="flex flex-col items-center justify-center px-4 pt-40
-          xl:flex-row"
+          className="flex flex-col items-center justify-center px-4 pt-40 xl:px-20"
         >
           <Suspense
             fallback={
