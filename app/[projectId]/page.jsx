@@ -33,6 +33,23 @@ const ProjectPage = () => {
           animate={{ y: -30 }}
           className="flex flex-col items-center justify-center px-4 pt-40 xl:px-20"
         >
+          {project.video && (
+            <Suspense
+              fallback={
+                <div className="w-100 h-auto animate-pulse bg-slate-700"></div>
+              }
+            >
+              <video
+                src="https://utfs.io/f/2x9MeROBnW8izghZmAdbdqj6eSUgmlVLipk0w4HItRXDYyGJ"
+                className="h-100 w-auto items-center justify-center rounded-lg border-2 border-black bg-slate-700 dark:border-white"
+                muted
+                playsInline
+                autoPlay
+                loop
+                preload="metadata"
+              />
+            </Suspense>
+          )}
           <Suspense
             fallback={
               <div className="w-100 h-auto animate-pulse bg-slate-700"></div>

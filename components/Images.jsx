@@ -4,6 +4,7 @@ const images = [
     src: "/schedtrack-dt.jpeg",
     src2: "/schedtrack-dt2.jpeg",
     mobileImg: "/schedtrack-m.jpeg",
+    video: "https://utfs.io/f/2x9MeROBnW8izghZmAdbdqj6eSUgmlVLipk0w4HItRXDYyGJ",
     livePreviewLink: "https://www.schedtrack.com/",
     githubLink: "https://github.com/Dillonpw/schedule",
     title: "Sched Track",
