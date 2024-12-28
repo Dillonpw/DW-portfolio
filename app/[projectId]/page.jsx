@@ -1,4 +1,3 @@
-"use client";
 import images from "../../components/Images";
 import { motion } from "framer-motion";
 import { Suspense } from "react";
@@ -8,6 +7,11 @@ import { useParams } from "next/navigation";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import { faUpRightFromSquare } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+
+export const Metadata = {
+  title: `${project.title} - Dillon Walsh`,
+  description: "Explore recent projects and see more work on GitHub.",
+};
 
 const ProjectPage = () => {
   const { projectId } = useParams();
