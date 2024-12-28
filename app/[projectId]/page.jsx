@@ -1,3 +1,5 @@
+'use client';
+
 import images from "../../components/Images";
 import { motion } from "framer-motion";
 import { Suspense } from "react";
@@ -7,22 +9,6 @@ import { useParams } from "next/navigation";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import { faUpRightFromSquare } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-
-export const Metadata = {
-  title: `${project.title} - Dillonwalsh.com`,
-  description: "Explore recent projects and see more work on GitHub.",
-  openGraph: {
-    title: `${project.title} - Dillon Walsh`,
-    description: "Take a look at some of my recent projects.",
-    type: "website",
-    url: `https://www.dillonwalsh.com/${project.id}`,
-  },
-  twitter: {
-    card: `${project.src}`,
-    title: `${project.title} - Dillonwalsh.com`,
-    description: "Take a look at some of my recent projects.",
-  },
-};
 
 const ProjectPage = () => {
   const { projectId } = useParams();
@@ -115,9 +101,9 @@ const ProjectPage = () => {
           {project.tags.map((tag, index) => (
             <motion.span
               key={tag}
-              initial={{ opacity: 0, x: index % 2 === 0 ? -30 : 30 }} // Alternate directions
+              initial={{ opacity: 0, x: index % 2 === 0 ? -30 : 30 }}
               whileInView={{ opacity: 1, x: 0 }}
-              transition={{ duration: 1, delay: index * 0.1 }} // delay for a staggered effect
+              transition={{ duration: 1, delay: index * 0.1 }}
               className="m-2 cursor-default rounded-2xl border-2 bg-neutral-950 px-3 py-2 text-gray-200 dark:bg-gray-200 dark:text-neutral-950"
             >
               {tag}
