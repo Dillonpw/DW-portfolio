@@ -2,8 +2,12 @@
 
 import Link from "next/link";
 import { motion } from "framer-motion";
+import { getAllPosts } from '../lib/getPosts';
 
-const BlogPostList = ({ posts }) => {
+
+const BlogPostList = () => {
+const posts = getAllPosts();
+
   return (
     <motion.div
       initial={{ opacity: 0 }}

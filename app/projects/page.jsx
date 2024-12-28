@@ -41,7 +41,7 @@ const ProjectsPage = () => {
           </Link>
           <TooltipProvider>
             <Tooltip>
-              <TooltipTrigger>
+              <TooltipTrigger asChild>
                 <a
                   id="githubLink"
                   href="https://github.com/Dillonpw/"

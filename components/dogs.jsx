@@ -10,7 +10,7 @@ const Dogs = () => {
   return (
     <TooltipProvider>
       <Tooltip>
-        <TooltipTrigger>
+        <TooltipTrigger asChild>
           <h3 className="fade-in-3 cursor-pointer text-xl opacity-60">
             I&apos;m probably walking my dogs
           </h3>
