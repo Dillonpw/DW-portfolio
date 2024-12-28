@@ -9,8 +9,19 @@ import { faUpRightFromSquare } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 export const Metadata = {
-  title: `${project.title} - Dillon Walsh`,
+  title: `${project.title} - Dillonwalsh.com`,
   description: "Explore recent projects and see more work on GitHub.",
+  openGraph: {
+    title: `${project.title} - Dillon Walsh`,
+    description: "Take a look at some of my recent projects.",
+    type: "website",
+    url: `https://www.dillonwalsh.com/${project.id}`,
+  },
+  twitter: {
+    card: `${project.src}`,
+    title: `${project.title} - Dillonwalsh.com`,
+    description: "Take a look at some of my recent projects.",
+  },
 };
 
 const ProjectPage = () => {

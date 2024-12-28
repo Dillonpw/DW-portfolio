@@ -12,24 +12,24 @@ export async function generateMetadata({ params }) {
 
   if (!post) {
     return {
-      title: "Post Not Found | Your Site Name",
+      title: "Post Not Found | Dillonwalsh.com",
       description: "The requested blog post could not be found.",
     };
   }
 
   return {
-    title: `${post.title} | Your Site Name`,
+    title: `${post.title} | Dillonwalsh.com`,
     description: post.excerpt,
     openGraph: {
-      title: `${post.title} | Your Site Name`,
+      title: `${post.title} | Dillonwalsh.com`,
       description: post.excerpt,
       type: "article",
-      url: `https://yoursite.com/blog/${post.slug}`,
+      url: `https://www.dillonwalsh.com/blog/${post.slug}`,
       publishedTime: post.date,
     },
     twitter: {
-      card: "summary_large_image",
-      title: `${post.title} | Your Site Name`,
+      card: "twitter-img.png",
+      title: `${post.title} | Dillonwalsh.com`,
       description: post.excerpt,
     },
   };

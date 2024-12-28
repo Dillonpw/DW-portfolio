@@ -12,8 +12,19 @@ import { Button } from "../../components/ui/button";
 import Link from "next/link";
 
 export const metadata = {
-  title: "Projects - Recent Work",
+  title: "Projects | Dillonwalsh.com",
   description: "Explore recent projects and see more work on GitHub.",
+  openGraph: {
+    title: "Projects | Dillonwalsh.com",
+    description: "Explore recent projects and see more work on GitHub.",
+    type: "website",
+    url: "https://www.dillonwalsh.com/projects",
+  },
+  twitter: {
+    card: "/twiiter-img.png",
+    title: "Projects | Dillonwalsh.com",
+    description: "Explore recent projects and see more work on GitHub.",
+  },
 };
 
 const ProjectsPage = () => {
