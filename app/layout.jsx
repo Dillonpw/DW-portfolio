@@ -1,5 +1,5 @@
 import "./globals.css";
-import { Inter } from "next/font/google";
+import { Poppins } from "next/font/google";
 import { Analytics } from "@vercel/analytics/react";
 import Footer from "../components/Footer";
 import { ThemeProvider } from "../components/theme-provider";
@@ -96,13 +96,18 @@ export const metadata = {
   },
 };
 
-const inter = Inter({ subsets: ["latin"] });
+const poppins = Poppins({
+  subsets: ['latin'],
+  weight: ['400', '500', '700'],
+  variable: '--font-poppins',
+  display: 'swap',
+})
 
 export default function RootLayout({ children }) {
   return (
     <html lang="en" suppressHydrationWarning>
       <body
-        className={`${inter.className} relative min-h-full w-[100vw] bg-neutral-50 p-0 text-slate-900 transition-all dark:bg-neutral-950 dark:text-gray-200`}
+        className={`${poppins.className} relative min-h-full w-[100vw] bg-neutral-50 p-0 text-slate-900 transition-all dark:bg-neutral-950 dark:text-gray-200`}
       >
         <ThemeProvider attribute="class" defaultTheme="system">
           {children}
