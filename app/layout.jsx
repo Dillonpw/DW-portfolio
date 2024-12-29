@@ -25,7 +25,7 @@ export const metadata = {
     type: "website",
   },
   twitter: {
-    card: "summary_large_image",
+    card: "/twitter-img.png",
     title: "Dillon Walsh - Web Developer",
     description: "Professional Web Developer.",
     creator: "@dillonpw",
