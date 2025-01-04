@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion";
 const Footer = () => {
+  const year = new Date().getFullYear();
   return (
     <>
       <motion.footer
@@ -16,7 +17,7 @@ const Footer = () => {
           <b className="text-emerald-500">Tailwind</b>, with some elements
           designed in <b className="text-emerald-500">Figma</b>
           <br />
-          &copy;2024 All Rights Reserved
+          &copy; {year} All Rights Reserved
         </p>
       </motion.footer>
     </>
