@@ -34,8 +34,8 @@ const NavBar = ({ children }) => {
       <header
         className={`mx-4 flex items-center justify-between px-6 backdrop-blur-xl transition-all ${
           isScrolled
-            ? "mt-4 h-16 w-[90%] rounded-full bg-white text-black shadow-md dark:bg-neutral-900 dark:text-white"
-            : "h-16 w-full bg-transparent dark:text-white"
+            ? "mt-4 h-16 w-[90%] rounded-full bg-transparent text-black shadow-md dark:bg-neutral-900 dark:text-white"
+            : "h-16 w-full dark:text-white"
         }`}
       >
         <Link href="/" id="logo">

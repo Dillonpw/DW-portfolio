@@ -34,7 +34,7 @@ const Tech = () => {
       transition={{ duration: 1, delay: 0.5 }}
       whileInView={{ opacity: 1 }}
       animate={{ y: 0 }}
-      className="my-10 cursor-pointer text-center md:mb-6"
+      className="mt-20 cursor-pointer text-center md:mb-6"
     >
       <h2 className="mb-4 text-xl font-bold lg:text-2xl">Working with</h2>
       <div className="relative hidden md:block">

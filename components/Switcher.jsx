@@ -9,7 +9,6 @@ const TextSwitcher = () => {
     "Frontend Developer",
     "Software Engineer",
     "Full Stack Developer",
-    "React Developer",
   );
 
   useEffect(() => {

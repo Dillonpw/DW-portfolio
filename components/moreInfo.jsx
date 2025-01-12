@@ -6,7 +6,7 @@ const MoreInfo = () => {
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{ duration: 1, delay: 0.75 }}
-      className="mx-10 mt-10 flex flex-col gap-2 dark:text-gray-200 lg:mx-[12rem] xl:mx-[20rem] xl:text-xl"
+      className="mx-10 mt-20 flex flex-col gap-2 dark:text-gray-200 lg:mx-[12rem] xl:mx-[20rem] xl:text-xl"
     >
       <h1 className="text-center text-xl font-bold">Want to Connect?</h1>
       <p className="text-md mx-12 text-center opacity-60">
