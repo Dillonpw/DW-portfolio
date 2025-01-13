@@ -5,7 +5,7 @@ import MoreInfo from "./moreInfo.jsx";
 const Content = () => {
   return (
     <>
-      <main className="xl:text-xl h-screen">
+      <main className="xl:text-xl">
         <NavBar />
         <Header />
         <Tech />
