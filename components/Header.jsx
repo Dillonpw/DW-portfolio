@@ -24,7 +24,7 @@ const Header = () => {
       transition={{ duration: 1 }}
       whileInView={{ opacity: 1 }}
       animate={{ y: 10 }}
-      className="mt-28 flex flex-col items-center justify-center md:mx-10 md:flex-row md:justify-evenly"
+      className="mt-20 flex flex-col items-center justify-center md:mx-10 md:flex-row md:justify-evenly"
     >
       <Image
         src="https://utfs.io/f/2x9MeROBnW8iOQeCQKVh4ogqGP9YIydZrTlvxQFDetMEbBfH"

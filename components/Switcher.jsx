@@ -15,7 +15,7 @@ const TextSwitcher = () => {
     // Automatically cycle the text every 3 seconds
     const interval = setInterval(() => {
       cycleText();
-    }, 5000);
+    }, 3000);
 
     return () => clearInterval(interval);
   }, [cycleText]);
